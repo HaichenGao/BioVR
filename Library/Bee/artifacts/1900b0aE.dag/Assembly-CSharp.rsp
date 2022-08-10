@@ -417,6 +417,7 @@
 "Assets/Scripts/ParticleBoids.cs"
 "Assets/Scripts/ParticleControl.cs"
 "Assets/Scripts/ParticleController.cs"
+"Assets/Scripts/ParticleManager.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/SimpleCameraController.cs"
 "Assets/Scripts/TextureBuffer.cs"

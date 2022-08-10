@@ -48,7 +48,7 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   skyIntensityMode:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   exposure:
     m_OverrideState: 1
@@ -76,16 +76,16 @@ MonoBehaviour:
     m_Value: 0
   top:
     m_OverrideState: 1
-    m_Value: {r: 0.10258684, g: 0.3373149, b: 0.8584906, a: 1}
+    m_Value: {r: 0, g: 0.12715185, b: 0.4528302, a: 1}
   middle:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 0.73299974, b: 0.572327, a: 1}
+    m_Value: {r: 0.140922, g: 0.26382792, b: 0.8584906, a: 1}
   bottom:
     m_OverrideState: 1
-    m_Value: {r: 0.7075472, g: 0.47460026, b: 0.45834813, a: 1}
+    m_Value: {r: 0.7490566, g: 0.84005654, b: 1, a: 1}
   gradientDiffusion:
     m_OverrideState: 1
-    m_Value: 5.96
+    m_Value: 6.8
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,11 +128,11 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: {r: 1, g: 1, b: 1, a: 1}
   tint:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {r: 1, g: 1, b: 1, a: 1}
   maxFogDistance:
     m_OverrideState: 1
-    m_Value: 5000
+    m_Value: 4963.6
   mipFogMaxMip:
     m_OverrideState: 1
     m_Value: 0.756
@@ -144,13 +144,13 @@ MonoBehaviour:
     m_Value: 1000
   baseHeight:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: -4.3
   maximumHeight:
     m_OverrideState: 1
-    m_Value: 16.42
+    m_Value: 13.95
   meanFreePath:
     m_OverrideState: 1
-    m_Value: 234
+    m_Value: 231.9
   enableVolumetricFog:
     m_OverrideState: 1
     m_Value: 0
@@ -162,7 +162,7 @@ MonoBehaviour:
     m_Value: 1
   depthExtent:
     m_OverrideState: 1
-    m_Value: 64
+    m_Value: 279
   denoisingMode:
     m_OverrideState: 0
     m_Value: 2
