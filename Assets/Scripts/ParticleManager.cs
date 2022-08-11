@@ -7,10 +7,12 @@ public class ParticleManager : MonoBehaviour
 {
     VisualEffect visualEffect;
     MyMessageListener shoulderData;
-    TimerGL timerGatheringL;
-    TimerGR timerGatheringR;
+    TimerRL timerRelaxingL;
+    TimerRR timerRelaxingR;
     TimerSL timerSpreadingL;
     TimerSR timerSpreadingR;
+    TimerGL timerGatheringL;
+    TimerGR timerGatheringR;
 
     [SerializeField]
     int tensionSpeed = 50;
@@ -19,22 +21,22 @@ public class ParticleManager : MonoBehaviour
     int relaxationSpeed = 100;
 
     [SerializeField]
-    int upperLimit = 200;
+    int upperLimit = 2;
 
     [SerializeField]
-    int lowerLimit = 2500;
+    int lowerLimit = 0;
 
     [SerializeField]
     float tensionThreshold = 0.6f;
 
     [SerializeField]
-    int tensionTime = 3;
+    float tensionTime = 3;
 
     [SerializeField]
-    int spreadingTime = 4;
+    float spreadingTime = 4;
 
     [SerializeField]
-    int relaxationTime = 10;
+    float relaxationTime = 10;
 
     [SerializeField]
     int cycle = 10;
@@ -53,7 +55,12 @@ public class ParticleManager : MonoBehaviour
     bool rightGatheringStart = true;
     bool rightSpreadingStart = false;
 
+    //bool leftSpawningStart = true;
+    //bool rightSpawningStart = true;
 
+    public float timerGathering;
+    public float timerSpreading;
+    public float timerRelaxing;
 
 
     // Start is called before the first frame update
@@ -61,13 +68,18 @@ public class ParticleManager : MonoBehaviour
     {
         visualEffect = this.GetComponent<VisualEffect>();
         shoulderData = GameObject.Find("SerialController").GetComponent<MyMessageListener>();
-        timerGatheringL = GameObject.Find("[CameraRig]").GetComponent<TimerGL>();
-        timerGatheringR = GameObject.Find("[CameraRig]").GetComponent<TimerGR>();
         timerSpreadingL = GameObject.Find("[CameraRig]").GetComponent<TimerSL>();
         timerSpreadingR = GameObject.Find("[CameraRig]").GetComponent<TimerSR>();
+        timerRelaxingL = GameObject.Find("[CameraRig]").GetComponent<TimerRL>();
+        timerRelaxingR = GameObject.Find("[CameraRig]").GetComponent<TimerRR>();
+        timerGatheringL = GameObject.Find("[CameraRig]").GetComponent<TimerGL>();
+        timerGatheringR = GameObject.Find("[CameraRig]").GetComponent<TimerGR>();
 
         visualEffect.SetInt("Min", lowerLimit);
         visualEffect.SetInt("Max", upperLimit);
+
+        enableLeftGathering = 5;
+        visualEffect.SetInt("EnableLeftGathering", enableLeftGathering);
     }
 
     // Update is called once per frame
@@ -80,29 +92,19 @@ public class ParticleManager : MonoBehaviour
         visualEffect.SetFloat("ParticleAmountLeft", shoulderLeft);
         visualEffect.SetFloat("ParticleAmountRight", shoulderRight);
 
-        //visualEffect.SetInt("EnableLeftGathering", enableLeftGathering);
-        //visualEffect.SetInt("EnableRightGathering", enableRightGathering);
-
-        //timerGatheringL.TimerStart = true;
-        //Debug.Log("G:" + timerGatheringL.CurrentTime);
-
-        //timerSpreadingL.TimerStart = true;
-        //Debug.Log("S:" + timerSpreadingL.CurrentTime);
+        timerGathering = timerGatheringL.CurrentTime;
+        timerSpreading = timerSpreadingL.CurrentTime;
+        timerRelaxing = timerRelaxingL.CurrentTime;
 
         //Left shoulder: gathering particles
-
-
         if (shoulderLeft >= tensionThreshold && timerGatheringL.TimerStart == false && leftGatheringStart == true && currentIterationL <= cycle)
         {
             timerGatheringL.TimerStart = true;
-            enableLeftGathering = 5;
+            enableLeftGathering = 0;
             visualEffect.SetInt("EnableLeftGathering", enableLeftGathering);
         }
         else if (timerGatheringL.CurrentTime >= tensionTime && timerGatheringL.TimerStart == true)
         {
-
-            enableLeftGathering = 0;
-            visualEffect.SetInt("EnableLeftGathering", enableLeftGathering);
             timerGatheringL.ResetTimer();
             leftGatheringStart = false;
             leftSpreadingStart = true;
@@ -110,19 +112,18 @@ public class ParticleManager : MonoBehaviour
         else
         {
             timerGatheringL.TimerStart = false;
-            enableLeftGathering = 0;
-            visualEffect.SetInt("EnableLeftGathering", enableLeftGathering);
         }
 
         //Left shoulder: spreading particles
         if (shoulderLeft < tensionThreshold && timerSpreadingL.TimerStart == false && leftSpreadingStart == true)
         {
             timerSpreadingL.TimerStart = true;
+            timerRelaxingL.TimerStart = true;
             enableLeftSpreading = 5;
             visualEffect.SetInt("EnableLeftSpreading", enableLeftSpreading);
 
         }
-        else if (timerSpreadingL.CurrentTime >= relaxationTime && timerSpreadingL.TimerStart == true)
+        else if (timerSpreadingL.CurrentTime >= spreadingTime && timerSpreadingL.TimerStart == true)
         {
             enableLeftSpreading = 0;
             visualEffect.SetInt("EnableLeftSpreading", enableLeftSpreading);
@@ -135,23 +136,28 @@ public class ParticleManager : MonoBehaviour
         else
         {
             timerSpreadingL.TimerStart = false;
-            enableLeftSpreading = 0;
-            visualEffect.SetInt("EnableLeftSpreading", enableLeftSpreading);
+        }
 
+        if (timerRelaxingL.CurrentTime >= relaxationTime && timerRelaxingL.TimerStart == true)
+        {
+            timerRelaxingL.ResetTimer();
+            if (currentIterationL < 10)
+            {
+                enableLeftGathering = 5;
+                visualEffect.SetInt("EnableLeftGathering", enableLeftGathering);
+            }
+            
         }
 
         //Right shoulder: gathering particles
         if (shoulderRight >= tensionThreshold && timerGatheringR.TimerStart == false && rightGatheringStart == true && currentIterationR <= cycle)
         {
             timerGatheringR.TimerStart = true;
-            enableRightGathering = 5;
+            enableRightGathering = 0;
             visualEffect.SetInt("EnableRightGathering", enableRightGathering);
         }
         else if (timerGatheringR.CurrentTime >= tensionTime && timerGatheringR.TimerStart == true)
         {
-
-            enableRightGathering = 0;
-            visualEffect.SetInt("EnableRightGathering", enableRightGathering);
             timerGatheringR.ResetTimer();
             rightGatheringStart = false;
             rightSpreadingStart = true;
@@ -159,19 +165,18 @@ public class ParticleManager : MonoBehaviour
         else
         {
             timerGatheringR.TimerStart = false;
-            enableRightGathering = 0;
-            visualEffect.SetInt("EnableRightGathering", enableRightGathering);
         }
 
         //Right shoulder: spreading particles
         if (shoulderRight < tensionThreshold && timerSpreadingR.TimerStart == false && rightSpreadingStart == true)
         {
             timerSpreadingR.TimerStart = true;
+            timerRelaxingR.TimerStart = true;
             enableRightSpreading = 5;
             visualEffect.SetInt("EnableRightSpreading", enableRightSpreading);
 
         }
-        else if (timerSpreadingR.CurrentTime >= relaxationTime && timerSpreadingR.TimerStart == true)
+        else if (timerSpreadingR.CurrentTime >= spreadingTime && timerSpreadingR.TimerStart == true)
         {
             enableRightSpreading = 0;
             visualEffect.SetInt("EnableRightSpreading", enableRightSpreading);
@@ -184,9 +189,66 @@ public class ParticleManager : MonoBehaviour
         else
         {
             timerSpreadingR.TimerStart = false;
-            enableRightSpreading = 0;
-            visualEffect.SetInt("EnableRightSpreading", enableRightSpreading);
+        }
+
+        if (timerRelaxingR.CurrentTime >= relaxationTime && timerRelaxingR.TimerStart == true)
+        {
+            timerRelaxingR.ResetTimer();
+            if (currentIterationR < 10)
+            {
+                enableRightGathering = 5;
+                visualEffect.SetInt("EnableRightGathering", enableRightGathering);
+            }
 
         }
+
+        //Right shoulder: gathering particles
+        //if (shoulderRight >= tensionThreshold && timerGatheringR.TimerStart == false && rightGatheringStart == true && currentIterationR <= cycle)
+        //{
+        //    timerGatheringR.TimerStart = true;
+        //    enableRightGathering = 5;
+        //    visualEffect.SetInt("EnableRightGathering", enableRightGathering);
+        //}
+        //else if (timerGatheringR.CurrentTime >= tensionTime && timerGatheringR.TimerStart == true)
+        //{
+
+        //    enableRightGathering = 0;
+        //    visualEffect.SetInt("EnableRightGathering", enableRightGathering);
+        //    timerGatheringR.ResetTimer();
+        //    rightGatheringStart = false;
+        //    rightSpreadingStart = true;
+        //}
+        //else
+        //{
+        //    timerGatheringR.TimerStart = false;
+        //    enableRightGathering = 0;
+        //    visualEffect.SetInt("EnableRightGathering", enableRightGathering);
+        //}
+
+        ////Right shoulder: spreading particles
+        //if (shoulderRight < tensionThreshold && timerSpreadingR.TimerStart == false && rightSpreadingStart == true)
+        //{
+        //    timerSpreadingR.TimerStart = true;
+        //    enableRightSpreading = 5;
+        //    visualEffect.SetInt("EnableRightSpreading", enableRightSpreading);
+
+        //}
+        //else if (timerSpreadingR.CurrentTime >= relaxationTime && timerSpreadingR.TimerStart == true)
+        //{
+        //    enableRightSpreading = 0;
+        //    visualEffect.SetInt("EnableRightSpreading", enableRightSpreading);
+        //    timerSpreadingR.ResetTimer();
+        //    rightGatheringStart = true;
+        //    rightSpreadingStart = false;
+        //    currentIterationR += 1;
+
+        //}
+        //else
+        //{
+        //    timerSpreadingR.TimerStart = false;
+        //    enableRightSpreading = 0;
+        //    visualEffect.SetInt("EnableRightSpreading", enableRightSpreading);
+
+        //}
     }
 }

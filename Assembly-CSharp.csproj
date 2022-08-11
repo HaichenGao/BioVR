@@ -61,13 +61,16 @@
     <Compile Include="Assets\Ardity\Scripts\Samples\SampleUserPolling_JustRead.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
     <Compile Include="Assets\Scripts\GraphEventSample.cs" />
-    <Compile Include="Assets\Scripts\TimerGL.cs" />
+    <Compile Include="Assets\Scripts\TimerRL.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
+    <Compile Include="Assets\Scripts\TimerGR.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\PostProcessingProfile.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\PostProcessingContext.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
     <Compile Include="Assets\Scripts\ParticleControl.cs" />
+    <Compile Include="Assets\Scripts\TimerGL.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\Scripts\ParticleManager.cs" />
     <Compile Include="Assets\Scripts\TimerSR.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\PostProcessingComponent.cs" />
     <Compile Include="Assets\Ardity\Scripts\Threads\SerialThread.cs" />
@@ -88,7 +91,7 @@
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
-    <Compile Include="Assets\Scripts\TimerGR.cs" />
+    <Compile Include="Assets\Scripts\TimerRR.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
     <Compile Include="Assets\Scripts\FreeCameraRight.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
@@ -132,7 +135,6 @@
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Components\FogComponent.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
-    <Compile Include="Assets\Scripts\ParticleManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shader\ParticleBoidsCS.compute" />

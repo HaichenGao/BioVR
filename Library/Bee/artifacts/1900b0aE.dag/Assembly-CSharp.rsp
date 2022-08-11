@@ -424,6 +424,8 @@
 "Assets/Scripts/Timer.cs"
 "Assets/Scripts/TimerGL.cs"
 "Assets/Scripts/TimerGR.cs"
+"Assets/Scripts/TimerRL.cs"
+"Assets/Scripts/TimerRR.cs"
 "Assets/Scripts/TimerSL.cs"
 "Assets/Scripts/TimerSR.cs"
 "Assets/Scripts/VRRig.cs"

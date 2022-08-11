@@ -15,7 +15,7 @@ C:/Users/ROG/Documents/GitHub/BioVR
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-50371
+49347
 Successfully changed project path to: C:/Users/ROG/Documents/GitHub/BioVR
 C:/Users/ROG/Documents/GitHub/BioVR
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/ROG/Documents/GitHub/BioVR
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 87.48 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 101.94 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.5f1 (40eb3a945986)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.3.5f1/Editor/Data/Resources/UnitySubsystems
@@ -63,96 +63,96 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2021.3.5f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2021.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity 2021.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56444
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56584
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2021.3.5f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity 2021.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity 2021.3.5f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.002400 seconds.
+Registered in 0.002319 seconds.
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 86.96 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 91.46 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.403 seconds
+- Completed reload, in  0.414 seconds
 Domain Reload Profiling:
-	ReloadAssembly (404ms)
-		BeginReloadAssembly (35ms)
+	ReloadAssembly (415ms)
+		BeginReloadAssembly (39ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (307ms)
-			LoadAssemblies (34ms)
+		EndReloadAssembly (311ms)
+			LoadAssemblies (37ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (60ms)
+			SetupTypeCache (63ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (14ms)
+			RebuildScriptCaches (15ms)
 			SetupLoadedEditorAssemblies (200ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (87ms)
+				RefreshPlugins (92ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (76ms)
-				ProcessInitializeOnLoadMethodAttributes (30ms)
+				ProcessInitializeOnLoadAttributes (74ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.010925 seconds.
+Registered in 0.010634 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 95.96 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 86.76 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 Mono: successfully reloaded assembly
-- Completed reload, in  1.066 seconds
+- Completed reload, in  0.987 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1066ms)
-		BeginReloadAssembly (63ms)
+	ReloadAssembly (988ms)
+		BeginReloadAssembly (64ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (13ms)
-		EndReloadAssembly (936ms)
-			LoadAssemblies (54ms)
+		EndReloadAssembly (865ms)
+			LoadAssemblies (57ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (245ms)
+			SetupTypeCache (203ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (66ms)
-			SetupLoadedEditorAssemblies (522ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (515ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (96ms)
-				BeforeProcessingInitializeOnLoad (78ms)
+				RefreshPlugins (87ms)
+				BeforeProcessingInitializeOnLoad (75ms)
 				ProcessInitializeOnLoadAttributes (237ms)
-				ProcessInitializeOnLoadMethodAttributes (97ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				ProcessInitializeOnLoadMethodAttributes (101ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.82 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 1.29 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7232 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 78 unused Assets / (3.9 MB). Loaded Objects now: 7673.
-Memory consumption went from 322.3 MB to 318.5 MB.
-Total: 3.089800 ms (FindLiveObjects: 0.316000 ms CreateObjectMapping: 0.202200 ms MarkObjects: 2.104300 ms  DeleteObjects: 0.466600 ms)
+Unloading 7236 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 78 unused Assets / (3.9 MB). Loaded Objects now: 7683.
+Memory consumption went from 323.9 MB to 320.0 MB.
+Total: 4.481000 ms (FindLiveObjects: 0.808300 ms CreateObjectMapping: 0.380300 ms MarkObjects: 2.500500 ms  DeleteObjects: 0.790100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -166,171 +166,57 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 88275.622055 seconds.
-  path: Assets/SteamVR/Input/Editor/Resources/Icons/BlenderBehaviour_Manual_Icon.png
-  artifactKey: Guid(426d721c1fc5bfa418c79dc808856464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/Input/Editor/Resources/Icons/BlenderBehaviour_Manual_Icon.png using Guid(426d721c1fc5bfa418c79dc808856464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ef9d5c39c589389cd5fbfe9c1d99ef0') in 0.050549 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/Textures/fabric.png
-  artifactKey: Guid(f38d8e4ac87f9894fae9b325586a30c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/Textures/fabric.png using Guid(f38d8e4ac87f9894fae9b325586a30c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5c644f2ab7789941d3fbe018685b3c4') in 0.015623 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/controlerbuggy_LO_BuggyController_Normal.png
-  artifactKey: Guid(d66d01bd1e0702a4bbfa207820fb2fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/controlerbuggy_LO_BuggyController_Normal.png using Guid(d66d01bd1e0702a4bbfa207820fb2fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4418911606852b0bd9f4391956761dd1') in 0.030853 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/controlerbuggy_LO_BuggyController_Emission.png
-  artifactKey: Guid(4e003c622c1d9a6408f4d90438aa389a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/controlerbuggy_LO_BuggyController_Emission.png using Guid(4e003c622c1d9a6408f4d90438aa389a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f72b0b0384ca524597dfee9f03107e3') in 0.007545 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/Buggy_LO_Buggy_Normal.png
-  artifactKey: Guid(1c038cbe6dac00648b2b243005d40029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/Buggy_LO_Buggy_Normal.png using Guid(1c038cbe6dac00648b2b243005d40029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5712cc6d40c50aa7448e1a6e10c1dfd') in 0.007508 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/UI/BuggyUI/blob.png
-  artifactKey: Guid(34052ff677e1e0040bfdde61332fac2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/UI/BuggyUI/blob.png using Guid(34052ff677e1e0040bfdde61332fac2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1af2a67b1c37a33c6ea9610c4cdba41e') in 0.022720 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/Models/Materials/Furniture_AlbedoTransparency.png
-  artifactKey: Guid(f209c99394eca224b90cb94fca3e17c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/Models/Materials/Furniture_AlbedoTransparency.png using Guid(f209c99394eca224b90cb94fca3e17c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '169e36ec2f9c15662536e43df1cb197d') in 0.008650 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/SteamVR/Models/Materials/floppyHand Emit.png
-  artifactKey: Guid(666af8d433621574ea153b525fceae88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/Models/Materials/floppyHand Emit.png using Guid(666af8d433621574ea153b525fceae88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66fef2953b5412676204961fdc8768b0') in 0.009591 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/Buggy_LO_Buggy_MetallicSmoothness.png
-  artifactKey: Guid(a918aa40491fd4848ad52fc1accf4a80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/Textures/Buggy_LO_Buggy_MetallicSmoothness.png using Guid(a918aa40491fd4848ad52fc1accf4a80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd17d8f1cf00b42607be17734720a3d4') in 0.007600 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/Textures/estimatedOnObject.png
-  artifactKey: Guid(0d7512e9f3d5af340be754fb56d4c263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/Textures/estimatedOnObject.png using Guid(0d7512e9f3d5af340be754fb56d4c263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbc67046b746f751b5b38abb56c24044') in 0.010005 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.560660 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/Models/black_floor_metal_001a.jpg
-  artifactKey: Guid(31a81610aba97a948b33ac6481d66c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/Models/black_floor_metal_001a.jpg using Guid(31a81610aba97a948b33ac6481d66c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1194612c8d440e5ece55383506249649') in 0.009552 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/SteamVR/InteractionSystem/Samples/Models/black_floor_metal_NRM.jpg
-  artifactKey: Guid(35f6da91b7f761e45b32d5f613a851cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Samples/Models/black_floor_metal_NRM.jpg using Guid(35f6da91b7f761e45b32d5f613a851cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7ba19bb62b444b38557bd3e69f4aefc') in 0.007538 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/SteamVR/Textures/background.png
-  artifactKey: Guid(bb00cc87e146a414fbf2c4d3c0d31151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/Textures/background.png using Guid(bb00cc87e146a414fbf2c4d3c0d31151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e391a5e37840292f2d29d627d47cf3bd') in 0.008361 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/SteamVR/Textures/arrow.png
-  artifactKey: Guid(2db89a771043d7b4eb9d26622f6b97c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/Textures/arrow.png using Guid(2db89a771043d7b4eb9d26622f6b97c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e88c589f8785a06e1566aa8962622b3') in 0.009352 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/SteamVR/InteractionSystem/Longbow/Textures/ArrowAlbedoTransparency.png
-  artifactKey: Guid(0f09256f7da973b45a660eefd832b56b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Longbow/Textures/ArrowAlbedoTransparency.png using Guid(0f09256f7da973b45a660eefd832b56b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '091b059fbd9d3fbc7a689ba2ab2f3c74') in 0.007856 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/SteamVR/Models/Materials/AlienHand_Normal.png
-  artifactKey: Guid(c895ac09c5f562b4798e88828f61e812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/Models/Materials/AlienHand_Normal.png using Guid(c895ac09c5f562b4798e88828f61e812) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b8b6cc641d93ef903f04c01b6d11333') in 0.015719 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/SteamVR/Input/Editor/Resources/Icons/BlenderBehaviour_Analog_Icon.png
-  artifactKey: Guid(aa701b1f3ae438e469d0ad4f122a0633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/Input/Editor/Resources/Icons/BlenderBehaviour_Analog_Icon.png using Guid(aa701b1f3ae438e469d0ad4f122a0633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5a76a91a3d67ffdbfaaf0f6aa6fd179') in 0.009666 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/SteamVR/Models/Materials/AlienHand_AlbedoTransparency.png
-  artifactKey: Guid(c7d922ead57c2c34ea7da4ad4c05bd61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/Models/Materials/AlienHand_AlbedoTransparency.png using Guid(c7d922ead57c2c34ea7da4ad4c05bd61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '517f531dd4959564525913e5c859547c') in 0.008466 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/SteamVR/InteractionSystem/Longbow/Textures/BalloonPop.png
-  artifactKey: Guid(210c1550425ed90419d73be09bde0486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Longbow/Textures/BalloonPop.png using Guid(210c1550425ed90419d73be09bde0486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a4d837c6f8a55721b919174db5ec97e') in 0.008811 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/SteamVR/InteractionSystem/Longbow/Textures/BalloonColor.png
-  artifactKey: Guid(b57165504b60a7b49b9a5832dc81b5c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SteamVR/InteractionSystem/Longbow/Textures/BalloonColor.png using Guid(b57165504b60a7b49b9a5832dc81b5c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dc7df24a93e01fe1c25b60ecc876f8f') in 0.007907 seconds 
+  Time since last request: 10197.242384 seconds.
+  path: Assets/StylizedNatureBundle/Materials/M_SNB_Vegetation_Simple.mat
+  artifactKey: Guid(ccb63da6afd98194b87717cb83ff2145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedNatureBundle/Materials/M_SNB_Vegetation_Simple.mat using Guid(ccb63da6afd98194b87717cb83ff2145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97c2d6ccc5dabb15040710ca4f4fc3b3') in 1.350528 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.013660 seconds.
+Registered in 0.009160 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 1.01 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.809 seconds
+- Completed reload, in  0.841 seconds
 Domain Reload Profiling:
-	ReloadAssembly (810ms)
-		BeginReloadAssembly (107ms)
+	ReloadAssembly (842ms)
+		BeginReloadAssembly (120ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
+			DisableScriptedObjects (22ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (634ms)
-			LoadAssemblies (66ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (665ms)
+			LoadAssemblies (50ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (194ms)
+			SetupTypeCache (187ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (285ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (293ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (12ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (58ms)
-				ProcessInitializeOnLoadAttributes (194ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (189ms)
 				ProcessInitializeOnLoadMethodAttributes (20ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 5.52 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 3.19 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6894 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 68 unused Assets / (3.8 MB). Loaded Objects now: 7689.
-Memory consumption went from 308.6 MB to 304.8 MB.
-Total: 4.950600 ms (FindLiveObjects: 0.454600 ms CreateObjectMapping: 0.395000 ms MarkObjects: 3.220700 ms  DeleteObjects: 0.879000 ms)
+Unloading 6897 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 68 unused Assets / (3.9 MB). Loaded Objects now: 7835.
+Memory consumption went from 313.0 MB to 309.2 MB.
+Total: 2.750000 ms (FindLiveObjects: 0.274600 ms CreateObjectMapping: 0.225600 ms MarkObjects: 1.825100 ms  DeleteObjects: 0.424100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -342,7 +228,3 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
