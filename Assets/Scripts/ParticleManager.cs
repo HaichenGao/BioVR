@@ -80,6 +80,9 @@ public class ParticleManager : MonoBehaviour
 
         enableLeftGathering = 5;
         visualEffect.SetInt("EnableLeftGathering", enableLeftGathering);
+
+        enableRightGathering = 5;
+        visualEffect.SetInt("EnableRightGathering", enableRightGathering);
     }
 
     // Update is called once per frame

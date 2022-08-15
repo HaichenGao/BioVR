@@ -15,7 +15,7 @@ C:/Users/ROG/Documents/GitHub/BioVR
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-65371
+55294
 Successfully changed project path to: C:/Users/ROG/Documents/GitHub/BioVR
 C:/Users/ROG/Documents/GitHub/BioVR
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/ROG/Documents/GitHub/BioVR
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 101.17 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 96.82 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.5f1 (40eb3a945986)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.3.5f1/Editor/Data/Resources/UnitySubsystems
@@ -63,82 +63,82 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2021.3.5f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2021.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity 2021.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56708
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56504
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2021.3.5f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity 2021.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity 2021.3.5f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.002244 seconds.
+Registered in 0.002359 seconds.
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 86.38 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 85.59 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.384 seconds
+- Completed reload, in  0.389 seconds
 Domain Reload Profiling:
-	ReloadAssembly (384ms)
-		BeginReloadAssembly (37ms)
+	ReloadAssembly (389ms)
+		BeginReloadAssembly (38ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (287ms)
+		EndReloadAssembly (290ms)
 			LoadAssemblies (36ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (61ms)
+			SetupTypeCache (57ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (14ms)
-			SetupLoadedEditorAssemblies (181ms)
+			SetupLoadedEditorAssemblies (186ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (86ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (64ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
+				ProcessInitializeOnLoadAttributes (67ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.008877 seconds.
+Registered in 0.009169 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 91.31 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 87.13 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 Mono: successfully reloaded assembly
-- Completed reload, in  0.977 seconds
+- Completed reload, in  0.988 seconds
 Domain Reload Profiling:
-	ReloadAssembly (977ms)
-		BeginReloadAssembly (58ms)
+	ReloadAssembly (989ms)
+		BeginReloadAssembly (60ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (11ms)
-		EndReloadAssembly (860ms)
-			LoadAssemblies (50ms)
+			CreateAndSetChildDomain (12ms)
+		EndReloadAssembly (867ms)
+			LoadAssemblies (53ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (197ms)
-			ReleaseScriptCaches (1ms)
+			SetupTypeCache (208ms)
+			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (53ms)
-			SetupLoadedEditorAssemblies (522ms)
+			SetupLoadedEditorAssemblies (514ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (91ms)
-				BeforeProcessingInitializeOnLoad (72ms)
-				ProcessInitializeOnLoadAttributes (232ms)
-				ProcessInitializeOnLoadMethodAttributes (113ms)
+				RefreshPlugins (87ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (230ms)
+				ProcessInitializeOnLoadMethodAttributes (108ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -147,12 +147,12 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.85 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 0.87 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 7236 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 78 unused Assets / (3.9 MB). Loaded Objects now: 7683.
 Memory consumption went from 323.8 MB to 319.9 MB.
-Total: 3.394400 ms (FindLiveObjects: 0.317800 ms CreateObjectMapping: 0.195500 ms MarkObjects: 2.255600 ms  DeleteObjects: 0.624600 ms)
+Total: 3.156000 ms (FindLiveObjects: 0.315000 ms CreateObjectMapping: 0.223500 ms MarkObjects: 2.170200 ms  DeleteObjects: 0.446400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -166,377 +166,75 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 25485.699631 seconds.
-  path: Assets/Scenes/BioVR_Scene1.unity
-  artifactKey: Guid(1e7d93c40efe6f84aaccde61083534dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/BioVR_Scene1.unity using Guid(1e7d93c40efe6f84aaccde61083534dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77bcee979e25be9d719045d7c6f03964') in 0.007539 seconds 
+  Time since last request: 24595.317530 seconds.
+  path: Assets/VFXGraphs/Petal 1.vfx
+  artifactKey: Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFXGraphs/Petal 1.vfx using Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c03db98589844bdf109f44d3eca0f8df') in 7.478787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.717939 seconds.
+  path: Assets/VFXGraphs/Petal 1.vfx
+  artifactKey: Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFXGraphs/Petal 1.vfx using Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f81b7f5f9ee4361a3dde19b095179404') in 0.052651 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.705943 seconds.
+  path: Assets/VFXGraphs/Petal 1.vfx
+  artifactKey: Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFXGraphs/Petal 1.vfx using Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31650eebd3b316b7a65d7d09b4c9a245') in 0.043526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.363225 seconds.
+  path: Assets/VFXGraphs/Petal 1.vfx
+  artifactKey: Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFXGraphs/Petal 1.vfx using Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ed5367ace6b7b03528ec7fca41c4795') in 0.052267 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.010849 seconds.
+Registered in 0.009132 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.14 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 0.83 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.852 seconds
+- Completed reload, in  0.825 seconds
 Domain Reload Profiling:
-	ReloadAssembly (852ms)
-		BeginReloadAssembly (91ms)
+	ReloadAssembly (825ms)
+		BeginReloadAssembly (120ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
+			DisableScriptedObjects (19ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (704ms)
-			LoadAssemblies (50ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (186ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (350ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (103ms)
-				ProcessInitializeOnLoadAttributes (212ms)
-				ProcessInitializeOnLoadMethodAttributes (19ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.03 ms, found 11 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6897 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 68 unused Assets / (3.9 MB). Loaded Objects now: 7688.
-Memory consumption went from 305.8 MB to 301.9 MB.
-Total: 2.880000 ms (FindLiveObjects: 0.269600 ms CreateObjectMapping: 0.172900 ms MarkObjects: 1.974500 ms  DeleteObjects: 0.462100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008455 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.09 ms, found 11 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.791 seconds
-Domain Reload Profiling:
-	ReloadAssembly (792ms)
-		BeginReloadAssembly (94ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (643ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (645ms)
 			LoadAssemblies (51ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (187ms)
+			SetupTypeCache (194ms)
 			ReleaseScriptCaches (2ms)
 			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (297ms)
+			SetupLoadedEditorAssemblies (285ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (70ms)
-				ProcessInitializeOnLoadAttributes (192ms)
-				ProcessInitializeOnLoadMethodAttributes (20ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.39 ms, found 11 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6897 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 68 unused Assets / (3.8 MB). Loaded Objects now: 7693.
-Memory consumption went from 305.8 MB to 301.9 MB.
-Total: 2.759900 ms (FindLiveObjects: 0.276800 ms CreateObjectMapping: 0.186100 ms MarkObjects: 1.850600 ms  DeleteObjects: 0.445600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008712 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.17 ms, found 11 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.793 seconds
-Domain Reload Profiling:
-	ReloadAssembly (794ms)
-		BeginReloadAssembly (91ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (648ms)
-			LoadAssemblies (54ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (183ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (290ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (69ms)
-				ProcessInitializeOnLoadAttributes (184ms)
-				ProcessInitializeOnLoadMethodAttributes (22ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.31 ms, found 11 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6897 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 68 unused Assets / (3.9 MB). Loaded Objects now: 7698.
-Memory consumption went from 305.8 MB to 301.9 MB.
-Total: 2.818200 ms (FindLiveObjects: 0.277600 ms CreateObjectMapping: 0.193200 ms MarkObjects: 1.902700 ms  DeleteObjects: 0.444000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009087 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.11 ms, found 11 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.791 seconds
-Domain Reload Profiling:
-	ReloadAssembly (792ms)
-		BeginReloadAssembly (89ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (647ms)
-			LoadAssemblies (54ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (189ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (287ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (69ms)
-				ProcessInitializeOnLoadAttributes (184ms)
-				ProcessInitializeOnLoadMethodAttributes (20ms)
+				BeforeProcessingInitializeOnLoad (56ms)
+				ProcessInitializeOnLoadAttributes (194ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.29 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 3.20 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6897 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 68 unused Assets / (3.9 MB). Loaded Objects now: 7703.
-Memory consumption went from 305.8 MB to 302.0 MB.
-Total: 2.801400 ms (FindLiveObjects: 0.271200 ms CreateObjectMapping: 0.177000 ms MarkObjects: 1.901300 ms  DeleteObjects: 0.450900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1471.632227 seconds.
-  path: Assets/VFXGraphs/Petal.vfx
-  artifactKey: Guid(949654c8251268247bdd95791109121e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VFXGraphs/Petal.vfx using Guid(949654c8251268247bdd95791109121e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b6b6f195453530fe96f59194966cf2f') in 2.348831 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 25.541904 seconds.
-  path: Assets/VFXGraphs/Petal.vfx
-  artifactKey: Guid(949654c8251268247bdd95791109121e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VFXGraphs/Petal.vfx using Guid(949654c8251268247bdd95791109121e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76b753c10f060da7cbfd7553d9bbb460') in 0.042450 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 75.054940 seconds.
-  path: Assets/VFXGraphs/Petal.vfx
-  artifactKey: Guid(949654c8251268247bdd95791109121e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VFXGraphs/Petal.vfx using Guid(949654c8251268247bdd95791109121e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9689f35eff9a0bf57286e29b79318279') in 0.042553 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.051392 seconds.
-  path: Assets/VFXGraphs/Petal.vfx
-  artifactKey: Guid(949654c8251268247bdd95791109121e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VFXGraphs/Petal.vfx using Guid(949654c8251268247bdd95791109121e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72b1984170078eecb34be888b5555c37') in 0.039124 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008265 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.75 ms, found 11 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.793 seconds
-Domain Reload Profiling:
-	ReloadAssembly (793ms)
-		BeginReloadAssembly (116ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (19ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (621ms)
-			LoadAssemblies (49ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (181ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (276ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (52ms)
-				ProcessInitializeOnLoadAttributes (190ms)
-				ProcessInitializeOnLoadMethodAttributes (20ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.07 ms, found 11 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6897 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 68 unused Assets / (3.9 MB). Loaded Objects now: 7855.
-Memory consumption went from 312.9 MB to 309.1 MB.
-Total: 2.863100 ms (FindLiveObjects: 0.287700 ms CreateObjectMapping: 0.182300 ms MarkObjects: 1.843700 ms  DeleteObjects: 0.548600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 20.166293 seconds.
-  path: Assets/VFXGraphs/Petal.vfx
-  artifactKey: Guid(949654c8251268247bdd95791109121e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VFXGraphs/Petal.vfx using Guid(949654c8251268247bdd95791109121e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f24c9fe0ac18e2e55dc0bc7b46e2b37') in 1.855269 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008411 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.92 ms, found 11 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.922 seconds
-Domain Reload Profiling:
-	ReloadAssembly (923ms)
-		BeginReloadAssembly (118ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (18ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (747ms)
-			LoadAssemblies (51ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (211ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (72ms)
-			SetupLoadedEditorAssemblies (268ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (55ms)
-				ProcessInitializeOnLoadAttributes (180ms)
-				ProcessInitializeOnLoadMethodAttributes (19ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.13 ms, found 11 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6897 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 68 unused Assets / (3.8 MB). Loaded Objects now: 7965.
-Memory consumption went from 313.1 MB to 309.3 MB.
-Total: 2.958700 ms (FindLiveObjects: 0.295000 ms CreateObjectMapping: 0.188200 ms MarkObjects: 1.965600 ms  DeleteObjects: 0.509100 ms)
+Unloading 68 unused Assets / (3.8 MB). Loaded Objects now: 7835.
+Memory consumption went from 312.8 MB to 309.0 MB.
+Total: 2.825100 ms (FindLiveObjects: 0.286200 ms CreateObjectMapping: 0.188200 ms MarkObjects: 1.897100 ms  DeleteObjects: 0.452700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -551,166 +249,50 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008887 seconds.
+Registered in 0.008862 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.20 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 0.95 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.814 seconds
+- Completed reload, in  0.823 seconds
 Domain Reload Profiling:
-	ReloadAssembly (814ms)
+	ReloadAssembly (824ms)
 		BeginReloadAssembly (96ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (662ms)
-			LoadAssemblies (48ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (673ms)
+			LoadAssemblies (53ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (184ms)
+			SetupTypeCache (181ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (35ms)
+			RebuildScriptCaches (42ms)
 			SetupLoadedEditorAssemblies (294ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (70ms)
-				ProcessInitializeOnLoadAttributes (187ms)
-				ProcessInitializeOnLoadMethodAttributes (21ms)
+				BeforeProcessingInitializeOnLoad (69ms)
+				ProcessInitializeOnLoadAttributes (188ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.32 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 3.20 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6898 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 68 unused Assets / (3.9 MB). Loaded Objects now: 7970.
-Memory consumption went from 313.1 MB to 309.2 MB.
-Total: 2.959700 ms (FindLiveObjects: 0.292700 ms CreateObjectMapping: 0.179500 ms MarkObjects: 2.033000 ms  DeleteObjects: 0.453600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008616 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 2.90 ms, found 11 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.887 seconds
-Domain Reload Profiling:
-	ReloadAssembly (888ms)
-		BeginReloadAssembly (91ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (30ms)
-		EndReloadAssembly (740ms)
-			LoadAssemblies (50ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (183ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (359ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (109ms)
-				ProcessInitializeOnLoadAttributes (203ms)
-				ProcessInitializeOnLoadMethodAttributes (20ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.37 ms, found 11 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6898 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 68 unused Assets / (3.8 MB). Loaded Objects now: 7975.
-Memory consumption went from 313.1 MB to 309.2 MB.
-Total: 3.280000 ms (FindLiveObjects: 0.303100 ms CreateObjectMapping: 0.195700 ms MarkObjects: 2.135900 ms  DeleteObjects: 0.644200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010066 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 11 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.770 seconds
-Domain Reload Profiling:
-	ReloadAssembly (771ms)
-		BeginReloadAssembly (95ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (33ms)
-		EndReloadAssembly (619ms)
-			LoadAssemblies (52ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (183ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (270ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (52ms)
-				ProcessInitializeOnLoadAttributes (186ms)
-				ProcessInitializeOnLoadMethodAttributes (20ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.45 ms, found 11 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6898 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 68 unused Assets / (3.9 MB). Loaded Objects now: 7980.
-Memory consumption went from 313.0 MB to 309.2 MB.
-Total: 2.775300 ms (FindLiveObjects: 0.302300 ms CreateObjectMapping: 0.181700 ms MarkObjects: 1.848200 ms  DeleteObjects: 0.442200 ms)
+Unloading 68 unused Assets / (3.9 MB). Loaded Objects now: 7840.
+Memory consumption went from 312.8 MB to 308.9 MB.
+Total: 3.064100 ms (FindLiveObjects: 0.282700 ms CreateObjectMapping: 0.190100 ms MarkObjects: 2.154700 ms  DeleteObjects: 0.435500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -724,191 +306,57 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 2876.559521 seconds.
-  path: Assets/VFXGraphs/Petal.vfx
-  artifactKey: Guid(949654c8251268247bdd95791109121e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VFXGraphs/Petal.vfx using Guid(949654c8251268247bdd95791109121e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ac6ec74645b5134001d6e2db915407b') in 1.885956 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 39.761415 seconds.
-  path: Assets/VFXGraphs/Petal.vfx
-  artifactKey: Guid(949654c8251268247bdd95791109121e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VFXGraphs/Petal.vfx using Guid(949654c8251268247bdd95791109121e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd59db3e694b121b60cba129bdd43071c') in 0.041381 seconds 
+  Time since last request: 3655.673562 seconds.
+  path: Assets/VFXGraphs/Petal 1.vfx
+  artifactKey: Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFXGraphs/Petal 1.vfx using Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82a30f7a2a66b896b9dff34eb525227f') in 1.950339 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.011161 seconds.
+Registered in 0.009586 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.80 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 0.76 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.787 seconds
+- Completed reload, in  0.805 seconds
 Domain Reload Profiling:
-	ReloadAssembly (788ms)
+	ReloadAssembly (806ms)
 		BeginReloadAssembly (116ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (18ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (37ms)
-		EndReloadAssembly (616ms)
-			LoadAssemblies (53ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (634ms)
+			LoadAssemblies (51ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (175ms)
+			SetupTypeCache (186ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (274ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (278ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (53ms)
-				ProcessInitializeOnLoadAttributes (187ms)
-				ProcessInitializeOnLoadMethodAttributes (21ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.51 ms, found 11 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6897 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 68 unused Assets / (3.9 MB). Loaded Objects now: 8090.
-Memory consumption went from 313.2 MB to 309.4 MB.
-Total: 2.836200 ms (FindLiveObjects: 0.306600 ms CreateObjectMapping: 0.184300 ms MarkObjects: 1.898500 ms  DeleteObjects: 0.446000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 57.193576 seconds.
-  path: Assets/VFXGraphs/Petal.vfx
-  artifactKey: Guid(949654c8251268247bdd95791109121e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VFXGraphs/Petal.vfx using Guid(949654c8251268247bdd95791109121e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '280ed1b4e186e3d9bfa365461ccf9e09') in 1.783170 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 189.791521 seconds.
-  path: Assets/VFXGraphs/Petal.vfx
-  artifactKey: Guid(949654c8251268247bdd95791109121e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VFXGraphs/Petal.vfx using Guid(949654c8251268247bdd95791109121e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6df00a4a720a9e082faf635f4fdf5d69') in 0.043121 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008259 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.94 ms, found 11 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.805 seconds
-Domain Reload Profiling:
-	ReloadAssembly (805ms)
-		BeginReloadAssembly (117ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (18ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (629ms)
-			LoadAssemblies (50ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (183ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (279ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (54ms)
 				ProcessInitializeOnLoadAttributes (192ms)
-				ProcessInitializeOnLoadMethodAttributes (19ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (13ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.04 ms, found 11 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6897 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 68 unused Assets / (3.8 MB). Loaded Objects now: 8200.
-Memory consumption went from 313.4 MB to 309.5 MB.
-Total: 3.034500 ms (FindLiveObjects: 0.317600 ms CreateObjectMapping: 0.186800 ms MarkObjects: 2.056800 ms  DeleteObjects: 0.472500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009979 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\ROG\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.06 ms, found 11 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.817 seconds
-Domain Reload Profiling:
-	ReloadAssembly (818ms)
-		BeginReloadAssembly (90ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (27ms)
-		EndReloadAssembly (671ms)
-			LoadAssemblies (50ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (183ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (42ms)
-			SetupLoadedEditorAssemblies (286ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (66ms)
-				ProcessInitializeOnLoadAttributes (184ms)
 				ProcessInitializeOnLoadMethodAttributes (20ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (13ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.13 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 3.61 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6898 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 68 unused Assets / (3.9 MB). Loaded Objects now: 8205.
-Memory consumption went from 313.3 MB to 309.5 MB.
-Total: 2.867500 ms (FindLiveObjects: 0.316900 ms CreateObjectMapping: 0.185300 ms MarkObjects: 1.907400 ms  DeleteObjects: 0.457200 ms)
+Unloading 6897 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 68 unused Assets / (3.9 MB). Loaded Objects now: 7950.
+Memory consumption went from 313.0 MB to 309.2 MB.
+Total: 3.201100 ms (FindLiveObjects: 0.309000 ms CreateObjectMapping: 0.242800 ms MarkObjects: 2.157500 ms  DeleteObjects: 0.490800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -920,3 +368,93 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 907.630781 seconds.
+  path: Assets/VFXGraphs/Petal 1.vfx
+  artifactKey: Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFXGraphs/Petal 1.vfx using Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef42ff3385b069be172a71a9878d681e') in 1.870335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 179.160577 seconds.
+  path: Assets/VFXGraphs/Petal 1.vfx
+  artifactKey: Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFXGraphs/Petal 1.vfx using Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea96ed591ac6fac38506ba19ed1be848') in 0.042147 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.228119 seconds.
+  path: Assets/VFXGraphs/Petal 1.vfx
+  artifactKey: Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFXGraphs/Petal 1.vfx using Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5ff5219977aecb274742b05375eb7a7') in 0.038761 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.923965 seconds.
+  path: Assets/VFXGraphs/Petal 1.vfx
+  artifactKey: Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFXGraphs/Petal 1.vfx using Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3929147d14b8471737bb918683ca0ed5') in 0.043507 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 882.361855 seconds.
+  path: Assets/VFXGraphs/Petal 1.vfx
+  artifactKey: Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFXGraphs/Petal 1.vfx using Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d0dbccd337a9ba318061363006421a4') in 0.047545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1041.679543 seconds.
+  path: Assets/VFXGraphs/Petal 1.vfx
+  artifactKey: Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFXGraphs/Petal 1.vfx using Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b0445815262199c0a476af527d51956') in 0.050211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 49.461788 seconds.
+  path: Assets/VFXGraphs/Petal 1.vfx
+  artifactKey: Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFXGraphs/Petal 1.vfx using Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b7a5cf1e6a52f3de4df439ca06f4ff1') in 0.041935 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.148174 seconds.
+  path: Assets/VFXGraphs/Petal 1.vfx
+  artifactKey: Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFXGraphs/Petal 1.vfx using Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25cbe98df0085707bc6b8b683c038ddb') in 0.037349 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.047557 seconds.
+  path: Assets/VFXGraphs/Petal 1.vfx
+  artifactKey: Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFXGraphs/Petal 1.vfx using Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fd97ae302190e830fdd5d6e12b57977') in 0.039407 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.636282 seconds.
+  path: Assets/VFXGraphs/Petal 1.vfx
+  artifactKey: Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFXGraphs/Petal 1.vfx using Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be55aba375aa8cc5b2ee3bd6f800d465') in 0.039050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.313015 seconds.
+  path: Assets/VFXGraphs/Petal 1.vfx
+  artifactKey: Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFXGraphs/Petal 1.vfx using Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4697e43ba90108293c0717794cfd0fc5') in 0.039301 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 87.006164 seconds.
+  path: Assets/VFXGraphs/Petal 1.vfx
+  artifactKey: Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFXGraphs/Petal 1.vfx using Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c3c04d982cdb002dc8f7f641e728d30') in 0.039085 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.256757 seconds.
+  path: Assets/VFXGraphs/Petal 1.vfx
+  artifactKey: Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFXGraphs/Petal 1.vfx using Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25a61428e89355bb05c3709c314854af') in 0.039455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.205154 seconds.
+  path: Assets/VFXGraphs/Petal 1.vfx
+  artifactKey: Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFXGraphs/Petal 1.vfx using Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '500aef54786a90fb2295a3efc8bee2b3') in 0.042780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 127.204971 seconds.
+  path: Assets/VFXGraphs/Petal 1.vfx
+  artifactKey: Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VFXGraphs/Petal 1.vfx using Guid(f94d124174251f24eb0f8cf786e5f814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e1b7f7f7d88d26285c248856e9d3db6') in 0.043122 seconds 
