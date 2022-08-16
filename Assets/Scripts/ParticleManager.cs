@@ -99,6 +99,8 @@ public class ParticleManager : MonoBehaviour
         timerSpreading = timerSpreadingL.CurrentTime;
         timerRelaxing = timerRelaxingL.CurrentTime;
 
+        visualEffect.SetFloat("TimerGathering", timerGathering);
+
         //Left shoulder: gathering particles
         if (shoulderLeft >= tensionThreshold && timerGatheringL.TimerStart == false && leftGatheringStart == true && currentIterationL <= cycle)
         {
