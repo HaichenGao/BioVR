@@ -77,6 +77,7 @@
     <Compile Include="Assets\Scripts\ParticleController.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\BloomModel.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Components\FxaaComponent.cs" />
+    <Compile Include="Assets\Scripts\TimerFL.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
@@ -100,12 +101,14 @@
     <Compile Include="Assets\Scripts\MyMessageListener.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\DitheringModel.cs" />
     <Compile Include="Assets\Ardity\Scripts\Samples\SampleCustomDelimiter.cs" />
+    <Compile Include="Assets\Scripts\ParticleManager2.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Ardity\Scripts\Threads\SerialThreadCustomDelimiter.cs" />
     <Compile Include="Assets\Scripts\TimerSL.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Components\BloomComponent.cs" />
+    <Compile Include="Assets\Scripts\TimerFR.cs" />
     <Compile Include="Assets\Scripts\Timer.cs" />
     <Compile Include="Assets\Ardity\Scripts\SerialController.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Components\DitheringComponent.cs" />
@@ -135,9 +138,6 @@
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Components\FogComponent.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
-    <Compile Include="Assets\Scripts\ParticleManager2.cs" />
-    <Compile Include="Assets\Scripts\TimerFL.cs" />
-    <Compile Include="Assets\Scripts\TimerFR.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shader\ParticleBoidsCS.compute" />

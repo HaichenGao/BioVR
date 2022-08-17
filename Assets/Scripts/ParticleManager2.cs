@@ -63,6 +63,10 @@ public class ParticleManager2 : MonoBehaviour
     //bool leftSpawningStart = true;
     //bool rightSpawningStart = true;
 
+    public float timerGathering;
+    public float timerSpreading;
+    public float timerRelaxing;
+
 
     // Start is called before the first frame update
     void Start()
@@ -97,6 +101,10 @@ public class ParticleManager2 : MonoBehaviour
         shoulderRight = Mathf.Round((float)shoulderData.right * 100f) / 100f;
         visualEffect.SetFloat("ParticleAmountLeft", shoulderLeft);
         visualEffect.SetFloat("ParticleAmountRight", shoulderRight);
+
+        timerGathering = timerGatheringL.CurrentTime;
+        timerSpreading = timerSpreadingL.CurrentTime;
+        timerRelaxing = timerRelaxingL.CurrentTime;
 
         visualEffect.SetFloat("TimerGathering", timerGatheringL.CurrentTime);
         visualEffect.SetFloat("TimerFading", timerFadingL.CurrentTime);
