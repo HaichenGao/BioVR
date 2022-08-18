@@ -57,8 +57,10 @@ public class ParticleManager2 : MonoBehaviour
 
     bool leftGatheringStart = true;
     bool leftSpreadingStart = false;
+    bool leftRelaxingStart = false;
     bool rightGatheringStart = true;
     bool rightSpreadingStart = false;
+    bool rightRelaxingStart = false;
 
     //bool leftSpawningStart = true;
     //bool rightSpawningStart = true;
@@ -112,6 +114,7 @@ public class ParticleManager2 : MonoBehaviour
         //Left shoulder: gathering particles
         if (shoulderLeft >= tensionThreshold && timerGatheringL.TimerStart == false && leftGatheringStart == true && currentIterationL <= cycle)
         {
+            
             timerGatheringL.TimerStart = true;
             //enableLeftGathering = 0;
             //visualEffect.SetInt("EnableLeftGathering", enableLeftGathering);
@@ -121,6 +124,8 @@ public class ParticleManager2 : MonoBehaviour
             timerGatheringL.ResetTimer();
             leftGatheringStart = false;
             leftSpreadingStart = true;
+            leftRelaxingStart = true;
+            visualEffect.SetBool("LeftRelaxingStart", leftRelaxingStart);
             visualEffect.SetBool("LeftSpreadingStart", leftSpreadingStart);
             enableLeftGathering = 0;
             visualEffect.SetInt("EnableLeftGathering", enableLeftGathering);
@@ -139,6 +144,7 @@ public class ParticleManager2 : MonoBehaviour
         //Left shoulder: spreading particles
         if (shoulderLeft < tensionThreshold && timerSpreadingL.TimerStart == false && leftSpreadingStart == true)
         {
+            visualEffect.SetInt("SphereL", currentIterationL);
             timerSpreadingL.TimerStart = true;
             timerRelaxingL.TimerStart = true;
             enableLeftSpreading = 5;
@@ -166,6 +172,8 @@ public class ParticleManager2 : MonoBehaviour
             timerRelaxingL.ResetTimer();
             if (currentIterationL < 10)
             {
+                leftRelaxingStart = false;
+                visualEffect.SetBool("LeftRelaxingStart", leftRelaxingStart);
                 enableLeftGathering = 5;
                 visualEffect.SetInt("EnableLeftGathering", enableLeftGathering);
             }
