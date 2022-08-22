@@ -52,14 +52,14 @@ public class ParticleManager2 : MonoBehaviour
     int enableLeftSpreading = 0;
     int enableRightSpreading = 0;
 
-    int currentIterationL = 0;
-    int currentIterationR = 0;
+    public int currentIterationL = 0;
+    public int currentIterationR = 0;
 
     bool leftGatheringStart = true;
-    bool leftSpreadingStart = false;
+    public bool leftSpreadingStart = false;
     bool leftRelaxingStart = false;
     bool rightGatheringStart = true;
-    bool rightSpreadingStart = false;
+    public bool rightSpreadingStart = false;
     bool rightRelaxingStart = false;
 
     //bool leftSpawningStart = true;
@@ -159,7 +159,7 @@ public class ParticleManager2 : MonoBehaviour
             leftGatheringStart = true;
             leftSpreadingStart = false;
             visualEffect.SetBool("LeftSpreadingStart", leftSpreadingStart);
-            currentIterationL += 1;
+            //currentIterationL += 1;
 
         }
         else
@@ -176,6 +176,7 @@ public class ParticleManager2 : MonoBehaviour
                 visualEffect.SetBool("LeftRelaxingStart", leftRelaxingStart);
                 enableLeftGathering = 5;
                 visualEffect.SetInt("EnableLeftGathering", enableLeftGathering);
+                currentIterationL += 1;
             }
             
         }

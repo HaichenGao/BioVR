@@ -432,6 +432,7 @@
 "Assets/Scripts/TimerRR.cs"
 "Assets/Scripts/TimerSL.cs"
 "Assets/Scripts/TimerSR.cs"
+"Assets/Scripts/TimerWL.cs"
 "Assets/Scripts/VRRig.cs"
 "Assets/StylizedNatureBundle/Demo/PostProcessing/Runtime/Attributes/GetSetAttribute.cs"
 "Assets/StylizedNatureBundle/Demo/PostProcessing/Runtime/Attributes/MinAttribute.cs"
