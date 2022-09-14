@@ -90,7 +90,7 @@
     <Compile Include="Assets\Scripts\CountdownTimer.cs" />
     <Compile Include="Assets\Scripts\TextureBuffer.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
-    <Compile Include="Assets\Scripts\TimerWL.cs" />
+    <Compile Include="Assets\Scripts\TimerW.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
     <Compile Include="Assets\Scripts\TimerRR.cs" />
@@ -101,7 +101,7 @@
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
     <Compile Include="Assets\Scripts\MyMessageListener.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\DitheringModel.cs" />
-    <Compile Include="Assets\Scripts\Glow.cs" />
+    <Compile Include="Assets\Scripts\GlowL.cs" />
     <Compile Include="Assets\Ardity\Scripts\Samples\SampleCustomDelimiter.cs" />
     <Compile Include="Assets\Scripts\ParticleManager2.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
@@ -140,6 +140,8 @@
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Components\FogComponent.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
+    <Compile Include="Assets\Scripts\GlowR.cs" />
+    <Compile Include="Assets\Scripts\SinMove.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shader\ParticleBoidsCS.compute" />

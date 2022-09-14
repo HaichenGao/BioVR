@@ -143,7 +143,7 @@ public class ParticleManager2 : MonoBehaviour
         }
 
         //Left shoulder: spreading particles
-        if (shoulderLeft < tensionThreshold && timerSpreadingL.TimerStart == false && leftSpreadingStart == true)
+        if (shoulderLeft < tensionThreshold && timerSpreadingL.TimerStart == false && leftSpreadingStart == true && currentIterationL < cycle)
         {
             visualEffect.SetInt("SphereL", currentIterationL);
             timerSpreadingL.TimerStart = true;
@@ -171,12 +171,14 @@ public class ParticleManager2 : MonoBehaviour
         if (timerRelaxingL.CurrentTime >= relaxationTime && timerRelaxingL.TimerStart == true)
         {
             timerRelaxingL.ResetTimer();
-            if (currentIterationL < 10)
+            if (currentIterationL < cycle - 1)
             {
                 leftRelaxingStart = false;
                 visualEffect.SetBool("LeftRelaxingStart", leftRelaxingStart);
                 enableLeftGathering = 5;
                 visualEffect.SetInt("EnableLeftGathering", enableLeftGathering);
+                currentIterationL += 1;
+            }else{
                 currentIterationL += 1;
             }
             
@@ -212,7 +214,7 @@ public class ParticleManager2 : MonoBehaviour
         }
 
         //Right shoulder: spreading particles
-        if (shoulderRight < tensionThreshold && timerSpreadingR.TimerStart == false && rightSpreadingStart == true)
+        if (shoulderRight < tensionThreshold && timerSpreadingR.TimerStart == false && rightSpreadingStart == true && currentIterationR < cycle)
         {
             visualEffect.SetInt("SphereR", currentIterationR);
             timerSpreadingR.TimerStart = true;
@@ -240,12 +242,14 @@ public class ParticleManager2 : MonoBehaviour
         if (timerRelaxingR.CurrentTime >= relaxationTime && timerRelaxingR.TimerStart == true)
         {
             timerRelaxingR.ResetTimer();
-            if (currentIterationR < 10)
+            if (currentIterationR < cycle -1)
             {
                 rightRelaxingStart = false;
                 visualEffect.SetBool("RightRelaxingStart", rightRelaxingStart);
                 enableRightGathering = 5;
                 visualEffect.SetInt("EnableRightGathering", enableRightGathering);
+                currentIterationR += 1;
+            }else{
                 currentIterationR += 1;
             }
 
