@@ -2516,6 +2516,7 @@ GameObject:
   - component: {fileID: 57269130}
   - component: {fileID: 57269134}
   - component: {fileID: 57269133}
+  - component: {fileID: 57269135}
   m_Layer: 0
   m_Name: SphereR10
   m_TagString: Untagged
@@ -2630,6 +2631,20 @@ MonoBehaviour:
   glow: 50
   tranSpeed: 0.001
   emissiveSpeed: 0.03
+--- !u!114 &57269135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57269128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c88280ea7057bd4bb7ded6c9c9d3acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.025
+  currentTime: 0
 --- !u!1001 &57526685
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5530,6 +5545,7 @@ GameObject:
   - component: {fileID: 125076359}
   - component: {fileID: 125076363}
   - component: {fileID: 125076362}
+  - component: {fileID: 125076364}
   m_Layer: 0
   m_Name: SphereL10
   m_TagString: Untagged
@@ -5644,6 +5660,20 @@ MonoBehaviour:
   glow: 50
   tranSpeed: 0.001
   emissiveSpeed: 0.03
+--- !u!114 &125076364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125076357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c88280ea7057bd4bb7ded6c9c9d3acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.025
+  currentTime: 0
 --- !u!1001 &125783304
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6569,6 +6599,7 @@ GameObject:
   - component: {fileID: 143953051}
   - component: {fileID: 143953055}
   - component: {fileID: 143953054}
+  - component: {fileID: 143953056}
   m_Layer: 0
   m_Name: SphereR6
   m_TagString: Untagged
@@ -6683,6 +6714,20 @@ MonoBehaviour:
   glow: 50
   tranSpeed: 0.001
   emissiveSpeed: 0.03
+--- !u!114 &143953056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143953049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c88280ea7057bd4bb7ded6c9c9d3acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.025
+  currentTime: 0
 --- !u!1001 &144664199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7130,11 +7175,11 @@ PrefabInstance:
     - target: {fileID: 2348914, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1869813945}
+      objectReference: {fileID: 598886090}
     - target: {fileID: 3380982, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 518933209}
+      objectReference: {fileID: 2126381535}
     - target: {fileID: 11417168, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -7401,7 +7446,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156599051}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.289858, y: 2.0521543, z: 19.93}
+  m_LocalPosition: {x: -7.289858, y: 2.42, z: 19.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -22324,170 +22369,6 @@ Transform:
   m_Father: {fileID: 1059634773}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &518933209
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 10
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 24
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 8
-    localAABB:
-      m_Center: {x: 0, y: 0.01, z: 0}
-      m_Extent: {x: 1.65, y: 0, z: 1.275}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000004000100010004000500010005000200020005000600020006000300030006000700030007000000000007000400
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 8
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 28
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 288
-    _typelessdata: 0000c03f0ad7233c000090bf000000000000803f0000803f0000803f00000000000000000000c0bf0ad7233c000090bf000000000000803f0000803f0000803f0000803f000000000000c0bf0ad7233c0000903f000000000000803f0000803f0000803f00000000000000000000c03f0ad7233c0000903f000000000000803f0000803f0000803f0000803f000000003333d33f0ad7233c3333a3bf000000000000803f0000803f00000000000000000000803f3333d3bf0ad7233c3333a3bf000000000000803f0000803f000000000000803f0000803f3333d3bf0ad7233c3333a33f000000000000803f0000803f00000000000000000000803f3333d33f0ad7233c3333a33f000000000000803f0000803f000000000000803f0000803f
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0.01, z: 0}
-    m_Extent: {x: 1.65, y: 0, z: 1.275}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
 --- !u!4 &519275336 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4293083544708992, guid: 72043e9bfc7ced44d8ad8301ed317725,
@@ -23861,6 +23742,7 @@ GameObject:
   - component: {fileID: 545660158}
   - component: {fileID: 545660162}
   - component: {fileID: 545660161}
+  - component: {fileID: 545660163}
   m_Layer: 0
   m_Name: SphereR8
   m_TagString: Untagged
@@ -23975,6 +23857,20 @@ MonoBehaviour:
   glow: 50
   tranSpeed: 0.001
   emissiveSpeed: 0.03
+--- !u!114 &545660163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545660156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c88280ea7057bd4bb7ded6c9c9d3acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.025
+  currentTime: 0
 --- !u!4 &546285557 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4293083544708992, guid: 72043e9bfc7ced44d8ad8301ed317725,
@@ -26083,6 +25979,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72043e9bfc7ced44d8ad8301ed317725, type: 3}
+--- !u!21 &598886090
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprites/Default
+  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &599699440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32582,6 +32515,7 @@ GameObject:
   - component: {fileID: 637640858}
   - component: {fileID: 637640862}
   - component: {fileID: 637640861}
+  - component: {fileID: 637640863}
   m_Layer: 0
   m_Name: SphereL5
   m_TagString: Untagged
@@ -32696,6 +32630,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ab4624b1a111b549a57a77a17f447e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &637640863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637640856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c88280ea7057bd4bb7ded6c9c9d3acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.025
+  currentTime: 0
 --- !u!4 &638221093 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4293083544708992, guid: 72043e9bfc7ced44d8ad8301ed317725,
@@ -35691,6 +35639,7 @@ GameObject:
   - component: {fileID: 698212091}
   - component: {fileID: 698212095}
   - component: {fileID: 698212094}
+  - component: {fileID: 698212096}
   m_Layer: 0
   m_Name: SphereL3
   m_TagString: Untagged
@@ -35805,6 +35754,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ab4624b1a111b549a57a77a17f447e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &698212096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698212089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c88280ea7057bd4bb7ded6c9c9d3acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.025
+  currentTime: 0
 --- !u!1 &698552021
 GameObject:
   m_ObjectHideFlags: 0
@@ -41816,6 +41779,7 @@ GameObject:
   - component: {fileID: 831795585}
   - component: {fileID: 831795588}
   - component: {fileID: 831795589}
+  - component: {fileID: 831795590}
   m_Layer: 0
   m_Name: SphereL2
   m_TagString: Untagged
@@ -41930,6 +41894,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ab4624b1a111b549a57a77a17f447e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &831795590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831795583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c88280ea7057bd4bb7ded6c9c9d3acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.025
+  currentTime: 0
 --- !u!4 &832035211 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4293083544708992, guid: 72043e9bfc7ced44d8ad8301ed317725,
@@ -50667,7 +50645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c88280ea7057bd4bb7ded6c9c9d3acb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 0.05
+  amplitude: 0.025
   currentTime: 0
 --- !u!1001 &1042990450
 PrefabInstance:
@@ -53396,6 +53374,7 @@ GameObject:
   - component: {fileID: 1124384898}
   - component: {fileID: 1124384902}
   - component: {fileID: 1124384901}
+  - component: {fileID: 1124384903}
   m_Layer: 0
   m_Name: SphereL7
   m_TagString: Untagged
@@ -53510,6 +53489,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ab4624b1a111b549a57a77a17f447e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1124384903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124384896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c88280ea7057bd4bb7ded6c9c9d3acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.025
+  currentTime: 0
 --- !u!1001 &1125123286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54195,6 +54188,7 @@ GameObject:
   - component: {fileID: 1133649467}
   - component: {fileID: 1133649471}
   - component: {fileID: 1133649470}
+  - component: {fileID: 1133649472}
   m_Layer: 0
   m_Name: SphereR1
   m_TagString: Untagged
@@ -54309,6 +54303,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ab4624b1a111b549a57a77a17f447e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1133649472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133649465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c88280ea7057bd4bb7ded6c9c9d3acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.025
+  currentTime: 0
 --- !u!1 &1134202770
 GameObject:
   m_ObjectHideFlags: 0
@@ -55305,6 +55313,7 @@ GameObject:
   - component: {fileID: 1161555294}
   - component: {fileID: 1161555298}
   - component: {fileID: 1161555297}
+  - component: {fileID: 1161555299}
   m_Layer: 0
   m_Name: SphereR2
   m_TagString: Untagged
@@ -55419,6 +55428,20 @@ MonoBehaviour:
   glow: 50
   tranSpeed: 0.001
   emissiveSpeed: 0.03
+--- !u!114 &1161555299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161555292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c88280ea7057bd4bb7ded6c9c9d3acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.025
+  currentTime: 0
 --- !u!4 &1162318502 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4358062748366962, guid: c298d5b22a610f64ebcd9e84aea49461,
@@ -55793,64 +55816,64 @@ VisualEffect:
       - m_Value: {x: 1, y: 1, z: 1}
         m_Name: Transform_Spine_scale
         m_Overridden: 1
-      - m_Value: {x: -11.789858, y: -1.3778458, z: 16.502089}
+      - m_Value: {x: -11.789858, y: -1.01, z: 16.502089}
         m_Name: Position_SphereL1
         m_Overridden: 1
-      - m_Value: {x: -12.519857, y: -1.0388458, z: 16.502089}
+      - m_Value: {x: -12.519857, y: -0.671, z: 16.502089}
         m_Name: Position_SphereL2
         m_Overridden: 1
-      - m_Value: {x: -13.092857, y: -0.60484576, z: 16.502089}
+      - m_Value: {x: -13.092857, y: -0.23699999, z: 16.502089}
         m_Name: Position_SphereL3
         m_Overridden: 1
-      - m_Value: {x: -13.561857, y: -0.022845745, z: 16.502089}
+      - m_Value: {x: -13.561857, y: 0.34500003, z: 16.502089}
         m_Name: Position_SphereL4
         m_Overridden: 1
-      - m_Value: {x: -13.879858, y: 0.9021543, z: 16.502089}
+      - m_Value: {x: -13.879858, y: 1.2700001, z: 16.502089}
         m_Name: Position_SphereL5
         m_Overridden: 1
-      - m_Value: {x: -13.859858, y: 1.7921543, z: 16.502089}
+      - m_Value: {x: -13.859858, y: 2.16, z: 16.502089}
         m_Name: Position_SphereL6
         m_Overridden: 1
-      - m_Value: {x: -13.539858, y: 2.6611543, z: 16.502089}
+      - m_Value: {x: -13.539858, y: 3.029, z: 16.502089}
         m_Name: Position_SphereL7
         m_Overridden: 1
-      - m_Value: {x: -13.029858, y: 3.2821543, z: 16.502089}
+      - m_Value: {x: -13.029858, y: 3.65, z: 16.502089}
         m_Name: Position_SphereL8
         m_Overridden: 1
-      - m_Value: {x: -12.366858, y: 3.7141542, z: 16.502089}
+      - m_Value: {x: -12.366858, y: 4.082, z: 16.502089}
         m_Name: Position_SphereL9
         m_Overridden: 1
-      - m_Value: {x: -11.599857, y: 3.9721541, z: 16.502089}
+      - m_Value: {x: -11.599857, y: 4.34, z: 16.502089}
         m_Name: Position_SphereL10
         m_Overridden: 1
-      - m_Value: {x: -10.839858, y: -1.3778458, z: 16.502089}
+      - m_Value: {x: -10.839858, y: -1.01, z: 16.502089}
         m_Name: Position_SphereR1
         m_Overridden: 1
-      - m_Value: {x: -9.973858, y: -1.0388458, z: 16.502089}
+      - m_Value: {x: -9.973858, y: -0.671, z: 16.502089}
         m_Name: Position_SphereR2
         m_Overridden: 1
-      - m_Value: {x: -9.371858, y: -0.60484576, z: 16.502089}
+      - m_Value: {x: -9.371858, y: -0.23699999, z: 16.502089}
         m_Name: Position_SphereR3
         m_Overridden: 1
-      - m_Value: {x: -8.921858, y: -0.022845745, z: 16.502089}
+      - m_Value: {x: -8.921858, y: 0.34500003, z: 16.502089}
         m_Name: Position_SphereR4
         m_Overridden: 1
-      - m_Value: {x: -8.599857, y: 0.9021543, z: 16.502089}
+      - m_Value: {x: -8.599857, y: 1.2700001, z: 16.502089}
         m_Name: Position_SphereR5
         m_Overridden: 1
-      - m_Value: {x: -8.626858, y: 1.7921543, z: 16.502089}
+      - m_Value: {x: -8.626858, y: 2.16, z: 16.502089}
         m_Name: Position_SphereR6
         m_Overridden: 1
-      - m_Value: {x: -8.954858, y: 2.6611543, z: 16.502089}
+      - m_Value: {x: -8.954858, y: 3.029, z: 16.502089}
         m_Name: Position_SphereR7
         m_Overridden: 1
-      - m_Value: {x: -9.435858, y: 3.2821543, z: 16.502089}
+      - m_Value: {x: -9.435858, y: 3.65, z: 16.502089}
         m_Name: Position_SphereR8
         m_Overridden: 1
-      - m_Value: {x: -10.103858, y: 3.7141542, z: 16.502089}
+      - m_Value: {x: -10.103858, y: 4.082, z: 16.502089}
         m_Name: Position_SphereR9
         m_Overridden: 1
-      - m_Value: {x: -10.799858, y: 3.9721541, z: 16.502089}
+      - m_Value: {x: -10.799858, y: 4.34, z: 16.502089}
         m_Name: Position_SphereR10
         m_Overridden: 1
     m_Vector4f:
@@ -56019,6 +56042,28 @@ MonoBehaviour:
   relaxationTime: 10
   fadeTime: 2
   cycle: 10
+  SphereL:
+  - {fileID: 1040487691}
+  - {fileID: 831795583}
+  - {fileID: 698212089}
+  - {fileID: 1291327270}
+  - {fileID: 637640856}
+  - {fileID: 1624181710}
+  - {fileID: 1124384896}
+  - {fileID: 1678889054}
+  - {fileID: 2146910192}
+  - {fileID: 125076357}
+  SphereR:
+  - {fileID: 1133649465}
+  - {fileID: 1161555292}
+  - {fileID: 1768375469}
+  - {fileID: 1241150119}
+  - {fileID: 1502340246}
+  - {fileID: 143953049}
+  - {fileID: 1173142071}
+  - {fileID: 545660156}
+  - {fileID: 1861744442}
+  - {fileID: 57269128}
   currentIterationL: 0
   currentIterationR: 0
   leftSpreadingStart: 0
@@ -56610,6 +56655,7 @@ GameObject:
   - component: {fileID: 1173142073}
   - component: {fileID: 1173142077}
   - component: {fileID: 1173142076}
+  - component: {fileID: 1173142078}
   m_Layer: 0
   m_Name: SphereR7
   m_TagString: Untagged
@@ -56724,6 +56770,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ab4624b1a111b549a57a77a17f447e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1173142078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173142071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c88280ea7057bd4bb7ded6c9c9d3acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.025
+  currentTime: 0
 --- !u!4 &1173524544 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4293083544708992, guid: 72043e9bfc7ced44d8ad8301ed317725,
@@ -59480,6 +59540,7 @@ GameObject:
   - component: {fileID: 1241150121}
   - component: {fileID: 1241150125}
   - component: {fileID: 1241150124}
+  - component: {fileID: 1241150126}
   m_Layer: 0
   m_Name: SphereR4
   m_TagString: Untagged
@@ -59594,6 +59655,20 @@ MonoBehaviour:
   glow: 50
   tranSpeed: 0.001
   emissiveSpeed: 0.03
+--- !u!114 &1241150126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241150119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c88280ea7057bd4bb7ded6c9c9d3acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.025
+  currentTime: 0
 --- !u!1001 &1241191222
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62078,6 +62153,7 @@ GameObject:
   - component: {fileID: 1291327272}
   - component: {fileID: 1291327276}
   - component: {fileID: 1291327275}
+  - component: {fileID: 1291327277}
   m_Layer: 0
   m_Name: SphereL4
   m_TagString: Untagged
@@ -62192,6 +62268,20 @@ MonoBehaviour:
   glow: 50
   tranSpeed: 0.001
   emissiveSpeed: 0.03
+--- !u!114 &1291327277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291327270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c88280ea7057bd4bb7ded6c9c9d3acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.025
+  currentTime: 0
 --- !u!4 &1291589171 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4293083544708992, guid: 72043e9bfc7ced44d8ad8301ed317725,
@@ -70647,6 +70737,7 @@ GameObject:
   - component: {fileID: 1502340248}
   - component: {fileID: 1502340252}
   - component: {fileID: 1502340251}
+  - component: {fileID: 1502340253}
   m_Layer: 0
   m_Name: SphereR5
   m_TagString: Untagged
@@ -70761,6 +70852,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ab4624b1a111b549a57a77a17f447e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1502340253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502340246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c88280ea7057bd4bb7ded6c9c9d3acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.025
+  currentTime: 0
 --- !u!4 &1504006069 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f21aed30ae5fb9549956687f3bf010dd,
@@ -76052,6 +76157,7 @@ GameObject:
   - component: {fileID: 1624181712}
   - component: {fileID: 1624181716}
   - component: {fileID: 1624181715}
+  - component: {fileID: 1624181717}
   m_Layer: 0
   m_Name: SphereL6
   m_TagString: Untagged
@@ -76166,6 +76272,20 @@ MonoBehaviour:
   glow: 50
   tranSpeed: 0.001
   emissiveSpeed: 0.03
+--- !u!114 &1624181717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624181710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c88280ea7057bd4bb7ded6c9c9d3acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.025
+  currentTime: 0
 --- !u!1 &1624220319
 GameObject:
   m_ObjectHideFlags: 0
@@ -78595,6 +78715,7 @@ GameObject:
   - component: {fileID: 1678889056}
   - component: {fileID: 1678889060}
   - component: {fileID: 1678889059}
+  - component: {fileID: 1678889061}
   m_Layer: 0
   m_Name: SphereL8
   m_TagString: Untagged
@@ -78709,6 +78830,20 @@ MonoBehaviour:
   glow: 50
   tranSpeed: 0.001
   emissiveSpeed: 0.03
+--- !u!114 &1678889061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678889054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c88280ea7057bd4bb7ded6c9c9d3acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.025
+  currentTime: 0
 --- !u!4 &1679011064 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4293083544708992, guid: 72043e9bfc7ced44d8ad8301ed317725,
@@ -82691,6 +82826,7 @@ GameObject:
   - component: {fileID: 1768375471}
   - component: {fileID: 1768375475}
   - component: {fileID: 1768375474}
+  - component: {fileID: 1768375476}
   m_Layer: 0
   m_Name: SphereR3
   m_TagString: Untagged
@@ -82805,6 +82941,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ab4624b1a111b549a57a77a17f447e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1768375476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768375469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c88280ea7057bd4bb7ded6c9c9d3acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.025
+  currentTime: 0
 --- !u!4 &1769904935 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4293083544708992, guid: 72043e9bfc7ced44d8ad8301ed317725,
@@ -86373,6 +86523,7 @@ GameObject:
   - component: {fileID: 1861744444}
   - component: {fileID: 1861744448}
   - component: {fileID: 1861744447}
+  - component: {fileID: 1861744449}
   m_Layer: 0
   m_Name: SphereR9
   m_TagString: Untagged
@@ -86487,6 +86638,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ab4624b1a111b549a57a77a17f447e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1861744449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861744442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c88280ea7057bd4bb7ded6c9c9d3acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.025
+  currentTime: 0
 --- !u!4 &1862082317 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4293083544708992, guid: 72043e9bfc7ced44d8ad8301ed317725,
@@ -87432,43 +87597,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1327742109}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &1869813945
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Sprites/Default
-  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!4 &1869924533 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4293083544708992, guid: 72043e9bfc7ced44d8ad8301ed317725,
@@ -98811,6 +98939,170 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 379540082}
   m_PrefabAsset: {fileID: 0}
+--- !u!43 &2126381535
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 24
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 8
+    localAABB:
+      m_Center: {x: 0, y: 0.01, z: 0}
+      m_Extent: {x: 1.65, y: 0, z: 1.275}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000004000100010004000500010005000200020005000600020006000300030006000700030007000000000007000400
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 8
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 28
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 288
+    _typelessdata: 0000c03f0ad7233c000090bf000000000000803f0000803f0000803f00000000000000000000c0bf0ad7233c000090bf000000000000803f0000803f0000803f0000803f000000000000c0bf0ad7233c0000903f000000000000803f0000803f0000803f00000000000000000000c03f0ad7233c0000903f000000000000803f0000803f0000803f0000803f000000003333d33f0ad7233c3333a3bf000000000000803f0000803f00000000000000000000803f3333d3bf0ad7233c3333a3bf000000000000803f0000803f000000000000803f0000803f3333d3bf0ad7233c3333a33f000000000000803f0000803f00000000000000000000803f3333d33f0ad7233c3333a33f000000000000803f0000803f000000000000803f0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0.01, z: 0}
+    m_Extent: {x: 1.65, y: 0, z: 1.275}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1001 &2129018579
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -99441,6 +99733,7 @@ GameObject:
   - component: {fileID: 2146910194}
   - component: {fileID: 2146910198}
   - component: {fileID: 2146910197}
+  - component: {fileID: 2146910199}
   m_Layer: 0
   m_Name: SphereL9
   m_TagString: Untagged
@@ -99555,6 +99848,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ab4624b1a111b549a57a77a17f447e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2146910199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146910192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c88280ea7057bd4bb7ded6c9c9d3acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amplitude: 0.025
+  currentTime: 0
 --- !u!1001 &2146911710
 PrefabInstance:
   m_ObjectHideFlags: 0

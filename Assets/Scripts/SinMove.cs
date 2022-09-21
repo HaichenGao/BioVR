@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SinMove : MonoBehaviour
 {
-    public float amplitude = 0.05f;
+    public float amplitude = 0.015f;
     public float currentTime = 0.0f;
     Vector3 initialPosition;
     // Start is called before the first frame update

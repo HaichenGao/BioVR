@@ -46,6 +46,12 @@ public class ParticleManager2 : MonoBehaviour
     [SerializeField]
     int cycle = 10;
 
+    [SerializeField]
+    GameObject[] SphereL = new GameObject[10];
+
+    [SerializeField]
+    GameObject[] SphereR = new GameObject[10];
+
 
     int enableLeftGathering = 0;
     int enableRightGathering = 0;
@@ -84,6 +90,16 @@ public class ParticleManager2 : MonoBehaviour
         timerFadingL = GameObject.Find("[CameraRig]").GetComponent<TimerFL>();
         timerFadingR = GameObject.Find("[CameraRig]").GetComponent<TimerFR>();
 
+        foreach(GameObject sphere in SphereL)
+        {
+            sphere.SetActive(false);
+        }
+
+        foreach (GameObject sphere in SphereR)
+        {
+            sphere.SetActive(false);
+        }
+
         visualEffect.SetInt("Min", lowerLimit);
         visualEffect.SetInt("Max", upperLimit);
 
@@ -115,7 +131,7 @@ public class ParticleManager2 : MonoBehaviour
         //Left shoulder: gathering particles
         if (shoulderLeft >= tensionThreshold && timerGatheringL.TimerStart == false && leftGatheringStart == true && currentIterationL <= cycle)
         {
-            
+            SphereL[currentIterationL].SetActive(true);
             timerGatheringL.TimerStart = true;
             //enableLeftGathering = 0;
             //visualEffect.SetInt("EnableLeftGathering", enableLeftGathering);
@@ -187,6 +203,7 @@ public class ParticleManager2 : MonoBehaviour
         //Right shoulder: gathering particles
         if (shoulderRight >= tensionThreshold && timerGatheringR.TimerStart == false && rightGatheringStart == true && currentIterationR <= cycle)
         {
+            SphereR[currentIterationR].SetActive(true);
             timerGatheringR.TimerStart = true;
             //enableRightGathering = 0;
             //visualEffect.SetInt("EnableRightGathering", enableRightGathering);
