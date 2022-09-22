@@ -1,0 +1,300 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.5f1 (40eb3a945986) revision 4254522'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19043) 64bit Enterprise' Language: 'en' Physical Memory: 65458 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.5f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/demo/Documents/GitHub/BioVR
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+53864
+Successfully changed project path to: C:/Users/demo/Documents/GitHub/BioVR
+C:/Users/demo/Documents/GitHub/BioVR
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 240.16 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.5f1 (40eb3a945986)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/demo/Documents/GitHub/BioVR/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA Quadro M4000 (ID=0x13f1)
+    Vendor:   NVIDIA
+    VRAM:     8144 MB
+    Driver:   31.0.15.1694
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56112
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.020242 seconds.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 219.35 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.188 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1188ms)
+		BeginReloadAssembly (142ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (835ms)
+			LoadAssemblies (139ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (200ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (503ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (220ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (184ms)
+				ProcessInitializeOnLoadMethodAttributes (81ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.024458 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\demo\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\demo\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 218.61 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+Mono: successfully reloaded assembly
+- Completed reload, in  2.833 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2835ms)
+		BeginReloadAssembly (195ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (2469ms)
+			LoadAssemblies (196ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (580ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (137ms)
+			SetupLoadedEditorAssemblies (1487ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (219ms)
+				BeforeProcessingInitializeOnLoad (240ms)
+				ProcessInitializeOnLoadAttributes (709ms)
+				ProcessInitializeOnLoadMethodAttributes (279ms)
+				AfterProcessingInitializeOnLoad (18ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 4.13 ms, found 11 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 7243 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 78 unused Assets / (3.9 MB). Loaded Objects now: 7684.
+Memory consumption went from 323.7 MB to 319.8 MB.
+Total: 10.707000 ms (FindLiveObjects: 1.282100 ms CreateObjectMapping: 1.252800 ms MarkObjects: 6.570700 ms  DeleteObjects: 1.598900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 233698.195482 seconds.
+  path: Assets/Scenes/BioVR_Scene1.unity
+  artifactKey: Guid(1e7d93c40efe6f84aaccde61083534dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/BioVR_Scene1.unity using Guid(1e7d93c40efe6f84aaccde61083534dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7f903929b94c72f4c5deb86e849f3ca') in 0.022286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.720953 seconds.
+  path: Assets/Scenes/FlowerDissolve.unity
+  artifactKey: Guid(31969ee0a9308f643838f4ba7bf610e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/FlowerDissolve.unity using Guid(31969ee0a9308f643838f4ba7bf610e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29aa8cd4bbfbeca8688a6dea86d747a8') in 0.004508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.254960 seconds.
+  path: Assets/Scenes/test_4.unity
+  artifactKey: Guid(e65f211b2411f0e45a73ad54f094c610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/test_4.unity using Guid(e65f211b2411f0e45a73ad54f094c610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27479cfe8a79b85e9617a36fecf52afe') in 0.005026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.524358 seconds.
+  path: Assets/Scenes/test_5.unity
+  artifactKey: Guid(4bcd015ed2c442d499b61fd9655e951e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/test_5.unity using Guid(4bcd015ed2c442d499b61fd9655e951e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2adae66e480a91627d0c802de1da8a65') in 0.004977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 212.091511 seconds.
+  path: Assets/Prefab/hint.mat
+  artifactKey: Guid(54e2e47496b5ced409f5298a02a34fb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/hint.mat using Guid(54e2e47496b5ced409f5298a02a34fb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1c341e32b9dfe0afc5bd9825e71fc0a') in 3.826566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.661483 seconds.
+  path: Assets/StylizedNatureBundle/Prefabs/GrassFlower
+  artifactKey: Guid(4d9a1a4e91f06ab44950a341cfdfaa18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedNatureBundle/Prefabs/GrassFlower using Guid(4d9a1a4e91f06ab44950a341cfdfaa18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70d236a3e5bb1104f9a9dd20b22eb2c0') in 0.004659 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.064799 seconds.
+  path: Assets/StylizedNatureBundle/Prefabs/GrassFlower/GrassFlower_04_LOD.prefab
+  artifactKey: Guid(72043e9bfc7ced44d8ad8301ed317725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedNatureBundle/Prefabs/GrassFlower/GrassFlower_04_LOD.prefab using Guid(72043e9bfc7ced44d8ad8301ed317725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5ec19506987219da2f3adf3ddeda708') in 0.069169 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.074713 seconds.
+  path: Assets/Audio/mixkit-forest-birds-chirp-ambiance-69.wav
+  artifactKey: Guid(bf2d34b24dc34674bb7a4a7718c5fd24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/mixkit-forest-birds-chirp-ambiance-69.wav using Guid(bf2d34b24dc34674bb7a4a7718c5fd24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65ea78fc7ed9520cd138372157710c1b') in 0.229978 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Audio/mixkit-swamp-and-jungle-birds-ambience-325.wav
+  artifactKey: Guid(7fa33fcbdb917fa4b8a27247a181b7ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/mixkit-swamp-and-jungle-birds-ambience-325.wav using Guid(7fa33fcbdb917fa4b8a27247a181b7ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f5cd788d48990a8bab79c082cef59a8') in 0.027473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1776.417232 seconds.
+  path: Assets/Scenes/FlowerDissolve.unity
+  artifactKey: Guid(31969ee0a9308f643838f4ba7bf610e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/FlowerDissolve.unity using Guid(31969ee0a9308f643838f4ba7bf610e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dba5e729f324ab0ceff67fc17ba48367') in 0.004754 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 161.671422 seconds.
+  path: Assets/Shader/Shader Graphs_Dissolve.mat
+  artifactKey: Guid(13a59b242b7c3b94fb8afbeb4c041adf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader/Shader Graphs_Dissolve.mat using Guid(13a59b242b7c3b94fb8afbeb4c041adf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ae4381442ebc1a9cb2fd42dab2dc063') in 0.541056 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 136.172456 seconds.
+  path: Assets/Shader/Shader Graphs_Dissolve.mat
+  artifactKey: Guid(13a59b242b7c3b94fb8afbeb4c041adf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader/Shader Graphs_Dissolve.mat using Guid(13a59b242b7c3b94fb8afbeb4c041adf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dd7720d10ebcf4023c800863bda6bd9') in 0.028675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 450.374781 seconds.
+  path: Assets/StylizedNatureBundle/Textures/T_SNB_GrassFlower.psd
+  artifactKey: Guid(9bf606c43682e9d488ea2aa0c944418f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedNatureBundle/Textures/T_SNB_GrassFlower.psd using Guid(9bf606c43682e9d488ea2aa0c944418f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9072b110947469de3b0db31d0a26955') in 0.036095 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 246.855092 seconds.
+  path: Assets/Shader/Dissolve.shadergraph
+  artifactKey: Guid(38a2640205ca2fd4a94a376f6db8477e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader/Dissolve.shadergraph using Guid(38a2640205ca2fd4a94a376f6db8477e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fa39cb426ce0a64831bd0d5e49bf01d') in 0.010575 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 41.115446 seconds.
+  path: Assets/StylizedNatureBundle/Shaders/SNB_Foliage.shader
+  artifactKey: Guid(041ed92166f5aa9449994e31aba70f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedNatureBundle/Shaders/SNB_Foliage.shader using Guid(041ed92166f5aa9449994e31aba70f1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f0c7a0f701b5db5b7d8bc76d8380e1d') in 0.009382 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.611008 seconds.
+  path: Assets/StylizedNatureBundle/Shaders/SNB_Grass.shader
+  artifactKey: Guid(f7835d26e94875f47848e4600cd0ab70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedNatureBundle/Shaders/SNB_Grass.shader using Guid(f7835d26e94875f47848e4600cd0ab70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08e2ff461b8eafb0d798e6c2ca513648') in 0.005944 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.383811 seconds.
+  path: Assets/StylizedNatureBundle/Shaders/SNB_Trees.shader
+  artifactKey: Guid(4e9aa94b7854f7f4d8bf69448ee6b3be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedNatureBundle/Shaders/SNB_Trees.shader using Guid(4e9aa94b7854f7f4d8bf69448ee6b3be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b57e8a3f6294262f83e89ead6c537ed') in 0.005803 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.519319 seconds.
+  path: Assets/StylizedNatureBundle/Shaders/SNB_Rocks.shader
+  artifactKey: Guid(2596cc0ca2072a44b85861fcbd7c0c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedNatureBundle/Shaders/SNB_Rocks.shader using Guid(2596cc0ca2072a44b85861fcbd7c0c88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77e3d0735b117bddb79d941c5e887613') in 0.006001 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 158.906499 seconds.
+  path: Assets/StylizedNatureBundle/Textures/T_SNB_Cloud.tga
+  artifactKey: Guid(7395ab8e2330e9f49b26fffa093c8d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedNatureBundle/Textures/T_SNB_Cloud.tga using Guid(7395ab8e2330e9f49b26fffa093c8d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2866c9706f2b4361b07f04f312d367c') in 0.030758 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/StylizedNatureBundle/Textures/T_SNB_Vegetation_BaseColor.tga
+  artifactKey: Guid(fcbd578e80a32e8469fe6fecd607d8aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedNatureBundle/Textures/T_SNB_Vegetation_BaseColor.tga using Guid(fcbd578e80a32e8469fe6fecd607d8aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98511263b851a377816bff7e3bdd237f') in 0.034330 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/StylizedNatureBundle/Textures/T_SNB_Trees_BaseColor.tga
+  artifactKey: Guid(e5949f3f02e8cd24e97605b8c7ed5b30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedNatureBundle/Textures/T_SNB_Trees_BaseColor.tga using Guid(e5949f3f02e8cd24e97605b8c7ed5b30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cd190e880c3ddd33c0593976f245822') in 0.023876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/StylizedNatureBundle/Textures/T_SNB_Rocks_BaseColor.tga
+  artifactKey: Guid(7b1fe3c11d564de49a9b6ea9489ccacf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StylizedNatureBundle/Textures/T_SNB_Rocks_BaseColor.tga using Guid(7b1fe3c11d564de49a9b6ea9489ccacf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63b08b5fbcb0e74c636ea2db520eb159') in 0.026591 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

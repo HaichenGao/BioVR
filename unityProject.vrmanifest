@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.biovr.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\ROG\\Documents\\GitHub\\BioVR\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\Users\\demo\\Documents\\GitHub\\BioVR\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "BioVR [Testing]"
