@@ -203,7 +203,7 @@ Material:
     - _FlowerColor04: {r: 0.9966534, g: 1, b: 0.6084906, a: 0}
     - _FlowerInside01: {r: 1, g: 0.9040528, b: 0.6179246, a: 0}
     - _FlowerInside02: {r: 1, g: 0.78196186, b: 0.2216981, a: 0}
-    - _FlowerInsideColor01: {r: 1, g: 0.7789562, b: 0.1273584, a: 0}
+    - _FlowerInsideColor01: {r: 1, g: 0.8613674, b: 0.12549019, a: 0}
     - _FlowerInsideColor02: {r: 1, g: 0.9507267, b: 0.6084906, a: 0}
     - _FlowerMainColor01: {r: 1, g: 0.9637498, b: 0.759434, a: 0}
     - _FlowerMainColor02: {r: 1, g: 0.70334506, b: 0.1556603, a: 0}
