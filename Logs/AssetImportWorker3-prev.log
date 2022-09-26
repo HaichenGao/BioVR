@@ -15,7 +15,7 @@ C:/Users/demo/Documents/GitHub/BioVR
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-53864
+62152
 Successfully changed project path to: C:/Users/demo/Documents/GitHub/BioVR
 C:/Users/demo/Documents/GitHub/BioVR
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/demo/Documents/GitHub/BioVR
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 236.17 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 267.32 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.5f1 (40eb3a945986)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/Resources/UnitySubsystems
@@ -63,39 +63,39 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56188
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56744
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.5f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.022362 seconds.
+Registered in 0.019471 seconds.
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 215.34 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 233.80 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.152 seconds
+- Completed reload, in  1.196 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1153ms)
+	ReloadAssembly (1197ms)
 		BeginReloadAssembly (140ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (801ms)
+		EndReloadAssembly (859ms)
 			LoadAssemblies (136ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (175ms)
+			SetupTypeCache (196ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (490ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (528ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
+				InitializePlatformSupportModulesInManaged (19ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (216ms)
+				RefreshPlugins (234ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (183ms)
+				ProcessInitializeOnLoadAttributes (199ms)
 				ProcessInitializeOnLoadMethodAttributes (73ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -103,53 +103,79 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.023875 seconds.
+Registered in 0.026212 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\demo\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\demo\Documents\GitHub\BioVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 218.79 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 227.19 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path C:\Users\demo\Documents\GitHub\BioVR\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <e40e5a8f982c4b618a930d29f9bd091c>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <e40e5a8f982c4b618a930d29f9bd091c>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <e40e5a8f982c4b618a930d29f9bd091c>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <e40e5a8f982c4b618a930d29f9bd091c>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <e40e5a8f982c4b618a930d29f9bd091c>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <1f0be198f5164d2489de92f22c998266>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
+UnityEditor.Tools:get_get ()
+UnityEditor.Tools:get_visibleLayers ()
+UnityEditor.Animations.Rigging.BoneRendererUtils:.cctor () (at Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs:121)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
+
 Mono: successfully reloaded assembly
-- Completed reload, in  2.840 seconds
+- Completed reload, in  2.920 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2842ms)
-		BeginReloadAssembly (193ms)
+	ReloadAssembly (2921ms)
+		BeginReloadAssembly (202ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (2475ms)
-			LoadAssemblies (204ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (2538ms)
+			LoadAssemblies (216ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (580ms)
+			SetupTypeCache (640ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (137ms)
-			SetupLoadedEditorAssemblies (1489ms)
+			RebuildScriptCaches (159ms)
+			SetupLoadedEditorAssemblies (1446ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (22ms)
+				InitializePlatformSupportModulesInManaged (25ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (219ms)
-				BeforeProcessingInitializeOnLoad (240ms)
-				ProcessInitializeOnLoadAttributes (698ms)
+				RefreshPlugins (227ms)
+				BeforeProcessingInitializeOnLoad (246ms)
+				ProcessInitializeOnLoadAttributes (637ms)
 				ProcessInitializeOnLoadMethodAttributes (291ms)
-				AfterProcessingInitializeOnLoad (18ms)
+				AfterProcessingInitializeOnLoad (19ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (15ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 4.30 ms, found 11 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 2.77 ms, found 11 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7243 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 78 unused Assets / (3.9 MB). Loaded Objects now: 7684.
-Memory consumption went from 323.7 MB to 319.8 MB.
-Total: 9.122000 ms (FindLiveObjects: 1.071300 ms CreateObjectMapping: 0.525000 ms MarkObjects: 5.751900 ms  DeleteObjects: 1.771700 ms)
+Unloading 7245 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 78 unused Assets / (3.9 MB). Loaded Objects now: 7698.
+Memory consumption went from 326.6 MB to 322.7 MB.
+Total: 7.586900 ms (FindLiveObjects: 0.883100 ms CreateObjectMapping: 0.587400 ms MarkObjects: 4.885500 ms  DeleteObjects: 1.229500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -163,34 +189,28 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 233958.654079 seconds.
-  path: Assets/Audio/mixkit-natural-ambience-with-flowing-water-and-birds-61.wav
-  artifactKey: Guid(c936c9104d2c4964fb3a5d5f48e450c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/mixkit-natural-ambience-with-flowing-water-and-birds-61.wav using Guid(c936c9104d2c4964fb3a5d5f48e450c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd424e0f653f07a9baeb00c0caf9a1232') in 0.256547 seconds 
+  Time since last request: 327467.822689 seconds.
+  path: Assets/blossom/40green.mat
+  artifactKey: Guid(2f42a64c61a97914e8862743bc51dfb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/blossom/40green.mat using Guid(2f42a64c61a97914e8862743bc51dfb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ecf0d857547c4b2655969c34702fe66') in 1.600450 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2974.853226 seconds.
-  path: Assets/StylizedNatureBundle/Textures/T_SNB_Ground_BaseColor_01.tga
-  artifactKey: Guid(ad96621db1b07aa45a79e3e1201ca947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StylizedNatureBundle/Textures/T_SNB_Ground_BaseColor_01.tga using Guid(ad96621db1b07aa45a79e3e1201ca947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f78ba8f84ad0c677d2e3097a19bdeb8') in 0.052613 seconds 
+  Time since last request: 0.000049 seconds.
+  path: Assets/blossom/100green.mat
+  artifactKey: Guid(e61b9d035595adc48a3c83554b7618dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/blossom/100green.mat using Guid(e61b9d035595adc48a3c83554b7618dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c22b530f0253b4f8d364f74081ec938d') in 0.046412 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000058 seconds.
-  path: Assets/StylizedNatureBundle/Textures/T_SNB_Ground_Normal_01.tga
-  artifactKey: Guid(20b7ead25c594394f8675e03e9be1259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StylizedNatureBundle/Textures/T_SNB_Ground_Normal_01.tga using Guid(20b7ead25c594394f8675e03e9be1259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0f6b66f9094151c13674a8b3a74a212') in 0.043717 seconds 
+  path: Assets/blossom/GrassFlower_LOD0.prefab
+  artifactKey: Guid(cd2861ea9fe997f4c84d734e151f8c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/blossom/GrassFlower_LOD0.prefab using Guid(cd2861ea9fe997f4c84d734e151f8c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9a57ef8c8da5e2dad998ecd32a32ac3') in 0.048808 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/StylizedNatureBundle/Textures/T_SNB_Trees_Normal.tga
-  artifactKey: Guid(06e6b2458a47542428bca89ee8a27e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StylizedNatureBundle/Textures/T_SNB_Trees_Normal.tga using Guid(06e6b2458a47542428bca89ee8a27e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd85c2de4ef4258168503310eb4a59ee6') in 0.024749 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/StylizedNatureBundle/Textures/T_SNB_Rocks_Normal.tga
-  artifactKey: Guid(4ab1a3671bb3c464fb5bb33ee846202c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/StylizedNatureBundle/Textures/T_SNB_Rocks_Normal.tga using Guid(4ab1a3671bb3c464fb5bb33ee846202c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a88027235d938904dc8cd62378c5b6e') in 0.022624 seconds 
+  Time since last request: 0.000043 seconds.
+  path: Assets/blossom/60green.mat
+  artifactKey: Guid(121fd5a3c3ec40944a3d639f16c49041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/blossom/60green.mat using Guid(121fd5a3c3ec40944a3d639f16c49041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd5de67d7950d1ed6249253e5c1576ec') in 0.045144 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
