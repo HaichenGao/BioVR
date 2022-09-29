@@ -49,8 +49,12 @@ public class ParticleManager2 : MonoBehaviour
     [SerializeField]
     GameObject[] SphereL = new GameObject[10];
 
+
+
     [SerializeField]
     GameObject[] SphereR = new GameObject[10];
+
+
 
 
     int enableLeftGathering = 0;

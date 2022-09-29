@@ -104,6 +104,7 @@
     <Compile Include="Assets\Scripts\GlowL.cs" />
     <Compile Include="Assets\Ardity\Scripts\Samples\SampleCustomDelimiter.cs" />
     <Compile Include="Assets\Scripts\ParticleManager2.cs" />
+    <Compile Include="Assets\Scripts\ParticleManager3.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\Scripts\SinMove.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
