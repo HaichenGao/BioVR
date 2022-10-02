@@ -3,7 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - RockFlowersL1
+  - RockFlowersL2
+  - RockFlowersL3
+  - RockFlowersR1
+  - RockFlowersR2
+  - RockFlowersR3
+  - RockGrassL1
+  - RockGrassL2
+  - RockGrassL3
+  - RockGrassR1
+  - RockGrassR2
+  - RockGrassR3
   layers:
   - Default
   - TransparentFX

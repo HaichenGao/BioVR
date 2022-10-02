@@ -16,6 +16,20 @@ public class ParticleManager3 : MonoBehaviour
     TimerFL timerFadingL;
     TimerFR timerFadingR;
 
+    GameObject[] rockFlowersL1;
+    GameObject[] rockFlowersL2;
+    GameObject[] rockFlowersL3;
+    GameObject[] rockFlowersR1;
+    GameObject[] rockFlowersR2;
+    GameObject[] rockFlowersR3;
+
+    GameObject[] rockGrassL1;
+    GameObject[] rockGrassL2;
+    GameObject[] rockGrassL3;
+    GameObject[] rockGrassR1;
+    GameObject[] rockGrassR2;
+    GameObject[] rockGrassR3;
+
     [SerializeField]
     int upperLimit = 2;
 
@@ -63,8 +77,6 @@ public class ParticleManager3 : MonoBehaviour
     public bool rightSpreadingStart = false;
     bool rightRelaxingStart = false;
 
-    //bool leftSpawningStart = true;
-    //bool rightSpawningStart = true;
 
     public float timerGathering;
     public float timerSpreading;
@@ -103,11 +115,56 @@ public class ParticleManager3 : MonoBehaviour
 
         enableRightGathering = 5;
         visualEffect.SetInt("EnableRightGathering", enableRightGathering);
+
+        rockFlowersL1 = GameObject.FindGameObjectsWithTag("RockFlowersL1");
+        rockFlowersL2 = GameObject.FindGameObjectsWithTag("RockFlowersL2");
+        rockFlowersL3 = GameObject.FindGameObjectsWithTag("RockFlowersL3");
+        rockFlowersR1 = GameObject.FindGameObjectsWithTag("RockFlowersR1");
+        rockFlowersR2 = GameObject.FindGameObjectsWithTag("RockFlowersR2");
+        rockFlowersR3 = GameObject.FindGameObjectsWithTag("RockFlowersR3");
+
+        rockGrassL1 = GameObject.FindGameObjectsWithTag("RockGrassL1");
+        rockGrassL2 = GameObject.FindGameObjectsWithTag("RockGrassL2");
+        rockGrassL3 = GameObject.FindGameObjectsWithTag("RockGrassL3");
+        rockGrassR1 = GameObject.FindGameObjectsWithTag("RockGrassR1");
+        rockGrassR2 = GameObject.FindGameObjectsWithTag("RockGrassR2");
+        rockGrassR3 = GameObject.FindGameObjectsWithTag("RockGrassR3");
+
+        foreach (GameObject flowers in rockFlowersL1)
+        {
+            flowers.SetActive(false);
+        }
+
+        foreach (GameObject flowers in rockFlowersL2)
+        {
+            flowers.SetActive(false);
+        }
+
+        foreach (GameObject flowers in rockFlowersL3)
+        {
+            flowers.SetActive(false);
+        }
+
+        foreach (GameObject flowers in rockFlowersR1)
+        {
+            flowers.SetActive(false);
+        }
+
+        foreach (GameObject flowers in rockFlowersR2)
+        {
+            flowers.SetActive(false);
+        }
+
+        foreach (GameObject flowers in rockFlowersR3)
+        {
+            flowers.SetActive(false);
+        }
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+
         float shoulderLeft;
         float shoulderRight;
         shoulderLeft = Mathf.Round((float)shoulderData.left * 100f) / 100f;
@@ -119,10 +176,10 @@ public class ParticleManager3 : MonoBehaviour
         timerSpreading = timerSpreadingL.CurrentTime;
         timerRelaxing = timerRelaxingL.CurrentTime;
 
-        //visualEffect.SetFloat("TimerGathering", timerGatheringL.CurrentTime);
         visualEffect.SetFloat("TimerFadingL", timerFadingL.CurrentTime);
         visualEffect.SetFloat("TimerFadingR", timerFadingR.CurrentTime);
 
+        #region Left Shoulder
         //Left shoulder: gathering particles
         if (shoulderLeft >= tensionThreshold && (timerGatheringL.CurrentTime < tensionTime) && leftGatheringStart == true && currentIterationL <= cycle)
         {
@@ -168,15 +225,9 @@ public class ParticleManager3 : MonoBehaviour
             visualEffect.SetInt("EnableLeftSpreading", enableLeftSpreading);
             timerSpreadingL.ResetTimer();
             
-            
-            //visualEffect.SetBool("LeftSpreadingStart", leftSpreadingStart);
-
 
         }
-        //else
-        //{
-        //    timerSpreadingL.TimerStart = false;
-        //}
+
 
         if (timerRelaxingL.CurrentTime >= relaxationTime && timerRelaxingL.TimerStart == true)
         {
@@ -193,15 +244,45 @@ public class ParticleManager3 : MonoBehaviour
                 currentIterationL += 1;
             }
             
-        }
+            if(currentIterationL == 10)
+            {
+                foreach (GameObject flowers in rockFlowersL1)
+                {
+                    flowers.SetActive(true);
+                    flowers.GetComponent<Animator>().SetBool("L1", true);
+                }
+            }
 
+            if (currentIterationL == 20)
+            {
+                foreach (GameObject flowers in rockFlowersL2)
+                {
+                    flowers.SetActive(true);
+                    flowers.GetComponent<Animator>().SetBool("L2", true);
+                }
+            }
+
+            if (currentIterationL == 30)
+            {
+                foreach (GameObject flowers in rockFlowersL3)
+                {
+                    flowers.SetActive(true);
+                    flowers.GetComponent<Animator>().SetBool("L3", true);
+                }
+            }
+
+        }
+        #endregion
+
+
+
+        #region Right Shoulder
         //Right shoulder: gathering particles
         if (shoulderRight >= tensionThreshold && (timerGatheringR.CurrentTime < tensionTime) && rightGatheringStart == true && currentIterationR <= cycle)
         {
             SphereR[currentIterationR].SetActive(true);
             timerGatheringR.TimerStart = true;
-            //enableRightGathering = 0;
-            //visualEffect.SetInt("EnableRightGathering", enableRightGathering);
+
         }
         else if (timerGatheringR.CurrentTime >= tensionTime && timerGatheringR.TimerStart == true)
         {
@@ -242,15 +323,9 @@ public class ParticleManager3 : MonoBehaviour
             visualEffect.SetInt("EnableRightSpreading", enableRightSpreading);
             timerSpreadingR.ResetTimer();
             
-            
-            //visualEffect.SetBool("RightSpreadingStart", rightSpreadingStart);
-            //currentIterationR += 1;
 
         }
-        //else
-        //{
-        //    timerSpreadingR.TimerStart = false;
-        //}
+
 
         if (timerRelaxingR.CurrentTime >= relaxationTime && timerRelaxingR.TimerStart == true)
         {
@@ -268,6 +343,7 @@ public class ParticleManager3 : MonoBehaviour
             }
 
         }
+        #endregion
 
 
     }
