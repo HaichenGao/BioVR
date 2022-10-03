@@ -30,6 +30,8 @@ public class ParticleManager3 : MonoBehaviour
     GameObject[] rockGrassR2;
     GameObject[] rockGrassR3;
 
+    public GameObject oL1;
+
     [SerializeField]
     int upperLimit = 2;
 
@@ -246,6 +248,7 @@ public class ParticleManager3 : MonoBehaviour
             
             if(currentIterationL == 10)
             {
+                oL1.GetComponent<Animator>().SetBool("oL1", true);
                 foreach (GameObject flowers in rockFlowersL1)
                 {
                     flowers.SetActive(true);
@@ -340,6 +343,33 @@ public class ParticleManager3 : MonoBehaviour
                 currentIterationR += 1;
             }else{
                 currentIterationR += 1;
+            }
+
+            if (currentIterationR == 10)
+            {
+                foreach (GameObject flowers in rockFlowersR1)
+                {
+                    flowers.SetActive(true);
+                    flowers.GetComponent<Animator>().SetBool("R1", true);
+                }
+            }
+
+            if (currentIterationR == 20)
+            {
+                foreach (GameObject flowers in rockFlowersR2)
+                {
+                    flowers.SetActive(true);
+                    flowers.GetComponent<Animator>().SetBool("R2", true);
+                }
+            }
+
+            if (currentIterationR == 30)
+            {
+                foreach (GameObject flowers in rockFlowersR3)
+                {
+                    flowers.SetActive(true);
+                    flowers.GetComponent<Animator>().SetBool("R3", true);
+                }
             }
 
         }
