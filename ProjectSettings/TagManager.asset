@@ -16,7 +16,8 @@ TagManager:
   - RockGrassR1
   - RockGrassR2
   - RockGrassR3
-  - oL1
+  - O
+  - Flowers
   layers:
   - Default
   - TransparentFX

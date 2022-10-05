@@ -31,6 +31,12 @@ public class ParticleManager3 : MonoBehaviour
     GameObject[] rockGrassR3;
 
     public GameObject oL1;
+    public GameObject oL2;
+    public GameObject oL3;
+
+    public GameObject oR1;
+    public GameObject oR2;
+    public GameObject oR3;
 
     [SerializeField]
     int upperLimit = 2;
@@ -258,6 +264,7 @@ public class ParticleManager3 : MonoBehaviour
 
             if (currentIterationL == 20)
             {
+                oL2.GetComponent<Animator>().SetBool("oL2", true);
                 foreach (GameObject flowers in rockFlowersL2)
                 {
                     flowers.SetActive(true);
@@ -267,6 +274,7 @@ public class ParticleManager3 : MonoBehaviour
 
             if (currentIterationL == 30)
             {
+                oL3.GetComponent<Animator>().SetBool("oL3", true);
                 foreach (GameObject flowers in rockFlowersL3)
                 {
                     flowers.SetActive(true);

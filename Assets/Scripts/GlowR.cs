@@ -5,9 +5,9 @@ using UnityEngine;
 public class GlowR : MonoBehaviour
 {
     public int numberRightSphere; //start from 0
-    public float waitingTime = 5f;
+    public float waitingTime = 14f;
     public float glow = 50f;
-    public float tranSpeed = 0.01f;
+    public float tranSpeed = 0.001f;
     public float emissiveSpeed = 0.03f;
 
     TimerW waitingTimer;
