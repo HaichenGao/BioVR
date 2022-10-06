@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.VFX;
 
@@ -29,6 +30,8 @@ public class ParticleManager3 : MonoBehaviour
     GameObject[] rockGrassR1;
     GameObject[] rockGrassR2;
     GameObject[] rockGrassR3;
+
+    GameObject[] flowers;
 
     public GameObject oL1;
     public GameObject oL2;
@@ -138,6 +141,13 @@ public class ParticleManager3 : MonoBehaviour
         rockGrassR2 = GameObject.FindGameObjectsWithTag("RockGrassR2");
         rockGrassR3 = GameObject.FindGameObjectsWithTag("RockGrassR3");
 
+        flowers = GameObject.FindGameObjectsWithTag("Flowers");
+
+        foreach (GameObject flowers in flowers)
+        {
+            flowers.SetActive(false);
+        }
+
         foreach (GameObject flowers in rockFlowersL1)
         {
             flowers.SetActive(false);
@@ -201,7 +211,7 @@ public class ParticleManager3 : MonoBehaviour
             leftSpreadingStart = true;
             leftRelaxingStart = true;
             visualEffect.SetBool("LeftRelaxingStart", leftRelaxingStart);
-            visualEffect.SetBool("LeftSpreadingStart", leftSpreadingStart);
+            //visualEffect.SetBool("LeftSpreadingStart", leftSpreadingStart);
             enableLeftGathering = 0;
             visualEffect.SetInt("EnableLeftGathering", enableLeftGathering);
             timerFadingL.TimerStart = true;
@@ -255,31 +265,34 @@ public class ParticleManager3 : MonoBehaviour
             if(currentIterationL == 10)
             {
                 oL1.GetComponent<Animator>().SetBool("oL1", true);
-                foreach (GameObject flowers in rockFlowersL1)
-                {
-                    flowers.SetActive(true);
-                    flowers.GetComponent<Animator>().SetBool("L1", true);
-                }
+                StartCoroutine(WaitToExecute(5f, 0, rockFlowersL1, "L1"));
+                //foreach (GameObject flowers in rockFlowersL1)
+                //{
+                //    flowers.SetActive(true);
+                //    flowers.GetComponent<Animator>().SetBool("L1", true);
+                //}
             }
 
             if (currentIterationL == 20)
             {
                 oL2.GetComponent<Animator>().SetBool("oL2", true);
-                foreach (GameObject flowers in rockFlowersL2)
-                {
-                    flowers.SetActive(true);
-                    flowers.GetComponent<Animator>().SetBool("L2", true);
-                }
+                StartCoroutine(WaitToExecute(5f, 0, rockFlowersL2, "L2"));
+                //foreach (GameObject flowers in rockFlowersL2)
+                //{
+                //    flowers.SetActive(true);
+                //    flowers.GetComponent<Animator>().SetBool("L2", true);
+                //}
             }
 
             if (currentIterationL == 30)
             {
                 oL3.GetComponent<Animator>().SetBool("oL3", true);
-                foreach (GameObject flowers in rockFlowersL3)
-                {
-                    flowers.SetActive(true);
-                    flowers.GetComponent<Animator>().SetBool("L3", true);
-                }
+                StartCoroutine(WaitToExecute(5f, 0, rockFlowersL3, "L3"));
+                //foreach (GameObject flowers in rockFlowersL3)
+                //{
+                //    flowers.SetActive(true);
+                //    flowers.GetComponent<Animator>().SetBool("L3", true);
+                //}
             }
 
         }
@@ -302,7 +315,7 @@ public class ParticleManager3 : MonoBehaviour
             rightSpreadingStart = true;
             rightRelaxingStart = true;
             visualEffect.SetBool("RightRelaxingStart", rightRelaxingStart);
-            visualEffect.SetBool("RightSpreadingStart", rightSpreadingStart);
+            //visualEffect.SetBool("RightSpreadingStart", rightSpreadingStart);
             enableRightGathering = 0;
             visualEffect.SetInt("EnableRightGathering", enableRightGathering);
             timerFadingR.TimerStart = true;
@@ -355,34 +368,73 @@ public class ParticleManager3 : MonoBehaviour
 
             if (currentIterationR == 10)
             {
-                foreach (GameObject flowers in rockFlowersR1)
-                {
-                    flowers.SetActive(true);
-                    flowers.GetComponent<Animator>().SetBool("R1", true);
-                }
+                oR1.GetComponent<Animator>().SetBool("oR1", true);
+                StartCoroutine(WaitToExecute(5f, 0, rockFlowersR1, "R1"));
+                //foreach (GameObject flowers in rockFlowersR1)
+                //{
+                //    flowers.SetActive(true);
+                //    flowers.GetComponent<Animator>().SetBool("R1", true);
+                //}
             }
 
             if (currentIterationR == 20)
             {
-                foreach (GameObject flowers in rockFlowersR2)
-                {
-                    flowers.SetActive(true);
-                    flowers.GetComponent<Animator>().SetBool("R2", true);
-                }
+                oR2.GetComponent<Animator>().SetBool("oR2", true);
+                StartCoroutine(WaitToExecute(5f, 0, rockFlowersR2, "R2"));
+                //foreach (GameObject flowers in rockFlowersR2)
+                //{
+                //    flowers.SetActive(true);
+                //    flowers.GetComponent<Animator>().SetBool("R2", true);
+                //}
             }
 
             if (currentIterationR == 30)
             {
-                foreach (GameObject flowers in rockFlowersR3)
-                {
-                    flowers.SetActive(true);
-                    flowers.GetComponent<Animator>().SetBool("R3", true);
-                }
+                oR3.GetComponent<Animator>().SetBool("oR3", true);
+                StartCoroutine(WaitToExecute(5f, 0, rockFlowersR3, "R3"));
+                //foreach (GameObject flowers in rockFlowersR3)
+                //{
+                //    flowers.SetActive(true);
+                //    flowers.GetComponent<Animator>().SetBool("R3", true);
+                //}
             }
 
         }
         #endregion
 
+        if(currentIterationL == 30 && currentIterationR == 30)
+        {
+            StartCoroutine(WaitToExecute(9f, 1, null, "finish"));
+            StartCoroutine(WaitToExecute(12f, 0, flowers, "blooming"));
+        }
+    }
 
+    IEnumerator WaitToExecute(float time, int fuction, GameObject[] group, string id)
+    {
+        yield return new WaitForSeconds(time);
+        switch (fuction)
+        {
+            case 0:
+                ActivateFlowers(group, id);
+                break;
+            case 1:
+                oL1.GetComponent<Animator>().SetBool(id, true);
+                oL2.GetComponent<Animator>().SetBool(id, true);
+                oL3.GetComponent<Animator>().SetBool(id, true);
+                oR1.GetComponent<Animator>().SetBool(id, true);
+                oR2.GetComponent<Animator>().SetBool(id, true);
+                oR3.GetComponent<Animator>().SetBool(id, true);
+                break;
+        }
+        
+    }
+
+    void ActivateFlowers(GameObject[] group, string id)
+    {
+        foreach (GameObject flowers in group)
+        {
+            flowers.SetActive(true);
+            flowers.GetComponent<Animator>().SetBool(id, true);
+        }
     }
 }

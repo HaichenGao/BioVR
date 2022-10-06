@@ -483,6 +483,7 @@
 "Assets/StylizedNatureBundle/Demo/PostProcessing/Runtime/Utils/RenderTextureFactory.cs"
 "Assets/StylizedNatureBundle/Demo/PostProcessing/Utilities/CustomMotionTexture/ExampleWheelController.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
+"Assets/WaitForSecondsExample.cs"
 -langversion:9.0
 
 /deterministic
