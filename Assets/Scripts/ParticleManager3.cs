@@ -33,6 +33,10 @@ public class ParticleManager3 : MonoBehaviour
 
     GameObject[] flowers;
 
+
+    [SerializeField]
+    GameObject[] beads = new GameObject[6];
+
     public GameObject oL1;
     public GameObject oL2;
     public GameObject oL3;
@@ -372,7 +376,7 @@ public class ParticleManager3 : MonoBehaviour
 
         if(currentIterationL == 30 && currentIterationR == 30)
         {
-            StartCoroutine(WaitToFinish(9f, "finish"));
+            StartCoroutine(WaitToFinish(4f, "finish"));
             StartCoroutine(WaitToExecute(12f, flowers, "blooming"));
         }
     }
@@ -381,32 +385,28 @@ public class ParticleManager3 : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         ActivateFlowers(group, id);
-        //switch (fuction)
-        //{
-        //    case 0:
-        //        ActivateFlowers(group, id);
-        //        break;
-        //    case 1:
-        //        oL1.GetComponent<Animator>().SetBool(id, true);
-        //        oL2.GetComponent<Animator>().SetBool(id, true);
-        //        oR1.GetComponent<Animator>().SetBool(id, true);
-        //        oR2.GetComponent<Animator>().SetBool(id, true);
-        //        oL3.GetComponent<Animator>().SetBool(id, true);
-        //        oR3.GetComponent<Animator>().SetBool(id, true);
-        //        break;
-        //}
         
     }
 
     IEnumerator WaitToFinish(float time, string id)
     {
         yield return new WaitForSeconds(time);
-        oL1.GetComponent<Animator>().SetBool(id, true);
-        oL2.GetComponent<Animator>().SetBool(id, true);
-        oR1.GetComponent<Animator>().SetBool(id, true);
-        oR2.GetComponent<Animator>().SetBool(id, true);
-        oL3.GetComponent<Animator>().SetBool(id, true);
-        oR3.GetComponent<Animator>().SetBool(id, true);
+        //foreach(GameObject bead in beads)
+        //{
+        //    bead.GetComponent<Animator>().SetBool(id, true);
+        //    yield return new WaitForSeconds(0.7f);
+        //}
+        for (int i = 0; i < beads.Length; i++)
+        {
+            beads[i].GetComponent<Animator>().SetBool(id, true);
+            yield return new WaitForSeconds(0.7f);
+        }
+        //oL1.GetComponent<Animator>().SetBool(id, true);
+        //oL2.GetComponent<Animator>().SetBool(id, true);
+        //oR1.GetComponent<Animator>().SetBool(id, true);
+        //oR2.GetComponent<Animator>().SetBool(id, true);
+        //oL3.GetComponent<Animator>().SetBool(id, true);
+        //oR3.GetComponent<Animator>().SetBool(id, true);
     }
 
     void ActivateFlowers(GameObject[] group, string id)
