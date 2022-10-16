@@ -124,6 +124,7 @@
     <Compile Include="Assets\Ardity\Scripts\Samples\SampleTearDown.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
+    <Compile Include="Assets\Scripts\Ding.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Components\TaaComponent.cs" />
     <Compile Include="Assets\WaitForSecondsExample.cs" />

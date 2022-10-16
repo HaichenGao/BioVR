@@ -409,6 +409,7 @@
 "Assets/Ardity/Scripts/Threads/SerialThreadLines.cs"
 "Assets/Scripts/CameraScript.cs"
 "Assets/Scripts/CountdownTimer.cs"
+"Assets/Scripts/Ding.cs"
 "Assets/Scripts/FreeCamera.cs"
 "Assets/Scripts/FreeCameraRight.cs"
 "Assets/Scripts/GlowL.cs"

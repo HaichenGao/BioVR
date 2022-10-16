@@ -6,6 +6,7 @@ using UnityEngine.VFX;
 
 public class ParticleManager3 : MonoBehaviour
 {
+ 
     VisualEffect visualEffect;
     MyMessageListener shoulderData;
     TimerRL timerRelaxingL;
@@ -24,18 +25,13 @@ public class ParticleManager3 : MonoBehaviour
     GameObject[] rockFlowersR2;
     GameObject[] rockFlowersR3;
 
-    GameObject[] rockGrassL1;
-    GameObject[] rockGrassL2;
-    GameObject[] rockGrassL3;
-    GameObject[] rockGrassR1;
-    GameObject[] rockGrassR2;
-    GameObject[] rockGrassR3;
-
     GameObject[] flowers;
 
 
     [SerializeField]
     GameObject[] beads = new GameObject[6];
+
+    public AudioSource backgroundSound;
 
     public GameObject oL1;
     public GameObject oL2;
@@ -137,13 +133,6 @@ public class ParticleManager3 : MonoBehaviour
         rockFlowersR1 = GameObject.FindGameObjectsWithTag("RockFlowersR1");
         rockFlowersR2 = GameObject.FindGameObjectsWithTag("RockFlowersR2");
         rockFlowersR3 = GameObject.FindGameObjectsWithTag("RockFlowersR3");
-
-        rockGrassL1 = GameObject.FindGameObjectsWithTag("RockGrassL1");
-        rockGrassL2 = GameObject.FindGameObjectsWithTag("RockGrassL2");
-        rockGrassL3 = GameObject.FindGameObjectsWithTag("RockGrassL3");
-        rockGrassR1 = GameObject.FindGameObjectsWithTag("RockGrassR1");
-        rockGrassR2 = GameObject.FindGameObjectsWithTag("RockGrassR2");
-        rockGrassR3 = GameObject.FindGameObjectsWithTag("RockGrassR3");
 
         flowers = GameObject.FindGameObjectsWithTag("Flowers");
 
@@ -378,6 +367,7 @@ public class ParticleManager3 : MonoBehaviour
         {
             StartCoroutine(WaitToFinish(4f, "finish"));
             StartCoroutine(WaitToExecute(12f, flowers, "blooming"));
+            backgroundSound.Play();
         }
     }
 
