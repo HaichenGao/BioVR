@@ -37,15 +37,15 @@ public class MyMessageListener : MonoBehaviour
         left = (double)Avg_data_l / dataRec_L;
         right = (double)Avg_data_r / dataRec_R;
 
-        if(left > 1)
-        {
-            left = 1;
-        }
+        //if(left > 1)
+        //{
+        //    left = 1;
+        //}
 
-        if(right > 1)
-        {
-            right = 1;
-        }
+        //if(right > 1)
+        //{
+        //    right = 1;
+        //}
 
         //Debug.Log("ArrivedL:" + left.ToString("0.00"));
         //Debug.Log("ArrivedR:" + right.ToString("0.00"));

@@ -4,6 +4,7 @@ using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.VFX;
 
+
 public class ParticleManager3 : MonoBehaviour
 {
  
@@ -175,7 +176,6 @@ public class ParticleManager3 : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-
         float shoulderLeft;
         float shoulderRight;
         shoulderLeft = Mathf.Round((float)shoulderData.left * 100f) / 100f;
