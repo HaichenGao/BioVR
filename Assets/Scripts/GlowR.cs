@@ -35,7 +35,7 @@ public class GlowR : MonoBehaviour
         while(waitingTimer.CurrentTime >= waitingTime && transparency <= 1f)
         {
             transparency += tranSpeed;
-            color = new Color(0.88f, 0.44f, 0f, transparency);
+            color = new Color(0.0514f, 0.4283f, 0.8396f, transparency);
             emissiveIntensity += emissiveSpeed;
             gameObject.GetComponent<Renderer>().material.SetColor("_BaseColor", color);
             gameObject.GetComponent<Renderer>().material.SetColor("_EmissiveColor", color * emissiveIntensity);
