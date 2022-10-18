@@ -417,6 +417,7 @@
 "Assets/Scripts/GlowL.cs"
 "Assets/Scripts/GlowR.cs"
 "Assets/Scripts/GraphEventSample.cs"
+"Assets/Scripts/LoadScenes.cs"
 "Assets/Scripts/LookWithMouse.cs"
 "Assets/Scripts/MyMessageListener.cs"
 "Assets/Scripts/ParticleBoids.cs"

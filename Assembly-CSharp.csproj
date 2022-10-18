@@ -68,6 +68,7 @@
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\PostProcessingContext.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
     <Compile Include="Assets\Scripts\ParticleControl.cs" />
+    <Compile Include="Assets\Scripts\DontDestroy.cs" />
     <Compile Include="Assets\Scripts\TimerGL.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Scripts\ParticleManager.cs" />
@@ -146,7 +147,7 @@
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Components\FogComponent.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
-    <Compile Include="Assets\Scripts\DontDestroy.cs" />
+    <Compile Include="Assets\Scripts\LoadScenes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shader\ParticleBoidsCS.compute" />

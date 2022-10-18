@@ -10,6 +10,7 @@ public class ParticleManager3 : MonoBehaviour
  
     VisualEffect visualEffect;
     MyMessageListener shoulderData;
+    ThresholdCalibrate thresholdCalibrate;
     TimerRL timerRelaxingL;
     TimerRR timerRelaxingR;
     TimerSL timerSpreadingL;
@@ -18,6 +19,8 @@ public class ParticleManager3 : MonoBehaviour
     TimerGR timerGatheringR;
     TimerFL timerFadingL;
     TimerFR timerFadingR;
+    Timer resetTimerL;
+    Timer resetTimerR;
 
     GameObject[] rockFlowersL1;
     GameObject[] rockFlowersL2;
@@ -32,7 +35,8 @@ public class ParticleManager3 : MonoBehaviour
     [SerializeField]
     GameObject[] beads = new GameObject[6];
 
-    public AudioSource backgroundSound;
+    public AudioSource audioBefore;
+    //public AudioSource audioAfter;
 
     public GameObject oL1;
     public GameObject oL2;
@@ -42,14 +46,19 @@ public class ParticleManager3 : MonoBehaviour
     public GameObject oR2;
     public GameObject oR3;
 
+    float setTensionThresholdL;
+    float setTensionThresholdR;
+    float setRelaxationThresholdL;
+    float setRelaxationThresholdR;
+
     [SerializeField]
     int upperLimit = 2;
 
     [SerializeField]
     int lowerLimit = 0;
 
-    [SerializeField]
-    float tensionThreshold = 0.5f;
+    //[SerializeField]
+    //float tensionThreshold = 0.5f;
 
     [SerializeField]
     float tensionTime = 3;
@@ -62,6 +71,9 @@ public class ParticleManager3 : MonoBehaviour
 
     [SerializeField]
     float fadeTime = 1;
+
+    [SerializeField]
+    float resetTime = 10;
 
     [SerializeField]
     int cycle = 30;
@@ -108,6 +120,9 @@ public class ParticleManager3 : MonoBehaviour
         timerGatheringR = GameObject.Find("[CameraRig]").GetComponent<TimerGR>();
         timerFadingL = GameObject.Find("[CameraRig]").GetComponent<TimerFL>();
         timerFadingR = GameObject.Find("[CameraRig]").GetComponent<TimerFR>();
+        resetTimerL = GameObject.Find("ResetTimerL").GetComponent<Timer>();
+        resetTimerR = GameObject.Find("ResetTimerR").GetComponent<Timer>();
+        thresholdCalibrate = GameObject.Find("SerialController").GetComponent<ThresholdCalibrate>();
 
         foreach(GameObject sphere in SphereL)
         {
@@ -120,13 +135,21 @@ public class ParticleManager3 : MonoBehaviour
         }
 
         visualEffect.SetInt("Min", lowerLimit);
-        visualEffect.SetInt("Max", upperLimit);
+        visualEffect.SetInt("MaxL", upperLimit);
+        visualEffect.SetInt("MaxR", upperLimit);
+        visualEffect.SetInt("IntensityL", 5);
+        visualEffect.SetInt("IntensityR", 5);
 
         enableLeftGathering = 5;
         visualEffect.SetInt("EnableLeftGathering", enableLeftGathering);
 
         enableRightGathering = 5;
         visualEffect.SetInt("EnableRightGathering", enableRightGathering);
+
+        setTensionThresholdL = thresholdCalibrate.tensionThresholdL;
+        setTensionThresholdR = thresholdCalibrate.tensionThresholdR;
+        setRelaxationThresholdL = thresholdCalibrate.relaxationThresholdL;
+        setRelaxationThresholdR = thresholdCalibrate.relaxationThresholdR;
 
         rockFlowersL1 = GameObject.FindGameObjectsWithTag("RockFlowersL1");
         rockFlowersL2 = GameObject.FindGameObjectsWithTag("RockFlowersL2");
@@ -192,10 +215,12 @@ public class ParticleManager3 : MonoBehaviour
 
         #region Left Shoulder
         //Left shoulder: gathering particles
-        if (shoulderLeft >= tensionThreshold && (timerGatheringL.CurrentTime < tensionTime) && leftGatheringStart == true && currentIterationL <= cycle)
+        if (shoulderLeft >= setTensionThresholdL && (timerGatheringL.CurrentTime < tensionTime) && leftGatheringStart == true && currentIterationL <= cycle)
         {
+            visualEffect.SetInt("IntensityL", 50);
             SphereL[currentIterationL].SetActive(true);
             timerGatheringL.TimerStart = true;
+            resetTimerL.ResetTimer();
         }
         else if (timerGatheringL.CurrentTime >= tensionTime && timerGatheringL.TimerStart == true)
         {
@@ -208,9 +233,11 @@ public class ParticleManager3 : MonoBehaviour
             visualEffect.SetInt("EnableLeftGathering", enableLeftGathering);
             timerFadingL.TimerStart = true;
         }
-        else
+        else if (shoulderLeft < setTensionThresholdL && timerGatheringL.TimerStart == true)
         {
             timerGatheringL.TimerStart = false;
+            visualEffect.SetInt("IntensityL", 5);
+            resetTimerL.TimerStart = true;
         }
 
         if(timerFadingL.CurrentTime >= fadeTime)
@@ -218,8 +245,14 @@ public class ParticleManager3 : MonoBehaviour
             timerFadingL.ResetTimer();
         }
 
+        if (resetTimerL.CurrentTime >= resetTime)
+        {
+            timerGatheringL.ResetTimer();
+            resetTimerL.ResetTimer();
+        }
+
         //Left shoulder: spreading particles
-        if (shoulderLeft < tensionThreshold && timerSpreadingL.TimerStart == false && leftSpreadingStart == true && currentIterationL < cycle)
+        if (shoulderLeft < setRelaxationThresholdL && timerSpreadingL.TimerStart == false && leftSpreadingStart == true && currentIterationL < cycle)
         {
             leftSpreadingStart = false;
             visualEffect.SetInt("SphereL", currentIterationL);
@@ -244,6 +277,7 @@ public class ParticleManager3 : MonoBehaviour
             timerRelaxingL.ResetTimer();
             if (currentIterationL < cycle - 1)
             {
+                visualEffect.SetInt("IntensityL", 5);
                 leftGatheringStart = true;
                 leftRelaxingStart = false;
                 visualEffect.SetBool("LeftRelaxingStart", leftRelaxingStart);
@@ -279,10 +313,12 @@ public class ParticleManager3 : MonoBehaviour
 
         #region Right Shoulder
         //Right shoulder: gathering particles
-        if (shoulderRight >= tensionThreshold && (timerGatheringR.CurrentTime < tensionTime) && rightGatheringStart == true && currentIterationR <= cycle)
+        if (shoulderRight >= setTensionThresholdR && (timerGatheringR.CurrentTime < tensionTime) && rightGatheringStart == true && currentIterationR <= cycle)
         {
+            visualEffect.SetInt("IntensityR", 50);
             SphereR[currentIterationR].SetActive(true);
             timerGatheringR.TimerStart = true;
+            resetTimerR.ResetTimer();
 
         }
         else if (timerGatheringR.CurrentTime >= tensionTime && timerGatheringR.TimerStart == true)
@@ -296,9 +332,11 @@ public class ParticleManager3 : MonoBehaviour
             visualEffect.SetInt("EnableRightGathering", enableRightGathering);
             timerFadingR.TimerStart = true;
         }
-        else
+        else if (shoulderRight < setTensionThresholdR && timerGatheringR.TimerStart == true)
         {
             timerGatheringR.TimerStart = false;
+            visualEffect.SetInt("IntensityR", 5);
+            resetTimerR.TimerStart = true;
         }
 
         if (timerFadingR.CurrentTime >= fadeTime)
@@ -306,8 +344,14 @@ public class ParticleManager3 : MonoBehaviour
             timerFadingR.ResetTimer();
         }
 
+        if (resetTimerR.CurrentTime >= resetTime)
+        {
+            timerGatheringR.ResetTimer();
+            resetTimerR.ResetTimer();
+        }
+
         //Right shoulder: spreading particles
-        if (shoulderRight < tensionThreshold && timerSpreadingR.TimerStart == false && rightSpreadingStart == true && currentIterationR < cycle)
+        if (shoulderRight < setRelaxationThresholdR && timerSpreadingR.TimerStart == false && rightSpreadingStart == true && currentIterationR < cycle)
         {
             rightSpreadingStart = false;
             visualEffect.SetInt("SphereR", currentIterationR);
@@ -332,6 +376,7 @@ public class ParticleManager3 : MonoBehaviour
             timerRelaxingR.ResetTimer();
             if (currentIterationR < cycle -1)
             {
+                visualEffect.SetInt("IntensityR", 5);
                 rightGatheringStart = true;
                 rightRelaxingStart = false;
                 visualEffect.SetBool("RightRelaxingStart", rightRelaxingStart);
@@ -367,7 +412,8 @@ public class ParticleManager3 : MonoBehaviour
         {
             StartCoroutine(WaitToFinish(4f, "finish"));
             StartCoroutine(WaitToExecute(12f, flowers, "blooming"));
-            backgroundSound.Play();
+            audioBefore.Play();
+            //audioAfter.Stop();
         }
     }
 

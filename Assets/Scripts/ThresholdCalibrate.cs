@@ -73,8 +73,8 @@ public class ThresholdCalibrate : MonoBehaviour
 
         if (relaxationRecordFinish == true)
         {
-            relaxationThresholdL = Mathf.Round((float)(relaxationData_L.Average() * (1 - relaxationThresholdOffsetL) * 100f)) / 100f;
-            relaxationThresholdR = Mathf.Round((float)(relaxationData_R.Average() * (1 - relaxationThresholdOffsetR) * 100f)) / 100f;
+            relaxationThresholdL = Mathf.Round((float)(relaxationData_L.Average() * (1 + relaxationThresholdOffsetL) * 100f)) / 100f;
+            relaxationThresholdR = Mathf.Round((float)(relaxationData_R.Average() * (1 + relaxationThresholdOffsetR) * 100f)) / 100f;
             relaxationRecordFinish = false;
             Debug.Log("relaxationThresholdL: " + relaxationThresholdL);
             Debug.Log("relaxationThresholdR: " + relaxationThresholdR);

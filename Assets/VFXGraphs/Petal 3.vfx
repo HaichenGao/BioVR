@@ -490,6 +490,9 @@ MonoBehaviour:
   - {fileID: 8926484042661619935}
   - {fileID: 8926484042661619940}
   - {fileID: 8926484042661619945}
+  - {fileID: 8926484042661619950}
+  - {fileID: 8926484042661619956}
+  - {fileID: 8926484042661619958}
   m_UIPosition: {x: 0, y: 0}
   m_UICollapsed: 1
   m_UISuperCollapsed: 0
@@ -703,8 +706,8 @@ MonoBehaviour:
     max: Infinity
     enumValues: []
     descendantCount: 0
-  - name: Max
-    path: Max
+  - name: MaxL
+    path: MaxL
     tooltip: 
     sheetType: m_Int
     realType: Int32
@@ -719,6 +722,20 @@ MonoBehaviour:
     descendantCount: 0
   - name: Min
     path: Min
+    tooltip: 
+    sheetType: m_Int
+    realType: Int32
+    defaultValue:
+      m_Type:
+        m_SerializableType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      m_SerializableObject: 0
+    min: -Infinity
+    max: Infinity
+    enumValues: []
+    descendantCount: 0
+  - name: MaxR
+    path: MaxR
     tooltip: 
     sheetType: m_Int
     realType: Int32
@@ -1699,6 +1716,34 @@ MonoBehaviour:
     descendantCount: 0
   - name: SphereR
     path: SphereR
+    tooltip: 
+    sheetType: m_Int
+    realType: Int32
+    defaultValue:
+      m_Type:
+        m_SerializableType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      m_SerializableObject: 0
+    min: -Infinity
+    max: Infinity
+    enumValues: []
+    descendantCount: 0
+  - name: IntensityL
+    path: IntensityL
+    tooltip: 
+    sheetType: m_Int
+    realType: Int32
+    defaultValue:
+      m_Type:
+        m_SerializableType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      m_SerializableObject: 0
+    min: -Infinity
+    max: Infinity
+    enumValues: []
+    descendantCount: 0
+  - name: IntensityR
+    path: IntensityR
     tooltip: 
     sheetType: m_Int
     realType: Int32
@@ -25059,7 +25104,7 @@ MonoBehaviour:
   m_InputSlots: []
   m_OutputSlots:
   - {fileID: 8926484042661617466}
-  m_ExposedName: Max
+  m_ExposedName: MaxL
   m_Exposed: 1
   m_Order: 9
   m_Category: 
@@ -25081,13 +25126,6 @@ MonoBehaviour:
     - outputSlot: {fileID: 8926484042661617466}
       inputSlot: {fileID: 8926484042661618498}
     position: {x: 4660, y: 3701.3335}
-    expandedSlots: []
-    expanded: 1
-  - m_Id: 2
-    linkedSlots:
-    - outputSlot: {fileID: 8926484042661617466}
-      inputSlot: {fileID: 8926484042661618545}
-    position: {x: 8273.333, y: 3328}
     expandedSlots: []
     expanded: 1
 --- !u!114 &8926484042661617466
@@ -25125,7 +25163,6 @@ MonoBehaviour:
   m_Direction: 1
   m_LinkedSlots:
   - {fileID: 8926484042661618498}
-  - {fileID: 8926484042661618545}
 --- !u!114 &8926484042661617467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25177,7 +25214,7 @@ MonoBehaviour:
       inputSlot: {fileID: 8926484042661618544}
     position: {x: 8276.667, y: 3236.6667}
     expandedSlots: []
-    expanded: 1
+    expanded: 0
 --- !u!114 &8926484042661617468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25237,7 +25274,7 @@ MonoBehaviour:
   - {fileID: 8926484042661617470}
   m_ExposedName: ParticleAmountLeft
   m_Exposed: 1
-  m_Order: 11
+  m_Order: 12
   m_Category: 
   m_Min:
     m_Type:
@@ -25317,7 +25354,7 @@ MonoBehaviour:
   - {fileID: 8926484042661617472}
   m_ExposedName: ParticleAmountRight
   m_Exposed: 1
-  m_Order: 12
+  m_Order: 13
   m_Category: 
   m_Min:
     m_Type:
@@ -37652,7 +37689,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.AnimationCurve, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"frames":[{"time":0.0,"value":0.0,"inTangent":-0.00400523841381073,"outTangent":-0.00400523841381073,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false},{"time":0.49994543194770815,"value":-0.00003604963421821594,"inTangent":0.0034362133592367174,"outTangent":0.26970627903938296,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":true},{"time":1.0,"value":1.0,"inTangent":0.24936740100383759,"outTangent":0.24936740100383759,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false}],"preWrapMode":8,"postWrapMode":8,"version":1}'
+      m_SerializableObject: '{"frames":[{"time":0.0,"value":0.0,"inTangent":-0.00400523841381073,"outTangent":-0.00400523841381073,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false},{"time":0.30000001192092898,"value":0.5,"inTangent":2.010545253753662,"outTangent":2.010545253753662,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false},{"time":1.0,"value":1.0,"inTangent":0.006443793419748545,"outTangent":0.006443793419748545,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false}],"preWrapMode":8,"postWrapMode":8,"version":1}'
     m_Space: 2147483647
   m_Property:
     name: curve
@@ -37926,7 +37963,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
   m_Direction: 0
   m_LinkedSlots:
-  - {fileID: 8926484042661617466}
+  - {fileID: 8926484042661619951}
 --- !u!114 &8926484042661618546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38045,7 +38082,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.AnimationCurve, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"frames":[{"time":0.0,"value":0.0,"inTangent":-0.00400523841381073,"outTangent":-0.00400523841381073,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false},{"time":0.49994543194770815,"value":-0.00003604963421821594,"inTangent":0.0034362133592367174,"outTangent":0.26970627903938296,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":true},{"time":1.0,"value":1.0,"inTangent":0.24936740100383759,"outTangent":0.24936740100383759,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false}],"preWrapMode":8,"postWrapMode":8,"version":1}'
+      m_SerializableObject: '{"frames":[{"time":0.0,"value":0.0,"inTangent":-0.00400523841381073,"outTangent":-0.00400523841381073,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false},{"time":0.30000001192092898,"value":0.5,"inTangent":2.010545253753662,"outTangent":2.010545253753662,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false},{"time":1.0,"value":1.0,"inTangent":0.006443793419748545,"outTangent":0.006443793419748545,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false}],"preWrapMode":8,"postWrapMode":8,"version":1}'
     m_Space: 2147483647
   m_Property:
     name: curve
@@ -39423,7 +39460,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618683}
   m_ExposedName: TimerGathering
   m_Exposed: 1
-  m_Order: 13
+  m_Order: 14
   m_Category: 
   m_Min:
     m_Type:
@@ -39790,7 +39827,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618747}
   m_ExposedName: LeftSpreadingStart
   m_Exposed: 1
-  m_Order: 48
+  m_Order: 49
   m_Category: 
   m_Min:
     m_Type:
@@ -40061,7 +40098,7 @@ MonoBehaviour:
   - {fileID: 8926484042661618834}
   m_ExposedName: TimerFadingL
   m_Exposed: 1
-  m_Order: 14
+  m_Order: 15
   m_Category: 
   m_Min:
     m_Type:
@@ -41295,7 +41332,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 50
+      m_SerializableObject: 5
     m_Space: 2147483647
   m_Property:
     name: True
@@ -41303,7 +41340,8 @@ MonoBehaviour:
       m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
   m_Direction: 0
-  m_LinkedSlots: []
+  m_LinkedSlots:
+  - {fileID: 8926484042661619957}
 --- !u!114 &8926484042661618889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41843,7 +41881,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 4423, y: 4822}
+  m_UIPosition: {x: 4434, y: 4822}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -42674,7 +42712,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619072}
   m_ExposedName: LeftRelaxingStart
   m_Exposed: 1
-  m_Order: 16
+  m_Order: 17
   m_Category: 
   m_Min:
     m_Type:
@@ -43531,7 +43569,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619189}
   m_ExposedName: Position_SphereL1
   m_Exposed: 1
-  m_Order: 18
+  m_Order: 19
   m_Category: 
   m_Min:
     m_Type:
@@ -43713,7 +43751,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619194}
   m_ExposedName: Position_SphereL2
   m_Exposed: 1
-  m_Order: 19
+  m_Order: 20
   m_Category: 
   m_Min:
     m_Type:
@@ -43895,7 +43933,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619199}
   m_ExposedName: Position_SphereL3
   m_Exposed: 1
-  m_Order: 20
+  m_Order: 21
   m_Category: 
   m_Min:
     m_Type:
@@ -44077,7 +44115,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619204}
   m_ExposedName: Position_SphereL4
   m_Exposed: 1
-  m_Order: 21
+  m_Order: 22
   m_Category: 
   m_Min:
     m_Type:
@@ -44259,7 +44297,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619209}
   m_ExposedName: Position_SphereL5
   m_Exposed: 1
-  m_Order: 22
+  m_Order: 23
   m_Category: 
   m_Min:
     m_Type:
@@ -44441,7 +44479,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619214}
   m_ExposedName: Position_SphereL6
   m_Exposed: 1
-  m_Order: 23
+  m_Order: 24
   m_Category: 
   m_Min:
     m_Type:
@@ -44623,7 +44661,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619219}
   m_ExposedName: Position_SphereL7
   m_Exposed: 1
-  m_Order: 24
+  m_Order: 25
   m_Category: 
   m_Min:
     m_Type:
@@ -44805,7 +44843,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619224}
   m_ExposedName: Position_SphereL8
   m_Exposed: 1
-  m_Order: 25
+  m_Order: 26
   m_Category: 
   m_Min:
     m_Type:
@@ -44987,7 +45025,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619229}
   m_ExposedName: Position_SphereL9
   m_Exposed: 1
-  m_Order: 26
+  m_Order: 27
   m_Category: 
   m_Min:
     m_Type:
@@ -45169,7 +45207,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619234}
   m_ExposedName: Position_SphereL10
   m_Exposed: 1
-  m_Order: 27
+  m_Order: 28
   m_Category: 
   m_Min:
     m_Type:
@@ -45351,7 +45389,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619244}
   m_ExposedName: SphereL
   m_Exposed: 1
-  m_Order: 79
+  m_Order: 80
   m_Category: 
   m_Min:
     m_Type:
@@ -46263,7 +46301,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619271}
   m_ExposedName: TimerFadingR
   m_Exposed: 1
-  m_Order: 15
+  m_Order: 16
   m_Category: 
   m_Min:
     m_Type:
@@ -46343,7 +46381,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619273}
   m_ExposedName: SphereR
   m_Exposed: 1
-  m_Order: 80
+  m_Order: 81
   m_Category: 
   m_Min:
     m_Type:
@@ -46423,7 +46461,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619275}
   m_ExposedName: RightRelaxingStart
   m_Exposed: 1
-  m_Order: 17
+  m_Order: 18
   m_Category: 
   m_Min:
     m_Type:
@@ -47665,7 +47703,8 @@ MonoBehaviour:
       m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
   m_Direction: 0
-  m_LinkedSlots: []
+  m_LinkedSlots:
+  - {fileID: 8926484042661619959}
 --- !u!114 &8926484042661619312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49813,7 +49852,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619404}
   m_ExposedName: Position_SphereR1
   m_Exposed: 1
-  m_Order: 49
+  m_Order: 50
   m_Category: 
   m_Min:
     m_Type:
@@ -49995,7 +50034,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619409}
   m_ExposedName: Position_SphereR2
   m_Exposed: 1
-  m_Order: 50
+  m_Order: 51
   m_Category: 
   m_Min:
     m_Type:
@@ -50177,7 +50216,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619414}
   m_ExposedName: Position_SphereR3
   m_Exposed: 1
-  m_Order: 51
+  m_Order: 52
   m_Category: 
   m_Min:
     m_Type:
@@ -50359,7 +50398,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619419}
   m_ExposedName: Position_SphereR4
   m_Exposed: 1
-  m_Order: 52
+  m_Order: 53
   m_Category: 
   m_Min:
     m_Type:
@@ -50541,7 +50580,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619424}
   m_ExposedName: Position_SphereR5
   m_Exposed: 1
-  m_Order: 53
+  m_Order: 54
   m_Category: 
   m_Min:
     m_Type:
@@ -50723,7 +50762,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619429}
   m_ExposedName: Position_SphereR6
   m_Exposed: 1
-  m_Order: 54
+  m_Order: 55
   m_Category: 
   m_Min:
     m_Type:
@@ -50905,7 +50944,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619434}
   m_ExposedName: Position_SphereR7
   m_Exposed: 1
-  m_Order: 55
+  m_Order: 56
   m_Category: 
   m_Min:
     m_Type:
@@ -51087,7 +51126,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619439}
   m_ExposedName: Position_SphereR8
   m_Exposed: 1
-  m_Order: 56
+  m_Order: 57
   m_Category: 
   m_Min:
     m_Type:
@@ -51269,7 +51308,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619444}
   m_ExposedName: Position_SphereR9
   m_Exposed: 1
-  m_Order: 57
+  m_Order: 58
   m_Category: 
   m_Min:
     m_Type:
@@ -51451,7 +51490,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619449}
   m_ExposedName: Position_SphereR10
   m_Exposed: 1
-  m_Order: 58
+  m_Order: 59
   m_Category: 
   m_Min:
     m_Type:
@@ -55332,7 +55371,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619562}
   m_ExposedName: Position_SphereL11
   m_Exposed: 1
-  m_Order: 28
+  m_Order: 29
   m_Category: 
   m_Min:
     m_Type:
@@ -55514,7 +55553,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619612}
   m_ExposedName: Position_SphereL12
   m_Exposed: 1
-  m_Order: 29
+  m_Order: 30
   m_Category: 
   m_Min:
     m_Type:
@@ -55696,7 +55735,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619617}
   m_ExposedName: Position_SphereL13
   m_Exposed: 1
-  m_Order: 30
+  m_Order: 31
   m_Category: 
   m_Min:
     m_Type:
@@ -55878,7 +55917,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619622}
   m_ExposedName: Position_SphereL14
   m_Exposed: 1
-  m_Order: 31
+  m_Order: 32
   m_Category: 
   m_Min:
     m_Type:
@@ -56060,7 +56099,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619627}
   m_ExposedName: Position_SphereL15
   m_Exposed: 1
-  m_Order: 32
+  m_Order: 33
   m_Category: 
   m_Min:
     m_Type:
@@ -56242,7 +56281,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619632}
   m_ExposedName: Position_SphereL16
   m_Exposed: 1
-  m_Order: 33
+  m_Order: 34
   m_Category: 
   m_Min:
     m_Type:
@@ -56424,7 +56463,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619637}
   m_ExposedName: Position_SphereL17
   m_Exposed: 1
-  m_Order: 34
+  m_Order: 35
   m_Category: 
   m_Min:
     m_Type:
@@ -56606,7 +56645,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619642}
   m_ExposedName: Position_SphereL18
   m_Exposed: 1
-  m_Order: 35
+  m_Order: 36
   m_Category: 
   m_Min:
     m_Type:
@@ -56788,7 +56827,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619647}
   m_ExposedName: Position_SphereL19
   m_Exposed: 1
-  m_Order: 36
+  m_Order: 37
   m_Category: 
   m_Min:
     m_Type:
@@ -56970,7 +57009,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619652}
   m_ExposedName: Position_SphereL20
   m_Exposed: 1
-  m_Order: 37
+  m_Order: 38
   m_Category: 
   m_Min:
     m_Type:
@@ -57152,7 +57191,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619685}
   m_ExposedName: Position_SphereL21
   m_Exposed: 1
-  m_Order: 38
+  m_Order: 39
   m_Category: 
   m_Min:
     m_Type:
@@ -57334,7 +57373,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619690}
   m_ExposedName: Position_SphereL22
   m_Exposed: 1
-  m_Order: 39
+  m_Order: 40
   m_Category: 
   m_Min:
     m_Type:
@@ -57516,7 +57555,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619695}
   m_ExposedName: Position_SphereL23
   m_Exposed: 1
-  m_Order: 40
+  m_Order: 41
   m_Category: 
   m_Min:
     m_Type:
@@ -57698,7 +57737,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619700}
   m_ExposedName: Position_SphereL24
   m_Exposed: 1
-  m_Order: 41
+  m_Order: 42
   m_Category: 
   m_Min:
     m_Type:
@@ -57880,7 +57919,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619705}
   m_ExposedName: Position_SphereL25
   m_Exposed: 1
-  m_Order: 42
+  m_Order: 43
   m_Category: 
   m_Min:
     m_Type:
@@ -58062,7 +58101,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619710}
   m_ExposedName: Position_SphereL26
   m_Exposed: 1
-  m_Order: 43
+  m_Order: 44
   m_Category: 
   m_Min:
     m_Type:
@@ -58244,7 +58283,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619715}
   m_ExposedName: Position_SphereL27
   m_Exposed: 1
-  m_Order: 44
+  m_Order: 45
   m_Category: 
   m_Min:
     m_Type:
@@ -58426,7 +58465,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619720}
   m_ExposedName: Position_SphereL28
   m_Exposed: 1
-  m_Order: 45
+  m_Order: 46
   m_Category: 
   m_Min:
     m_Type:
@@ -58608,7 +58647,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619725}
   m_ExposedName: Position_SphereL29
   m_Exposed: 1
-  m_Order: 46
+  m_Order: 47
   m_Category: 
   m_Min:
     m_Type:
@@ -58790,7 +58829,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619730}
   m_ExposedName: Position_SphereL30
   m_Exposed: 1
-  m_Order: 47
+  m_Order: 48
   m_Category: 
   m_Min:
     m_Type:
@@ -62671,7 +62710,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619851}
   m_ExposedName: Position_SphereR11
   m_Exposed: 1
-  m_Order: 59
+  m_Order: 60
   m_Category: 
   m_Min:
     m_Type:
@@ -62853,7 +62892,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619856}
   m_ExposedName: Position_SphereR12
   m_Exposed: 1
-  m_Order: 60
+  m_Order: 61
   m_Category: 
   m_Min:
     m_Type:
@@ -63035,7 +63074,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619861}
   m_ExposedName: Position_SphereR13
   m_Exposed: 1
-  m_Order: 61
+  m_Order: 62
   m_Category: 
   m_Min:
     m_Type:
@@ -63217,7 +63256,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619866}
   m_ExposedName: Position_SphereR14
   m_Exposed: 1
-  m_Order: 62
+  m_Order: 63
   m_Category: 
   m_Min:
     m_Type:
@@ -63399,7 +63438,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619871}
   m_ExposedName: Position_SphereR15
   m_Exposed: 1
-  m_Order: 63
+  m_Order: 64
   m_Category: 
   m_Min:
     m_Type:
@@ -63581,7 +63620,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619876}
   m_ExposedName: Position_SphereR16
   m_Exposed: 1
-  m_Order: 64
+  m_Order: 65
   m_Category: 
   m_Min:
     m_Type:
@@ -63763,7 +63802,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619881}
   m_ExposedName: Position_SphereR17
   m_Exposed: 1
-  m_Order: 65
+  m_Order: 66
   m_Category: 
   m_Min:
     m_Type:
@@ -63945,7 +63984,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619886}
   m_ExposedName: Position_SphereR18
   m_Exposed: 1
-  m_Order: 66
+  m_Order: 67
   m_Category: 
   m_Min:
     m_Type:
@@ -64127,7 +64166,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619891}
   m_ExposedName: Position_SphereR19
   m_Exposed: 1
-  m_Order: 67
+  m_Order: 68
   m_Category: 
   m_Min:
     m_Type:
@@ -64309,7 +64348,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619896}
   m_ExposedName: Position_SphereR20
   m_Exposed: 1
-  m_Order: 68
+  m_Order: 69
   m_Category: 
   m_Min:
     m_Type:
@@ -64491,7 +64530,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619901}
   m_ExposedName: Position_SphereR21
   m_Exposed: 1
-  m_Order: 69
+  m_Order: 70
   m_Category: 
   m_Min:
     m_Type:
@@ -64673,7 +64712,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619906}
   m_ExposedName: Position_SphereR22
   m_Exposed: 1
-  m_Order: 70
+  m_Order: 71
   m_Category: 
   m_Min:
     m_Type:
@@ -64855,7 +64894,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619911}
   m_ExposedName: Position_SphereR23
   m_Exposed: 1
-  m_Order: 71
+  m_Order: 72
   m_Category: 
   m_Min:
     m_Type:
@@ -65037,7 +65076,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619916}
   m_ExposedName: Position_SphereR24
   m_Exposed: 1
-  m_Order: 72
+  m_Order: 73
   m_Category: 
   m_Min:
     m_Type:
@@ -65219,7 +65258,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619921}
   m_ExposedName: Position_SphereR25
   m_Exposed: 1
-  m_Order: 73
+  m_Order: 74
   m_Category: 
   m_Min:
     m_Type:
@@ -65401,7 +65440,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619926}
   m_ExposedName: Position_SphereR26
   m_Exposed: 1
-  m_Order: 74
+  m_Order: 75
   m_Category: 
   m_Min:
     m_Type:
@@ -65583,7 +65622,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619931}
   m_ExposedName: Position_SphereR27
   m_Exposed: 1
-  m_Order: 75
+  m_Order: 76
   m_Category: 
   m_Min:
     m_Type:
@@ -65765,7 +65804,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619936}
   m_ExposedName: Position_SphereR28
   m_Exposed: 1
-  m_Order: 76
+  m_Order: 77
   m_Category: 
   m_Min:
     m_Type:
@@ -65947,7 +65986,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619941}
   m_ExposedName: Position_SphereR29
   m_Exposed: 1
-  m_Order: 77
+  m_Order: 78
   m_Category: 
   m_Min:
     m_Type:
@@ -66129,7 +66168,7 @@ MonoBehaviour:
   - {fileID: 8926484042661619946}
   m_ExposedName: Position_SphereR30
   m_Exposed: 1
-  m_Order: 78
+  m_Order: 79
   m_Category: 
   m_Min:
     m_Type:
@@ -66288,3 +66327,243 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
   m_Direction: 1
   m_LinkedSlots: []
+--- !u!114 &8926484042661619950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330e0fca1717dde4aaa144f48232aa64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UIIgnoredErrors: []
+  m_Parent: {fileID: 114350483966674976}
+  m_Children: []
+  m_UIPosition: {x: 0, y: 0}
+  m_UICollapsed: 1
+  m_UISuperCollapsed: 0
+  m_InputSlots: []
+  m_OutputSlots:
+  - {fileID: 8926484042661619951}
+  m_ExposedName: MaxR
+  m_Exposed: 1
+  m_Order: 11
+  m_Category: 
+  m_Min:
+    m_Type:
+      m_SerializableType: 
+    m_SerializableObject: 
+  m_Max:
+    m_Type:
+      m_SerializableType: 
+    m_SerializableObject: 
+  m_IsOutput: 0
+  m_EnumValues: []
+  m_ValueFilter: 0
+  m_Tooltip: 
+  m_Nodes:
+  - m_Id: 0
+    linkedSlots:
+    - outputSlot: {fileID: 8926484042661619951}
+      inputSlot: {fileID: 8926484042661618545}
+    position: {x: 8271, y: 3316}
+    expandedSlots: []
+    expanded: 0
+--- !u!114 &8926484042661619951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d246e354feb93041a837a9ef59437cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UIIgnoredErrors: []
+  m_Parent: {fileID: 0}
+  m_Children: []
+  m_UIPosition: {x: 0, y: 0}
+  m_UICollapsed: 1
+  m_UISuperCollapsed: 0
+  m_MasterSlot: {fileID: 8926484042661619951}
+  m_MasterData:
+    m_Owner: {fileID: 8926484042661619950}
+    m_Value:
+      m_Type:
+        m_SerializableType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      m_SerializableObject: 0
+    m_Space: 2147483647
+  m_Property:
+    name: o
+    m_serializedType:
+      m_SerializableType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+  m_Direction: 1
+  m_LinkedSlots:
+  - {fileID: 8926484042661618545}
+--- !u!114 &8926484042661619956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330e0fca1717dde4aaa144f48232aa64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UIIgnoredErrors: []
+  m_Parent: {fileID: 114350483966674976}
+  m_Children: []
+  m_UIPosition: {x: 0, y: 0}
+  m_UICollapsed: 1
+  m_UISuperCollapsed: 0
+  m_InputSlots: []
+  m_OutputSlots:
+  - {fileID: 8926484042661619957}
+  m_ExposedName: IntensityL
+  m_Exposed: 1
+  m_Order: 82
+  m_Category: 
+  m_Min:
+    m_Type:
+      m_SerializableType: 
+    m_SerializableObject: 
+  m_Max:
+    m_Type:
+      m_SerializableType: 
+    m_SerializableObject: 
+  m_IsOutput: 0
+  m_EnumValues: []
+  m_ValueFilter: 0
+  m_Tooltip: 
+  m_Nodes:
+  - m_Id: 0
+    linkedSlots:
+    - outputSlot: {fileID: 8926484042661619957}
+      inputSlot: {fileID: 8926484042661618888}
+    position: {x: 4588.1196, y: 4393.9067}
+    expandedSlots: []
+    expanded: 0
+--- !u!114 &8926484042661619957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d246e354feb93041a837a9ef59437cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UIIgnoredErrors: []
+  m_Parent: {fileID: 0}
+  m_Children: []
+  m_UIPosition: {x: 0, y: 0}
+  m_UICollapsed: 1
+  m_UISuperCollapsed: 0
+  m_MasterSlot: {fileID: 8926484042661619957}
+  m_MasterData:
+    m_Owner: {fileID: 8926484042661619956}
+    m_Value:
+      m_Type:
+        m_SerializableType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      m_SerializableObject: 0
+    m_Space: 2147483647
+  m_Property:
+    name: o
+    m_serializedType:
+      m_SerializableType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+  m_Direction: 1
+  m_LinkedSlots:
+  - {fileID: 8926484042661618888}
+--- !u!114 &8926484042661619958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330e0fca1717dde4aaa144f48232aa64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UIIgnoredErrors: []
+  m_Parent: {fileID: 114350483966674976}
+  m_Children: []
+  m_UIPosition: {x: 0, y: 0}
+  m_UICollapsed: 1
+  m_UISuperCollapsed: 0
+  m_InputSlots: []
+  m_OutputSlots:
+  - {fileID: 8926484042661619959}
+  m_ExposedName: IntensityR
+  m_Exposed: 1
+  m_Order: 83
+  m_Category: 
+  m_Min:
+    m_Type:
+      m_SerializableType: 
+    m_SerializableObject: 
+  m_Max:
+    m_Type:
+      m_SerializableType: 
+    m_SerializableObject: 
+  m_IsOutput: 0
+  m_EnumValues: []
+  m_ValueFilter: 0
+  m_Tooltip: 
+  m_Nodes:
+  - m_Id: 0
+    linkedSlots:
+    - outputSlot: {fileID: 8926484042661619959}
+      inputSlot: {fileID: 8926484042661619311}
+    position: {x: 8396.751, y: 4005.0005}
+    expandedSlots: []
+    expanded: 0
+--- !u!114 &8926484042661619959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d246e354feb93041a837a9ef59437cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UIIgnoredErrors: []
+  m_Parent: {fileID: 0}
+  m_Children: []
+  m_UIPosition: {x: 0, y: 0}
+  m_UICollapsed: 1
+  m_UISuperCollapsed: 0
+  m_MasterSlot: {fileID: 8926484042661619959}
+  m_MasterData:
+    m_Owner: {fileID: 8926484042661619958}
+    m_Value:
+      m_Type:
+        m_SerializableType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      m_SerializableObject: 0
+    m_Space: 2147483647
+  m_Property:
+    name: o
+    m_serializedType:
+      m_SerializableType: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+  m_Direction: 1
+  m_LinkedSlots:
+  - {fileID: 8926484042661619311}
