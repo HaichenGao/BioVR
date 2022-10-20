@@ -100,6 +100,9 @@ public class ParticleManager3 : MonoBehaviour
     bool rightGatheringStart = true;
     public bool rightSpreadingStart = false;
     bool rightRelaxingStart = false;
+    public bool isRelaxationFinishedL = false;
+    public bool isRelaxationFinishedR = false;
+
 
 
     public float timerGathering;
@@ -215,7 +218,7 @@ public class ParticleManager3 : MonoBehaviour
 
         #region Left Shoulder
         //Left shoulder: gathering particles
-        if (shoulderLeft >= setTensionThresholdL && (timerGatheringL.CurrentTime < tensionTime) && leftGatheringStart == true && currentIterationL <= cycle)
+        if (shoulderLeft >= setTensionThresholdL && (timerGatheringL.CurrentTime < tensionTime) && leftGatheringStart == true && leftSpreadingStart == false &&currentIterationL <= cycle)
         {
             visualEffect.SetInt("IntensityL", 50);
             SphereL[currentIterationL].SetActive(true);
@@ -254,7 +257,7 @@ public class ParticleManager3 : MonoBehaviour
         //Left shoulder: spreading particles
         if (shoulderLeft < setRelaxationThresholdL && timerSpreadingL.TimerStart == false && leftSpreadingStart == true && currentIterationL < cycle)
         {
-            leftSpreadingStart = false;
+                                     
             visualEffect.SetInt("SphereL", currentIterationL);
             timerSpreadingL.TimerStart = true;
             timerRelaxingL.TimerStart = true;
@@ -264,15 +267,22 @@ public class ParticleManager3 : MonoBehaviour
         }
         else if (timerSpreadingL.CurrentTime >= spreadingTime && timerSpreadingL.TimerStart == true)
         {
+            isRelaxationFinishedL = true;
+            leftSpreadingStart = false;
             enableLeftSpreading = 0;
             visualEffect.SetInt("EnableLeftSpreading", enableLeftSpreading);
             timerSpreadingL.ResetTimer();
             
-
+        }
+        else if (shoulderLeft >= setRelaxationThresholdL && timerSpreadingL.TimerStart == true)
+        {
+            timerSpreadingL.TimerStart = false;
+            enableLeftSpreading = 0;
+            visualEffect.SetInt("EnableLeftSpreading", enableLeftSpreading);
         }
 
 
-        if (timerRelaxingL.CurrentTime >= relaxationTime && timerRelaxingL.TimerStart == true)
+        if (timerRelaxingL.CurrentTime >= relaxationTime && timerRelaxingL.TimerStart == true && leftSpreadingStart == false)
         {
             timerRelaxingL.ResetTimer();
             if (currentIterationL < cycle - 1)
@@ -280,6 +290,7 @@ public class ParticleManager3 : MonoBehaviour
                 visualEffect.SetInt("IntensityL", 5);
                 leftGatheringStart = true;
                 leftRelaxingStart = false;
+                isRelaxationFinishedL = false;
                 visualEffect.SetBool("LeftRelaxingStart", leftRelaxingStart);
                 enableLeftGathering = 5;
                 visualEffect.SetInt("EnableLeftGathering", enableLeftGathering);
@@ -353,7 +364,7 @@ public class ParticleManager3 : MonoBehaviour
         //Right shoulder: spreading particles
         if (shoulderRight < setRelaxationThresholdR && timerSpreadingR.TimerStart == false && rightSpreadingStart == true && currentIterationR < cycle)
         {
-            rightSpreadingStart = false;
+            //rightSpreadingStart = false;
             visualEffect.SetInt("SphereR", currentIterationR);
             timerSpreadingR.TimerStart = true;
             timerRelaxingR.TimerStart = true;
@@ -363,15 +374,23 @@ public class ParticleManager3 : MonoBehaviour
         }
         else if (timerSpreadingR.CurrentTime >= spreadingTime && timerSpreadingR.TimerStart == true)
         {
+            isRelaxationFinishedR = true;
+            rightSpreadingStart = false;
             enableRightSpreading = 0;
             visualEffect.SetInt("EnableRightSpreading", enableRightSpreading);
             timerSpreadingR.ResetTimer();
             
 
         }
+        else if (shoulderRight >= setRelaxationThresholdR && timerSpreadingR.TimerStart == true)
+        {
+            timerSpreadingR.TimerStart = false;
+            enableRightSpreading = 0;
+            visualEffect.SetInt("EnableRightSpreading", enableRightSpreading);
+        }
 
 
-        if (timerRelaxingR.CurrentTime >= relaxationTime && timerRelaxingR.TimerStart == true)
+        if (timerRelaxingR.CurrentTime >= relaxationTime && timerRelaxingR.TimerStart == true && rightSpreadingStart == false)
         {
             timerRelaxingR.ResetTimer();
             if (currentIterationR < cycle -1)
@@ -379,6 +398,7 @@ public class ParticleManager3 : MonoBehaviour
                 visualEffect.SetInt("IntensityR", 5);
                 rightGatheringStart = true;
                 rightRelaxingStart = false;
+                isRelaxationFinishedR = false;
                 visualEffect.SetBool("RightRelaxingStart", rightRelaxingStart);
                 enableRightGathering = 5;
                 visualEffect.SetInt("EnableRightGathering", enableRightGathering);
