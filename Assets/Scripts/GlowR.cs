@@ -14,7 +14,7 @@ public class GlowR : MonoBehaviour
     TimerW waitingTimer;
     ParticleManager3 PM;
     float transparency = 0f;
-    float emissiveIntensity = 1f;
+    float emissiveIntensity = 0.5f;
 
     bool isLightened = false;
 

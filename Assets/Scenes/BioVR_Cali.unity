@@ -283,6 +283,7 @@ MonoBehaviour:
   numberLeftSphere: 6
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &7408570
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -431,6 +432,7 @@ MonoBehaviour:
   numberLeftSphere: 16
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &14274132
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -509,6 +511,7 @@ MonoBehaviour:
   numberRightSphere: 16
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!1 &15363273
 GameObject:
   m_ObjectHideFlags: 0
@@ -1580,6 +1583,7 @@ MonoBehaviour:
   numberLeftSphere: 7
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &61934823
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2344,6 +2348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beadSound: {fileID: 84083813}
+  revolvingSound: {fileID: 0}
 --- !u!1001 &86568583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2702,6 +2707,7 @@ MonoBehaviour:
   numberRightSphere: 5
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!1 &89535907
 GameObject:
   m_ObjectHideFlags: 0
@@ -3311,6 +3317,7 @@ MonoBehaviour:
   numberRightSphere: 1
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!1001 &136257706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3824,11 +3831,11 @@ PrefabInstance:
     - target: {fileID: 2348914, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2120734696}
+      objectReference: {fileID: 724261746}
     - target: {fileID: 3380982, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 721443724}
+      objectReference: {fileID: 1263696753}
     - target: {fileID: 11417168, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -6106,6 +6113,7 @@ MonoBehaviour:
   numberRightSphere: 0
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!1001 &265652364
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6428,6 +6436,7 @@ MonoBehaviour:
   numberLeftSphere: 0
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &267076285
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6723,6 +6732,7 @@ MonoBehaviour:
   numberLeftSphere: 23
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &278534983
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8198,6 +8208,7 @@ MonoBehaviour:
   numberLeftSphere: 29
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &316714039
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8276,6 +8287,7 @@ MonoBehaviour:
   numberRightSphere: 29
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!4 &317798669 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4647924438247260, guid: a60ce8c2c0ff05641a997df273098218,
@@ -9117,6 +9129,7 @@ MonoBehaviour:
   numberLeftSphere: 22
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &359857476
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9195,6 +9208,7 @@ MonoBehaviour:
   numberRightSphere: 22
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!1 &360491651
 GameObject:
   m_ObjectHideFlags: 0
@@ -10377,6 +10391,7 @@ MonoBehaviour:
   numberRightSphere: 2
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!1001 &408481729
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10744,6 +10759,7 @@ MonoBehaviour:
   numberLeftSphere: 27
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &420871804
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10822,6 +10838,7 @@ MonoBehaviour:
   numberRightSphere: 27
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!1 &421120725
 GameObject:
   m_ObjectHideFlags: 0
@@ -11351,6 +11368,7 @@ MonoBehaviour:
   numberLeftSphere: 22
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &437412077
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11670,6 +11688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beadSound: {fileID: 441059283}
+  revolvingSound: {fileID: 0}
 --- !u!1 &443314173
 GameObject:
   m_ObjectHideFlags: 0
@@ -12766,6 +12785,7 @@ MonoBehaviour:
   numberLeftSphere: 1
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &499062920
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13471,6 +13491,7 @@ MonoBehaviour:
   numberRightSphere: 9
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!1001 &530174798
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15718,6 +15739,7 @@ MonoBehaviour:
   numberLeftSphere: 12
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &605542521
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15796,6 +15818,7 @@ MonoBehaviour:
   numberRightSphere: 12
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!1 &614053396
 GameObject:
   m_ObjectHideFlags: 0
@@ -16002,6 +16025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beadSound: {fileID: 614788328}
+  revolvingSound: {fileID: 0}
 --- !u!1 &619242984
 GameObject:
   m_ObjectHideFlags: 0
@@ -21856,6 +21880,7 @@ MonoBehaviour:
   numberLeftSphere: 14
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &647180956
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -22263,6 +22288,7 @@ MonoBehaviour:
   numberLeftSphere: 17
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &653419336
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -22341,6 +22367,7 @@ MonoBehaviour:
   numberRightSphere: 17
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!1 &660741225
 GameObject:
   m_ObjectHideFlags: 0
@@ -22419,6 +22446,7 @@ MonoBehaviour:
   numberLeftSphere: 27
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &660741230
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -22747,6 +22775,7 @@ MonoBehaviour:
   numberLeftSphere: 24
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &665635471
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -24258,170 +24287,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 719620622}
   m_Mesh: {fileID: 4300000, guid: a52db66e30151634c9b0a6ab04a4f266, type: 3}
---- !u!43 &721443724
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 10
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 24
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 8
-    localAABB:
-      m_Center: {x: 0, y: 0.01, z: 0}
-      m_Extent: {x: 1.65, y: 0, z: 1.275}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000004000100010004000500010005000200020005000600020006000300030006000700030007000000000007000400
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 8
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 28
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 288
-    _typelessdata: 0000c03f0ad7233c000090bf000000000000803f0000803f0000803f00000000000000000000c0bf0ad7233c000090bf000000000000803f0000803f0000803f0000803f000000000000c0bf0ad7233c0000903f000000000000803f0000803f0000803f00000000000000000000c03f0ad7233c0000903f000000000000803f0000803f0000803f0000803f000000003333d33f0ad7233c3333a3bf000000000000803f0000803f00000000000000000000803f3333d3bf0ad7233c3333a3bf000000000000803f0000803f000000000000803f0000803f3333d3bf0ad7233c3333a33f000000000000803f0000803f00000000000000000000803f3333d33f0ad7233c3333a33f000000000000803f0000803f000000000000803f0000803f
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0.01, z: 0}
-    m_Extent: {x: 1.65, y: 0, z: 1.275}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
 --- !u!1 &722480303
 GameObject:
   m_ObjectHideFlags: 0
@@ -24514,6 +24379,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c298d5b22a610f64ebcd9e84aea49461, type: 3}
+--- !u!21 &724261746
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprites/Default
+  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1001 &724283500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25573,6 +25475,7 @@ MonoBehaviour:
   numberLeftSphere: 16
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &760984643
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -27128,6 +27031,7 @@ MonoBehaviour:
   numberLeftSphere: 21
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &818735139
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -27337,6 +27241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beadSound: {fileID: 829802868}
+  revolvingSound: {fileID: 0}
 --- !u!82 &829802868
 AudioSource:
   m_ObjectHideFlags: 0
@@ -27812,6 +27717,7 @@ MonoBehaviour:
   numberLeftSphere: 17
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &846910797
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -28036,6 +27942,7 @@ MonoBehaviour:
   numberLeftSphere: 12
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &850249131
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -30456,6 +30363,7 @@ MonoBehaviour:
   numberLeftSphere: 19
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &954854043
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -31164,6 +31072,7 @@ MonoBehaviour:
   numberLeftSphere: 28
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &980962377
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -32070,6 +31979,7 @@ MonoBehaviour:
   numberLeftSphere: 5
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &1012700953
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -33775,6 +33685,7 @@ MonoBehaviour:
   numberRightSphere: 3
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!4 &1073990426 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4643491978446666, guid: 8566a8dee0cadb44c92201009e549052,
@@ -34275,6 +34186,7 @@ MonoBehaviour:
   numberLeftSphere: 13
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &1109877661
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -35630,6 +35542,7 @@ MonoBehaviour:
   numberLeftSphere: 21
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &1159318796
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -35708,6 +35621,7 @@ MonoBehaviour:
   numberRightSphere: 21
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!1 &1160330650
 GameObject:
   m_ObjectHideFlags: 0
@@ -35825,6 +35739,7 @@ MonoBehaviour:
   numberLeftSphere: 2
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &1166267157
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38316,6 +38231,7 @@ MonoBehaviour:
   numberLeftSphere: 4
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &1182435224
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -39245,6 +39161,7 @@ MonoBehaviour:
   numberRightSphere: 8
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!1001 &1212147139
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40749,6 +40666,170 @@ Transform:
   m_Father: {fileID: 361820483}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 4.24, y: 76.31, z: 7.48}
+--- !u!43 &1263696753
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 24
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 8
+    localAABB:
+      m_Center: {x: 0, y: 0.01, z: 0}
+      m_Extent: {x: 1.65, y: 0, z: 1.275}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000004000100010004000500010005000200020005000600020006000300030006000700030007000000000007000400
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 8
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 28
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 288
+    _typelessdata: 0000c03f0ad7233c000090bf000000000000803f0000803f0000803f00000000000000000000c0bf0ad7233c000090bf000000000000803f0000803f0000803f0000803f000000000000c0bf0ad7233c0000903f000000000000803f0000803f0000803f00000000000000000000c03f0ad7233c0000903f000000000000803f0000803f0000803f0000803f000000003333d33f0ad7233c3333a3bf000000000000803f0000803f00000000000000000000803f3333d3bf0ad7233c3333a3bf000000000000803f0000803f000000000000803f0000803f3333d3bf0ad7233c3333a33f000000000000803f0000803f00000000000000000000803f3333d33f0ad7233c3333a33f000000000000803f0000803f000000000000803f0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0.01, z: 0}
+    m_Extent: {x: 1.65, y: 0, z: 1.275}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1001 &1264870517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41498,6 +41579,7 @@ MonoBehaviour:
   numberLeftSphere: 3
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &1294423463
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -43339,6 +43421,7 @@ MonoBehaviour:
   numberLeftSphere: 24
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &1365875135
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -43417,6 +43500,7 @@ MonoBehaviour:
   numberRightSphere: 24
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!1 &1367067859
 GameObject:
   m_ObjectHideFlags: 0
@@ -45710,6 +45794,7 @@ MonoBehaviour:
   numberLeftSphere: 20
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &1478506588
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -45788,6 +45873,7 @@ MonoBehaviour:
   numberRightSphere: 20
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!4 &1481400395 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4414127023599030, guid: cbf383e0d3f7a6a409faa76be11f7597,
@@ -46646,6 +46732,7 @@ MonoBehaviour:
   numberLeftSphere: 15
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &1519470174
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -47373,6 +47460,7 @@ MonoBehaviour:
   numberLeftSphere: 11
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &1547791363
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -47451,6 +47539,7 @@ MonoBehaviour:
   numberRightSphere: 11
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!1 &1550568651
 GameObject:
   m_ObjectHideFlags: 0
@@ -48222,6 +48311,7 @@ MonoBehaviour:
   numberLeftSphere: 10
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &1566994295
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -49145,6 +49235,7 @@ MonoBehaviour:
   numberLeftSphere: 25
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &1598990160
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -49353,6 +49444,7 @@ MonoBehaviour:
   numberLeftSphere: 14
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &1605324819
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -49431,6 +49523,7 @@ MonoBehaviour:
   numberRightSphere: 14
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!1 &1612085505
 GameObject:
   m_ObjectHideFlags: 0
@@ -50416,6 +50509,7 @@ MonoBehaviour:
   numberLeftSphere: 11
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &1650392617
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -51427,6 +51521,7 @@ MonoBehaviour:
   numberLeftSphere: 29
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &1701505368
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -52144,6 +52239,7 @@ MonoBehaviour:
   numberLeftSphere: 23
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &1731797931
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -52222,6 +52318,7 @@ MonoBehaviour:
   numberRightSphere: 23
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!1 &1737307048
 GameObject:
   m_ObjectHideFlags: 0
@@ -52954,6 +53051,7 @@ MonoBehaviour:
   numberLeftSphere: 15
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &1755451798
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -53032,6 +53130,7 @@ MonoBehaviour:
   numberRightSphere: 15
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!4 &1764924046 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f21aed30ae5fb9549956687f3bf010dd,
@@ -53462,6 +53561,7 @@ MonoBehaviour:
   numberRightSphere: 7
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!1 &1780557105
 GameObject:
   m_ObjectHideFlags: 0
@@ -53689,6 +53789,7 @@ MonoBehaviour:
   numberLeftSphere: 13
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &1785911496
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -53767,6 +53868,7 @@ MonoBehaviour:
   numberRightSphere: 13
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!1 &1787358917
 GameObject:
   m_ObjectHideFlags: 0
@@ -53879,6 +53981,7 @@ MonoBehaviour:
   numberLeftSphere: 28
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &1793724887
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -53957,6 +54060,7 @@ MonoBehaviour:
   numberRightSphere: 28
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!1001 &1795070545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54107,6 +54211,7 @@ MonoBehaviour:
   numberLeftSphere: 25
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &1798791572
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -54185,6 +54290,7 @@ MonoBehaviour:
   numberRightSphere: 25
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!1 &1801199722
 GameObject:
   m_ObjectHideFlags: 0
@@ -54845,6 +54951,7 @@ MonoBehaviour:
   numberRightSphere: 4
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!1 &1825555387
 GameObject:
   m_ObjectHideFlags: 0
@@ -55230,6 +55337,7 @@ MonoBehaviour:
   numberLeftSphere: 8
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &1833104332
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -55745,6 +55853,7 @@ MonoBehaviour:
   numberLeftSphere: 26
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &1843198935
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -56301,6 +56410,7 @@ MonoBehaviour:
   numberLeftSphere: 18
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &1873967506
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -56919,6 +57029,7 @@ MonoBehaviour:
   numberLeftSphere: 20
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &1903533084
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -58451,6 +58562,7 @@ MonoBehaviour:
   numberLeftSphere: 19
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &1949533198
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -58529,6 +58641,7 @@ MonoBehaviour:
   numberRightSphere: 19
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!4 &1951707625 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4358062748366962, guid: c298d5b22a610f64ebcd9e84aea49461,
@@ -59301,6 +59414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beadSound: {fileID: 1990853865}
+  revolvingSound: {fileID: 0}
 --- !u!1001 &1991155612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60021,6 +60135,7 @@ MonoBehaviour:
   numberRightSphere: 6
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!1 &2010373866
 GameObject:
   m_ObjectHideFlags: 0
@@ -60254,6 +60369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beadSound: {fileID: 2014743718}
+  revolvingSound: {fileID: 0}
 --- !u!82 &2014743718
 AudioSource:
   m_ObjectHideFlags: 0
@@ -61049,6 +61165,7 @@ MonoBehaviour:
   numberLeftSphere: 9
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &2029559079
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -61598,6 +61715,7 @@ MonoBehaviour:
   numberLeftSphere: 10
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &2043375453
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -61676,6 +61794,7 @@ MonoBehaviour:
   numberRightSphere: 10
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!1 &2045541303
 GameObject:
   m_ObjectHideFlags: 0
@@ -62668,6 +62787,7 @@ MonoBehaviour:
   numberLeftSphere: 26
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &2090976026
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -62746,6 +62866,7 @@ MonoBehaviour:
   numberRightSphere: 26
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!1 &2094418249
 GameObject:
   m_ObjectHideFlags: 0
@@ -63458,43 +63579,6 @@ Transform:
   m_Father: {fileID: 71618996}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &2120734696
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Sprites/Default
-  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!4 &2123910811 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4647924438247260, guid: a60ce8c2c0ff05641a997df273098218,
@@ -63746,6 +63830,7 @@ MonoBehaviour:
   numberLeftSphere: 18
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!135 &2135498370
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -63824,6 +63909,7 @@ MonoBehaviour:
   numberRightSphere: 18
   waitingTime: 14
   glow: 50
+  Lighten: {fileID: 0}
 --- !u!1 &2135923434
 GameObject:
   m_ObjectHideFlags: 0
@@ -64659,7 +64745,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &919132149514611058
 GameObject:
   m_ObjectHideFlags: 0
@@ -65453,7 +65539,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &2462194425003849202
 GameObject:
   m_ObjectHideFlags: 0
@@ -65469,7 +65555,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &2462194425170033355
 GameObject:
   m_ObjectHideFlags: 0
@@ -65485,7 +65571,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &2462194425517655702
 GameObject:
   m_ObjectHideFlags: 0
@@ -65501,7 +65587,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &2462194425570770989
 GameObject:
   m_ObjectHideFlags: 0
@@ -65517,7 +65603,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &2464098631276348994
 GameObject:
   m_ObjectHideFlags: 0

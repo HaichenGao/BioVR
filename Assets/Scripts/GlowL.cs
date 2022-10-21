@@ -8,7 +8,7 @@ public class GlowL : MonoBehaviour
     public float waitingTime = 5f;
     public float glow = 50f;
     float tranSpeed = 0.01f;
-    float emissiveSpeed = 1f;
+    float emissiveSpeed = 0.5f;
 
     TimerW waitingTimer;
     ParticleManager3 PM;
