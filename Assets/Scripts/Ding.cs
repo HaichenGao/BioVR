@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ding : MonoBehaviour
 {
     public AudioSource beadSound;
+    public AudioSource revolvingSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,5 +21,10 @@ public class Ding : MonoBehaviour
     void DropSound()
     {
         beadSound.Play();
+    }
+
+    void RevolvingSound()
+    {
+        revolvingSound.Play();
     }
 }

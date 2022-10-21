@@ -18,6 +18,8 @@ public class GlowL : MonoBehaviour
     bool isLightened = false;
 
     Color color = new Color(1f, 1f, 1f, 0f);
+
+    public AudioSource Lighten;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +34,7 @@ public class GlowL : MonoBehaviour
         if(PM.isRelaxationFinishedL == true && numberLeftSphere == PM.currentIterationL && isLightened == false)
         {
             StartCoroutine(EnLighten());
+            Lighten.Play();
             isLightened = true;
         }
 
