@@ -18,6 +18,8 @@ TagManager:
   - RockGrassR3
   - O
   - Flowers
+  - RuneL
+  - RuneR
   layers:
   - Default
   - TransparentFX

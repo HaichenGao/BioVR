@@ -11,7 +11,7 @@ public class GlowL : MonoBehaviour
     float emissiveSpeed = 0.5f;
 
     TimerW waitingTimer;
-    ParticleManager3 PM;
+    ParticleManager4 PM;
     float transparency = 0f;
     float emissiveIntensity = 1f;
 
@@ -24,7 +24,7 @@ public class GlowL : MonoBehaviour
     void Start()
     {
         waitingTimer = gameObject.GetComponent<TimerW>();
-        PM = GameObject.Find("Breaking_Velocity_Emitter").GetComponent<ParticleManager3>();
+        PM = GameObject.Find("Breaking_Velocity_Emitter").GetComponent<ParticleManager4>();
         gameObject.GetComponent<Renderer>().material.SetColor("_BaseColor", color);
     }
 
