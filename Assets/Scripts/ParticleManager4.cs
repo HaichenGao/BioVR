@@ -28,10 +28,6 @@ public class ParticleManager4 : MonoBehaviour
 
     GameObject[] RuneR;
 
-
-    [SerializeField]
-    GameObject[] beads = new GameObject[6];
-
     public AudioSource audioBefore;
     //public AudioSource audioAfter;
 
@@ -157,14 +153,14 @@ public class ParticleManager4 : MonoBehaviour
             flowers.SetActive(false);
         }
 
-        //RuneL = GameObject.FindGameObjectsWithTag("RuneL");
+        RuneL = GameObject.FindGameObjectsWithTag("RuneL");
         //foreach (GameObject rune in RuneL)
         //{
         //    rune.SetActive(false);
         //    //Debug.Log(rune.name);
         //}
 
-        //RuneR = GameObject.FindGameObjectsWithTag("RuneR");
+        RuneR = GameObject.FindGameObjectsWithTag("RuneR");
         //foreach (GameObject rune in RuneR)
         //{
         //    rune.SetActive(false);
@@ -194,7 +190,7 @@ public class ParticleManager4 : MonoBehaviour
         //Left shoulder: gathering particles
         if (shoulderLeft >= setTensionThresholdL && (timerGatheringL.CurrentTime < tensionTime) && leftGatheringStart == true && leftSpreadingStart == false &&currentIterationL <= cycle)
         {
-            visualEffect.SetInt("IntensityL", 50);
+            visualEffect.SetInt("IntensityL", 35);
             SphereL[currentIterationL].SetActive(true);
             timerGatheringL.TimerStart = true;
             resetTimerL.ResetTimer();
@@ -303,7 +299,7 @@ public class ParticleManager4 : MonoBehaviour
         //Right shoulder: gathering particles
         if (shoulderRight >= setTensionThresholdR && (timerGatheringR.CurrentTime < tensionTime) && rightGatheringStart == true && currentIterationR <= cycle)
         {
-            visualEffect.SetInt("IntensityR", 50);
+            visualEffect.SetInt("IntensityR", 35);
             SphereR[currentIterationR].SetActive(true);
             timerGatheringR.TimerStart = true;
             resetTimerR.ResetTimer();
@@ -410,8 +406,7 @@ public class ParticleManager4 : MonoBehaviour
 
         if(currentIterationL == 30 && currentIterationR == 30)
         {
-            StartCoroutine(WaitToFinish(4f, "finish"));
-            StartCoroutine(WaitToExecute(12f, flowers, "blooming"));
+            StartCoroutine(WaitToExecute(6f, flowers, "blooming"));
             audioBefore.Play();
             //audioAfter.Stop();
         }
@@ -422,16 +417,6 @@ public class ParticleManager4 : MonoBehaviour
         yield return new WaitForSeconds(time);
         ActivateFlowers(group, id);
         
-    }
-
-    IEnumerator WaitToFinish(float time, string id)
-    {
-        yield return new WaitForSeconds(time);
-        for (int i = 0; i < beads.Length; i++)
-        {
-            beads[i].GetComponent<Animator>().SetBool(id, true);
-            yield return new WaitForSeconds(0.7f);
-        }
     }
 
     IEnumerator SetObjectActive(float time, GameObject o)

@@ -9,12 +9,12 @@ public class EnlightenR : MonoBehaviour
 
     public float glow = 50f;
     float tranSpeed = 0.02f;
-    float emissiveSpeed = 1f;
+    float emissiveSpeed = 0.5f;
 
 
     ParticleManager4 PM;
     float transparency = 0f;
-    float emissiveIntensity = 0.5f;
+    float emissiveIntensity = 1f;
 
     bool isLightened = false;
 

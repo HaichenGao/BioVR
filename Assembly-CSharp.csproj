@@ -88,6 +88,7 @@
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Components\VignetteComponent.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\FogModel.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\PostProcessingModel.cs" />
+    <Compile Include="Assets\Scripts\EnlightenR.cs" />
     <Compile Include="Assets\Scripts\LookWithMouse.cs" />
     <Compile Include="Assets\Scripts\CountdownTimer.cs" />
     <Compile Include="Assets\Scripts\TextureBuffer.cs" />
@@ -113,6 +114,7 @@
     <Compile Include="Assets\Ardity\Scripts\Threads\SerialThreadCustomDelimiter.cs" />
     <Compile Include="Assets\Scripts\TimerSL.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
+    <Compile Include="Assets\Scripts\ParticleManager4.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Components\BloomComponent.cs" />
     <Compile Include="Assets\Scripts\ThresholdCalibrate.cs" />
     <Compile Include="Assets\Scripts\TimerFR.cs" />
@@ -120,6 +122,7 @@
     <Compile Include="Assets\Scripts\GlowR.cs" />
     <Compile Include="Assets\Ardity\Scripts\SerialController.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Components\DitheringComponent.cs" />
+    <Compile Include="Assets\Scripts\EnlightenL.cs" />
     <Compile Include="Assets\Scripts\ParticleBoids.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -148,9 +151,6 @@
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Components\FogComponent.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
-    <Compile Include="Assets\Scripts\ParticleManager4.cs" />
-    <Compile Include="Assets\Scripts\EnlightenL.cs" />
-    <Compile Include="Assets\Scripts\EnlightenR.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shader\ParticleBoidsCS.compute" />
