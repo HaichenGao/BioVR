@@ -35,6 +35,7 @@ public class GlowR : MonoBehaviour
         {
             StartCoroutine(EnLighten());
             Lighten.Play();
+            Debug.Log("!");
             isLightened = true;
         }
 

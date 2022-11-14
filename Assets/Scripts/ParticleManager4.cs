@@ -348,6 +348,7 @@ public class ParticleManager4 : MonoBehaviour
         else if (timerSpreadingR.CurrentTime >= spreadingTime && timerSpreadingR.TimerStart == true)
         {
             isRelaxationFinishedR = true;
+            Debug.Log("true");
             rightSpreadingStart = false;
             enableRightSpreading = 0;
             visualEffect.SetInt("EnableRightSpreading", enableRightSpreading);
