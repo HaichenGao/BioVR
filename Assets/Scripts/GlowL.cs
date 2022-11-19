@@ -36,6 +36,8 @@ public class GlowL : MonoBehaviour
             StartCoroutine(EnLighten());
             Lighten.Play();
             isLightened = true;
+            PM.isRelaxationFinishedL = false;
+            PM.currentIterationL += 1;
         }
 
         //while(waitingTimer.CurrentTime >= waitingTime && transparency <= 1f)

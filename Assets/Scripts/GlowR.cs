@@ -35,8 +35,9 @@ public class GlowR : MonoBehaviour
         {
             StartCoroutine(EnLighten());
             Lighten.Play();
-            Debug.Log("!");
             isLightened = true;
+            PM.isRelaxationFinishedR = false;
+            PM.currentIterationR += 1;
         }
 
         if (transparency > 1f)

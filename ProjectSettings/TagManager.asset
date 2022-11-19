@@ -20,6 +20,10 @@ TagManager:
   - Flowers
   - RuneL
   - RuneR
+  - Flowers1
+  - Flowers2
+  - Flowers3
+  - Flowers4
   layers:
   - Default
   - TransparentFX

@@ -17,7 +17,7 @@ public class LoadScenes : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Space) && isPressed == false)
         {
-            SceneManager.LoadScene("BioVR_Game 4");
+            SceneManager.LoadScene("BioVR_Game 5");
             isPressed = true;
         }
     }

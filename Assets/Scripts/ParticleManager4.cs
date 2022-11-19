@@ -24,6 +24,14 @@ public class ParticleManager4 : MonoBehaviour
 
     GameObject[] flowers;
 
+    GameObject[] flowers1;
+
+    GameObject[] flowers2;
+
+    GameObject[] flowers3;
+
+    GameObject[] flowers4;
+
     GameObject[] RuneL;
 
     GameObject[] RuneR;
@@ -153,19 +161,34 @@ public class ParticleManager4 : MonoBehaviour
             flowers.SetActive(false);
         }
 
+        flowers1 = GameObject.FindGameObjectsWithTag("Flowers1");
+        foreach (GameObject flowers in flowers1)
+        {
+            flowers.SetActive(false);
+        }
+
+        flowers2 = GameObject.FindGameObjectsWithTag("Flowers2");
+        foreach (GameObject flowers in flowers2)
+        {
+            flowers.SetActive(false);
+        }
+
+        flowers3 = GameObject.FindGameObjectsWithTag("Flowers3");
+        foreach (GameObject flowers in flowers3)
+        {
+            flowers.SetActive(false);
+        }
+
+        flowers4 = GameObject.FindGameObjectsWithTag("Flowers4");
+        foreach (GameObject flowers in flowers4)
+        {
+            flowers.SetActive(false);
+        }
+
         RuneL = GameObject.FindGameObjectsWithTag("RuneL");
-        //foreach (GameObject rune in RuneL)
-        //{
-        //    rune.SetActive(false);
-        //    //Debug.Log(rune.name);
-        //}
 
         RuneR = GameObject.FindGameObjectsWithTag("RuneR");
-        //foreach (GameObject rune in RuneR)
-        //{
-        //    rune.SetActive(false);
-        //    //Debug.Log(rune.name);
-        //}
+
 
     }
 
@@ -255,18 +278,16 @@ public class ParticleManager4 : MonoBehaviour
         if (timerRelaxingL.CurrentTime >= relaxationTime && timerRelaxingL.TimerStart == true && leftSpreadingStart == false)
         {
             timerRelaxingL.ResetTimer();
-            if (currentIterationL < cycle - 1)
+            if (currentIterationL <= cycle - 1)
             {
                 visualEffect.SetInt("IntensityL", 5);
                 leftGatheringStart = true;
                 leftRelaxingStart = false;
-                isRelaxationFinishedL = false;
                 visualEffect.SetBool("LeftRelaxingStart", leftRelaxingStart);
                 enableLeftGathering = 5;
                 visualEffect.SetInt("EnableLeftGathering", enableLeftGathering);
-                currentIterationL += 1;
-            }else{
-                currentIterationL += 1;
+                //isRelaxationFinishedL = false;
+                //currentIterationL += 1;
             }
 
             if (currentIterationL == 10)
@@ -348,7 +369,6 @@ public class ParticleManager4 : MonoBehaviour
         else if (timerSpreadingR.CurrentTime >= spreadingTime && timerSpreadingR.TimerStart == true)
         {
             isRelaxationFinishedR = true;
-            Debug.Log("true");
             rightSpreadingStart = false;
             enableRightSpreading = 0;
             visualEffect.SetInt("EnableRightSpreading", enableRightSpreading);
@@ -367,18 +387,16 @@ public class ParticleManager4 : MonoBehaviour
         if (timerRelaxingR.CurrentTime >= relaxationTime && timerRelaxingR.TimerStart == true && rightSpreadingStart == false)
         {
             timerRelaxingR.ResetTimer();
-            if (currentIterationR < cycle -1)
+            if (currentIterationR <= cycle -1)
             {
                 visualEffect.SetInt("IntensityR", 5);
                 rightGatheringStart = true;
                 rightRelaxingStart = false;
-                isRelaxationFinishedR = false;
                 visualEffect.SetBool("RightRelaxingStart", rightRelaxingStart);
                 enableRightGathering = 5;
                 visualEffect.SetInt("EnableRightGathering", enableRightGathering);
-                currentIterationR += 1;
-            }else{
-                currentIterationR += 1;
+                //isRelaxationFinishedR = false;
+                //currentIterationR += 1;
             }
 
             if (currentIterationR == 10)
@@ -408,6 +426,10 @@ public class ParticleManager4 : MonoBehaviour
         if(currentIterationL == 30 && currentIterationR == 30)
         {
             StartCoroutine(WaitToExecute(6f, flowers, "blooming"));
+            StartCoroutine(WaitToExecute1(7f, flowers1, "blooming"));
+            StartCoroutine(WaitToExecute2(8f, flowers2, "blooming"));
+            StartCoroutine(WaitToExecute3(9f, flowers3, "blooming"));
+            StartCoroutine(WaitToExecute4(10f, flowers4, "blooming"));
             audioBefore.Play();
             //audioAfter.Stop();
         }
@@ -418,6 +440,34 @@ public class ParticleManager4 : MonoBehaviour
         yield return new WaitForSeconds(time);
         ActivateFlowers(group, id);
         
+    }
+
+    IEnumerator WaitToExecute1(float time, GameObject[] group, string id)
+    {
+        yield return new WaitForSeconds(time);
+        ActivateFlowers(group, id);
+
+    }
+
+    IEnumerator WaitToExecute2(float time, GameObject[] group, string id)
+    {
+        yield return new WaitForSeconds(time);
+        ActivateFlowers(group, id);
+
+    }
+
+    IEnumerator WaitToExecute3(float time, GameObject[] group, string id)
+    {
+        yield return new WaitForSeconds(time);
+        ActivateFlowers(group, id);
+
+    }
+
+    IEnumerator WaitToExecute4(float time, GameObject[] group, string id)
+    {
+        yield return new WaitForSeconds(time);
+        ActivateFlowers(group, id);
+
     }
 
     IEnumerator SetObjectActive(float time, GameObject o)

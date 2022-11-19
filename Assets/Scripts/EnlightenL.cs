@@ -17,7 +17,7 @@ public class EnlightenL : MonoBehaviour
 
     bool isLightened = false;
 
-    Color color = new Color(1f, 1f, 1f, 0f);
+    Color color = new Color(0.13f, 0.67f, 0.1f, 1f);
 
     //public AudioSource Lighten;
     // Start is called before the first frame update
