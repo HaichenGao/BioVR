@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BioVR_Game 5.unity
     guid: f2f3871de6ab52745ad1d499205a7dd6
+  - enabled: 1
+    path: Assets/Scenes/BioVR_Game 6.unity
+    guid: 79b4958126bd41944ac6ca6281f0068b
   m_configObjects:
     Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: f78a01d3ed2a8ad44b49d45b9fa44519,
       type: 2}

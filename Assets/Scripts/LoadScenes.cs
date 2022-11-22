@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class LoadScenes : MonoBehaviour
 {
-    bool isPressed = false;
+    bool fIsPressed = false;
+    bool gIsPressed = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,10 +16,16 @@ public class LoadScenes : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Space) && isPressed == false)
+        if (Input.GetKeyUp(KeyCode.F) && fIsPressed == false)
         {
             SceneManager.LoadScene("BioVR_Game 5");
-            isPressed = true;
+            fIsPressed = true;
+        }
+
+        if (Input.GetKeyUp(KeyCode.G) && gIsPressed == false)
+        {
+            SceneManager.LoadScene("BioVR_Game 6");
+            gIsPressed = true;
         }
     }
 }

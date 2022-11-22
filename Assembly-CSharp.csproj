@@ -151,6 +151,12 @@
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Components\FogComponent.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
+    <Compile Include="Assets\Scripts\Guidance.cs" />
+    <Compile Include="Assets\Scripts\ParticleManagerGuidance.cs" />
+    <Compile Include="Assets\Scripts\EnlightenLGuidance.cs" />
+    <Compile Include="Assets\Scripts\EnlightenRGuidance.cs" />
+    <Compile Include="Assets\Scripts\GlowLGuidance.cs" />
+    <Compile Include="Assets\Scripts\GlowRGuidance.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shader\ParticleBoidsCS.compute" />
