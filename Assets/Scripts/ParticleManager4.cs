@@ -32,12 +32,13 @@ public class ParticleManager4 : MonoBehaviour
 
     GameObject[] flowers4;
 
-    GameObject[] RuneL;
+    GameObject[] flowers0;  
 
-    GameObject[] RuneR;
+    public GameObject[] RuneL;
+
+    public GameObject[] RuneR;
 
     public AudioSource audioBefore;
-    //public AudioSource audioAfter;
 
     public GameObject oL1;
     public GameObject oL2;
@@ -111,7 +112,6 @@ public class ParticleManager4 : MonoBehaviour
     public float timerRelaxing;
 
 
-    // Start is called before the first frame update
     void Start()
     {
         visualEffect = this.GetComponent<VisualEffect>();
@@ -185,6 +185,12 @@ public class ParticleManager4 : MonoBehaviour
             flowers.SetActive(false);
         }
 
+        flowers0 = GameObject.FindGameObjectsWithTag("Flowers0");
+        foreach (GameObject flowers in flowers0)
+        {
+            flowers.SetActive(false);
+        }
+
         RuneL = GameObject.FindGameObjectsWithTag("RuneL");
 
         RuneR = GameObject.FindGameObjectsWithTag("RuneR");
@@ -192,7 +198,6 @@ public class ParticleManager4 : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         float shoulderLeft;
@@ -229,12 +234,12 @@ public class ParticleManager4 : MonoBehaviour
             visualEffect.SetInt("EnableLeftGathering", enableLeftGathering);
             timerFadingL.TimerStart = true;
         }
-        else if (shoulderLeft < setTensionThresholdL && timerGatheringL.TimerStart == true)
-        {
-            timerGatheringL.TimerStart = false;
-            visualEffect.SetInt("IntensityL", 5);
-            resetTimerL.TimerStart = true;
-        }
+        //else if (shoulderLeft < setTensionThresholdL && timerGatheringL.TimerStart == true)
+        //{
+        //    timerGatheringL.TimerStart = false;
+        //    visualEffect.SetInt("IntensityL", 5);
+        //    resetTimerL.TimerStart = true;
+        //}
 
         if(timerFadingL.CurrentTime >= fadeTime)
         {
@@ -290,26 +295,26 @@ public class ParticleManager4 : MonoBehaviour
                 //currentIterationL += 1;
             }
 
-            if (currentIterationL == 10)
-            {
-                oL1.GetComponent<Animator>().SetBool("oL1", true);
-                RuneL[0].SetActive(true);
-                enlightenL += 1;
-            }
+            //if (currentIterationL == 10)
+            //{
+            //    oL1.GetComponent<Animator>().SetBool("oL1", true);
+            //    RuneL[0].SetActive(true);
+            //    enlightenL += 1;
+            //}
 
-            if (currentIterationL == 20)
-            {
-                oL2.GetComponent<Animator>().SetBool("oL2", true);
-                RuneL[1].SetActive(true);
-                enlightenL += 1;
-            }
+            //if (currentIterationL == 20)
+            //{
+            //    oL2.GetComponent<Animator>().SetBool("oL2", true);
+            //    RuneL[1].SetActive(true);
+            //    enlightenL += 1;
+            //}
 
-            if (currentIterationL == 30)
-            {
-                oL3.GetComponent<Animator>().SetBool("oL3", true);
-                RuneL[2].SetActive(true);
-                enlightenL += 1;
-            }
+            //if (currentIterationL == 30)
+            //{
+            //    oL3.GetComponent<Animator>().SetBool("oL3", true);
+            //    RuneL[2].SetActive(true);
+            //    enlightenL += 1;
+            //}
 
         }
         #endregion
@@ -337,12 +342,12 @@ public class ParticleManager4 : MonoBehaviour
             visualEffect.SetInt("EnableRightGathering", enableRightGathering);
             timerFadingR.TimerStart = true;
         }
-        else if (shoulderRight < setTensionThresholdR && timerGatheringR.TimerStart == true)
-        {
-            timerGatheringR.TimerStart = false;
-            visualEffect.SetInt("IntensityR", 5);
-            resetTimerR.TimerStart = true;
-        }
+        //else if (shoulderRight < setTensionThresholdR && timerGatheringR.TimerStart == true)
+        //{
+        //    timerGatheringR.TimerStart = false;
+        //    visualEffect.SetInt("IntensityR", 5);
+        //    resetTimerR.TimerStart = true;
+        //}
 
         if (timerFadingR.CurrentTime >= fadeTime)
         {
@@ -358,7 +363,6 @@ public class ParticleManager4 : MonoBehaviour
         //Right shoulder: spreading particles
         if (shoulderRight < setRelaxationThresholdR && timerSpreadingR.TimerStart == false && rightSpreadingStart == true && currentIterationR < cycle)
         {
-            //rightSpreadingStart = false;
             visualEffect.SetInt("SphereR", currentIterationR);
             timerSpreadingR.TimerStart = true;
             timerRelaxingR.TimerStart = true;
@@ -399,37 +403,38 @@ public class ParticleManager4 : MonoBehaviour
                 //currentIterationR += 1;
             }
 
-            if (currentIterationR == 10)
-            {
-                oR1.GetComponent<Animator>().SetBool("oR1", true);
-                RuneR[0].SetActive(true);
-                enlightenR += 1;
-            }
+            //if (currentIterationR == 10)
+            //{
+            //    oR1.GetComponent<Animator>().SetBool("oR1", true);
+            //    RuneR[0].SetActive(true);
+            //    enlightenR += 1;
+            //}
 
-            if (currentIterationR == 20)
-            {
-                oR2.GetComponent<Animator>().SetBool("oR2", true);
-                RuneR[1].SetActive(true);
-                enlightenR += 1;
-            }
+            //if (currentIterationR == 20)
+            //{
+            //    oR2.GetComponent<Animator>().SetBool("oR2", true);
+            //    RuneR[1].SetActive(true);
+            //    enlightenR += 1;
+            //}
 
-            if (currentIterationR == 30)
-            {
-                oR3.GetComponent<Animator>().SetBool("oR3", true);
-                RuneR[2].SetActive(true);
-                enlightenR += 1;
-            }
+            //if (currentIterationR == 30)
+            //{
+            //    oR3.GetComponent<Animator>().SetBool("oR3", true);
+            //    RuneR[2].SetActive(true);
+            //    enlightenR += 1;
+            //}
 
         }
         #endregion
 
         if(currentIterationL == 30 && currentIterationR == 30)
         {
-            StartCoroutine(WaitToExecute(6f, flowers, "blooming"));
-            StartCoroutine(WaitToExecute1(7f, flowers1, "blooming"));
-            StartCoroutine(WaitToExecute2(8f, flowers2, "blooming"));
-            StartCoroutine(WaitToExecute3(9f, flowers3, "blooming"));
-            StartCoroutine(WaitToExecute4(10f, flowers4, "blooming"));
+            StartCoroutine(WaitToExecute0(8f, flowers0, "blooming"));
+            StartCoroutine(WaitToExecute(9f, flowers, "blooming"));
+            StartCoroutine(WaitToExecute1(10f, flowers1, "blooming"));
+            StartCoroutine(WaitToExecute2(11f, flowers2, "blooming"));
+            StartCoroutine(WaitToExecute3(12f, flowers3, "blooming"));
+            StartCoroutine(WaitToExecute4(13f, flowers4, "blooming"));
             audioBefore.Play();
             //audioAfter.Stop();
         }
@@ -464,6 +469,13 @@ public class ParticleManager4 : MonoBehaviour
     }
 
     IEnumerator WaitToExecute4(float time, GameObject[] group, string id)
+    {
+        yield return new WaitForSeconds(time);
+        ActivateFlowers(group, id);
+
+    }
+
+    IEnumerator WaitToExecute0(float time, GameObject[] group, string id)
     {
         yield return new WaitForSeconds(time);
         ActivateFlowers(group, id);

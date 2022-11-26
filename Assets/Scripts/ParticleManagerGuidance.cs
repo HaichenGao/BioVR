@@ -32,6 +32,8 @@ public class ParticleManagerGuidance : MonoBehaviour
 
     GameObject[] flowers4;
 
+    GameObject[] flowers0;
+
     GameObject[] RuneL;
 
     GameObject[] RuneR;
@@ -181,6 +183,12 @@ public class ParticleManagerGuidance : MonoBehaviour
 
         flowers4 = GameObject.FindGameObjectsWithTag("Flowers4");
         foreach (GameObject flowers in flowers4)
+        {
+            flowers.SetActive(false);
+        }
+
+        flowers0 = GameObject.FindGameObjectsWithTag("Flowers0");
+        foreach (GameObject flowers in flowers0)
         {
             flowers.SetActive(false);
         }
@@ -425,11 +433,12 @@ public class ParticleManagerGuidance : MonoBehaviour
 
         if(currentIterationL == 30 && currentIterationR == 30)
         {
-            StartCoroutine(WaitToExecute(6f, flowers, "blooming"));
-            StartCoroutine(WaitToExecute1(7f, flowers1, "blooming"));
-            StartCoroutine(WaitToExecute2(8f, flowers2, "blooming"));
-            StartCoroutine(WaitToExecute3(9f, flowers3, "blooming"));
-            StartCoroutine(WaitToExecute4(10f, flowers4, "blooming"));
+            StartCoroutine(WaitToExecute0(8f, flowers0, "blooming"));
+            StartCoroutine(WaitToExecute(9f, flowers, "blooming"));
+            StartCoroutine(WaitToExecute1(10f, flowers1, "blooming"));
+            StartCoroutine(WaitToExecute2(11f, flowers2, "blooming"));
+            StartCoroutine(WaitToExecute3(12f, flowers3, "blooming"));
+            StartCoroutine(WaitToExecute4(13f, flowers4, "blooming"));
             audioBefore.Play();
             //audioAfter.Stop();
         }
@@ -464,6 +473,13 @@ public class ParticleManagerGuidance : MonoBehaviour
     }
 
     IEnumerator WaitToExecute4(float time, GameObject[] group, string id)
+    {
+        yield return new WaitForSeconds(time);
+        ActivateFlowers(group, id);
+
+    }
+
+    IEnumerator WaitToExecute0(float time, GameObject[] group, string id)
     {
         yield return new WaitForSeconds(time);
         ActivateFlowers(group, id);

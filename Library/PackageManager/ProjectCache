@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637984708048430846
-    m_Hash: 203556591
+      ticks: 638050373763326180
+    m_Hash: 789825624
   m_LockFileStatus:
     m_FilePath: C:/Users/demo/Documents/GitHub/BioVR/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637984708048440845
-    m_Hash: 1650942940
+      ticks: 638050373763417565
+    m_Hash: 578525815
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -132,7 +132,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Editor
-  type: 
+  type: asset
   description: The Version Control package gives you the ability to use either Collaborate
     or Plastic SCM for Unity (beta) in the Unity editor. To use Plastic SCM for Unity
     (beta), a Plastic SCM subscription is required. Learn more about how you can
@@ -191,6 +191,8 @@ m_ResolvedPackages:
     - 1.17.0
     - 1.17.1
     - 1.17.2
+    - 1.17.6
+    - 1.17.7
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15
@@ -206,6 +208,8 @@ m_ResolvedPackages:
     - 1.17.0
     - 1.17.1
     - 1.17.2
+    - 1.17.6
+    - 1.17.7
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15
@@ -250,7 +254,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637888962690000000
   documentationUrl: 
@@ -402,10 +406,12 @@ m_ResolvedPackages:
     - 3.0.13
     - 3.0.14
     - 3.0.15
+    - 3.0.16
     compatible:
     - 3.0.14
     - 3.0.15
-    verified: 3.0.15
+    - 3.0.16
+    verified: 3.0.16
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -572,6 +578,108 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.2.5
     nextVersion: 
+- packageId: com.unity.recorder@3.0.3
+  testable: 0
+  isDirectDependency: 1
+  version: 3.0.3
+  source: 1
+  resolvedPath: C:\Users\demo\Documents\GitHub\BioVR\Library\PackageCache\com.unity.recorder@3.0.3
+  assetPath: Packages/com.unity.recorder
+  name: com.unity.recorder
+  displayName: Recorder
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: 
+  description: 'The Recorder allows you to capture and save data from the Unity Editor
+    during Play mode: animations, videos, images, audio, arbitrary output variables
+    (AOVs), and more.'
+  status: 4
+  errors: []
+  versions:
+    all:
+    - 2.0.0-preview.6
+    - 2.0.1-preview.1
+    - 2.0.2-preview.3
+    - 2.0.3-preview.1
+    - 2.1.0-preview.1
+    - 2.2.0-preview.4
+    - 2.3.0-preview.3
+    - 2.4.0-preview.1
+    - 2.5.0-pre.1
+    - 2.5.2
+    - 2.5.4
+    - 2.5.5
+    - 2.5.7
+    - 2.6.0-exp.3
+    - 2.6.0-exp.4
+    - 3.0.0-pre.1
+    - 3.0.0-pre.2
+    - 3.0.0
+    - 3.0.1
+    - 3.0.2
+    - 3.0.3
+    - 4.0.0-pre.1
+    - 4.0.0-pre.2
+    - 4.0.0-pre.3
+    - 4.0.0-pre.4
+    - 4.0.0-pre.5
+    - 4.0.0
+    compatible:
+    - 3.0.3
+    - 4.0.0-pre.1
+    - 4.0.0-pre.2
+    - 4.0.0-pre.3
+    verified: 3.0.3
+  dependencies:
+  - name: com.unity.timeline
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.timeline
+    version: 1.6.4
+  - name: com.unity.modules.director
+    version: 1.0.0
+  - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.animation
+    version: 1.0.0
+  - name: com.unity.modules.particlesystem
+    version: 1.0.0
+  keywords:
+  - unity
+  - recorder
+  - recording
+  - capture
+  - video
+  - animation
+  - clip
+  - images
+  - AOV
+  - render
+  - pass
+  - layer
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 637726685330000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.recorder.git
+    revision: 52d2b7e77e6832f279e4de2172226475c5465729
+    path: 
+  unityLifecycle:
+    version: 3.0.3
+    nextVersion: 
 - packageId: com.unity.render-pipelines.high-definition@12.1.7
   testable: 0
   isDirectDependency: 1
@@ -693,6 +801,7 @@ m_ResolvedPackages:
     - 10.8.1
     - 10.9.0
     - 10.10.0
+    - 10.10.1
     - 12.1.7
     compatible:
     - 12.1.7
@@ -795,7 +904,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: Unity Test Framework
-  type: 
+  type: asset
   description: Test framework for running Edit mode and Play mode tests in Unity.
   status: 4
   errors: []
@@ -835,13 +944,19 @@ m_ResolvedPackages:
     - 1.1.30
     - 1.1.31
     - 1.1.33
+    - 1.3.0
+    - 1.3.1
     - 2.0.1-exp.1
+    - 2.0.1-exp.2
     - 2.0.1-pre.12
     - 2.0.1-pre.18
     compatible:
     - 1.1.31
     - 1.1.33
+    - 1.3.0
+    - 1.3.1
     - 2.0.1-exp.1
+    - 2.0.1-exp.2
     - 2.0.1-pre.12
     - 2.0.1-pre.18
     verified: 1.1.33
@@ -869,7 +984,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637804266210000000
   documentationUrl: 
@@ -1061,7 +1176,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: Use Unity Timeline to create cinematic content, game-play sequences,
     audio sequences, and complex particle effects.
   status: 4
@@ -1140,12 +1255,16 @@ m_ResolvedPackages:
     - 1.7.0-pre.2
     - 1.7.0
     - 1.7.1
+    - 1.7.2
+    - 1.8.0
     compatible:
     - 1.6.4
     - 1.7.0-pre.1
     - 1.7.0-pre.2
     - 1.7.0
     - 1.7.1
+    - 1.7.2
+    - 1.8.0
     verified: 1.6.4
   dependencies:
   - name: com.unity.modules.director
@@ -1178,7 +1297,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637789039180000000
   documentationUrl: 
@@ -1378,11 +1497,13 @@ m_ResolvedPackages:
     - 1.5.0-exp.1
     - 1.5.0
     - 1.5.1
+    - 1.5.3
     compatible:
     - 1.4.2
     - 1.5.0-exp.1
     - 1.5.0
     - 1.5.1
+    - 1.5.3
     verified: 1.4.2
   dependencies:
   - name: com.unity.xr.management
@@ -3507,7 +3628,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: A new input system which can be used as a more extensible and customizable
     alternative to Unity's classic input system in UnityEngine.Input.
   status: 4
@@ -3548,10 +3669,14 @@ m_ResolvedPackages:
     - 1.3.0
     - 1.4.1
     - 1.4.2
+    - 1.4.3
+    - 1.4.4
     compatible:
     - 1.3.0
     - 1.4.1
     - 1.4.2
+    - 1.4.3
+    - 1.4.4
     verified: 1.3.0
   dependencies:
   - name: com.unity.modules.uielements
@@ -3583,7 +3708,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637769972190000000
   documentationUrl: 
@@ -3735,7 +3860,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: Burst is a compiler that translates from IL/.NET bytecode to highly
     optimized native code using LLVM.
   status: 4
@@ -3858,6 +3983,9 @@ m_ResolvedPackages:
     - 1.7.4
     - 1.8.0-pre.1
     - 1.8.0-pre.2
+    - 1.8.0
+    - 1.8.1
+    - 1.8.2
     compatible:
     - 1.6.5
     - 1.6.6
@@ -3869,6 +3997,9 @@ m_ResolvedPackages:
     - 1.7.4
     - 1.8.0-pre.1
     - 1.8.0-pre.2
+    - 1.8.0
+    - 1.8.1
+    - 1.8.2
     verified: 1.6.6
   dependencies:
   - name: com.unity.mathematics
@@ -3884,7 +4015,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637835629630000000
   documentationUrl: 
@@ -4020,6 +4151,7 @@ m_ResolvedPackages:
     - 10.8.1
     - 10.9.0
     - 10.10.0
+    - 10.10.1
     - 12.1.7
     compatible:
     - 12.1.7
@@ -4183,6 +4315,7 @@ m_ResolvedPackages:
     - 10.8.1
     - 10.9.0
     - 10.10.0
+    - 10.10.1
     - 12.1.7
     compatible:
     - 12.1.7
@@ -4317,6 +4450,7 @@ m_ResolvedPackages:
     - 10.8.1
     - 10.9.0
     - 10.10.0
+    - 10.10.1
     - 12.1.7
     compatible:
     - 12.1.7
@@ -4433,6 +4567,7 @@ m_ResolvedPackages:
     - 10.8.1
     - 10.9.0
     - 10.10.0
+    - 10.10.1
     - 12.1.7
     compatible:
     - 12.1.7
@@ -4609,7 +4744,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: Use this package to export code coverage data and reports from your
     automated tests. Additionally, the Code Coverage package offers a Coverage Recording
     feature which allows capturing coverage data on demand, for manual testing or
@@ -4644,6 +4779,8 @@ m_ResolvedPackages:
     - 1.2.0-exp.6
     - 1.2.0-exp.7
     - 1.2.0
+    - 1.2.1
+    - 1.2.2
     compatible:
     - 1.0.1
     - 1.1.0
@@ -4656,6 +4793,8 @@ m_ResolvedPackages:
     - 1.2.0-exp.6
     - 1.2.0-exp.7
     - 1.2.0
+    - 1.2.1
+    - 1.2.2
     verified: 1.0.1
   dependencies:
   - name: com.unity.test-framework
@@ -4685,7 +4824,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637594767130000000
   documentationUrl: 
@@ -4712,7 +4851,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: 'This package defines common components used by multiple Game Service
     packages.
 
@@ -4737,11 +4876,15 @@ m_ResolvedPackages:
     - 1.4.1
     - 1.4.2
     - 1.4.3
+    - 1.5.2
+    - 1.6.0
     compatible:
     - 1.4.0
     - 1.4.1
     - 1.4.2
     - 1.4.3
+    - 1.5.2
+    - 1.6.0
     verified: 1.4.3
   dependencies:
   - name: com.unity.modules.unitywebrequest
@@ -4765,7 +4908,7 @@ m_ResolvedPackages:
     scopes: []
     isDefault: 1
     capabilities: 7
-  hideInEditor: 1
+  hideInEditor: 0
   isAssetStorePackage: 0
   datePublishedTicks: 637871962570000000
   documentationUrl: 
@@ -4805,10 +4948,12 @@ m_ResolvedPackages:
     - 1.0.6
     - 1.1.0
     - 1.1.1
+    - 1.1.2
     compatible:
     - 1.1.0
     - 1.1.1
-    verified: 1.1.1
+    - 1.1.2
+    verified: 1.1.2
   dependencies:
   - name: com.unity.modules.subsystems
     version: 1.0.0

@@ -38,16 +38,28 @@ public class GlowL : MonoBehaviour
             isLightened = true;
             PM.isRelaxationFinishedL = false;
             PM.currentIterationL += 1;
-        }
 
-        //while(waitingTimer.CurrentTime >= waitingTime && transparency <= 1f)
-        //{
-        //    transparency += tranSpeed;
-        //    color = new Color(0.0514f, 0.4283f, 0.8396f, transparency);
-        //    emissiveIntensity += emissiveSpeed;
-        //    gameObject.GetComponent<Renderer>().material.SetColor("_BaseColor", color);
-        //    gameObject.GetComponent<Renderer>().material.SetColor("_EmissiveColor", color * emissiveIntensity);
-        //}
+            if (PM.currentIterationL == 10)
+            {
+                StartCoroutine(AnioL1(5f));
+                PM.RuneL[0].SetActive(true);
+                PM.enlightenL += 1;
+            }
+
+            if (PM.currentIterationL == 20)
+            {
+                StartCoroutine(AnioL2(5f));
+                PM.RuneL[1].SetActive(true);
+                PM.enlightenL += 1;
+            }
+
+            if (PM.currentIterationL == 30)
+            {
+                StartCoroutine(AnioL3(5f));
+                PM.RuneL[2].SetActive(true);
+                PM.enlightenL += 1;
+            }
+        }
 
         
 
@@ -70,5 +82,23 @@ public class GlowL : MonoBehaviour
             gameObject.GetComponent<Renderer>().material.SetColor("_BaseColor", color);
             gameObject.GetComponent<Renderer>().material.SetColor("_EmissiveColor", color * emissiveIntensity);
         }
+    }
+
+    IEnumerator AnioL1(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        PM.oL1.GetComponent<Animator>().SetBool("oL1", true);
+    }
+
+    IEnumerator AnioL2(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        PM.oL2.GetComponent<Animator>().SetBool("oL2", true);
+    }
+
+    IEnumerator AnioL3(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        PM.oL3.GetComponent<Animator>().SetBool("oL3", true);
     }
 }

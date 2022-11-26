@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\VRRig.cs" />
     <Compile Include="Assets\Ardity\Scripts\Samples\SampleUserPolling_ReadWrite.cs" />
+    <Compile Include="Assets\Scripts\ParticleManagerGuidance.cs" />
     <Compile Include="Assets\Ardity\Scripts\Samples\SampleUserPolling_JustRead.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
     <Compile Include="Assets\Scripts\GraphEventSample.cs" />
@@ -65,6 +66,7 @@
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
     <Compile Include="Assets\Scripts\TimerGR.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\PostProcessingProfile.cs" />
+    <Compile Include="Assets\Scripts\GlowLGuidance.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\PostProcessingContext.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
     <Compile Include="Assets\Scripts\ParticleControl.cs" />
@@ -89,8 +91,11 @@
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\FogModel.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\PostProcessingModel.cs" />
     <Compile Include="Assets\Scripts\EnlightenR.cs" />
+    <Compile Include="Assets\Scripts\EnlightenRGuidance.cs" />
+    <Compile Include="Assets\Scripts\GlowRGuidance.cs" />
     <Compile Include="Assets\Scripts\LookWithMouse.cs" />
     <Compile Include="Assets\Scripts\CountdownTimer.cs" />
+    <Compile Include="Assets\Scripts\EnlightenLGuidance.cs" />
     <Compile Include="Assets\Scripts\TextureBuffer.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
     <Compile Include="Assets\Scripts\TimerW.cs" />
@@ -125,6 +130,7 @@
     <Compile Include="Assets\Scripts\EnlightenL.cs" />
     <Compile Include="Assets\Scripts\ParticleBoids.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
+    <Compile Include="Assets\Scripts\Guidance.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
     <Compile Include="Assets\Ardity\Scripts\Threads\AbstractSerialThread.cs" />
     <Compile Include="Assets\Ardity\Scripts\Samples\SampleTearDown.cs" />
@@ -151,12 +157,6 @@
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Components\FogComponent.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
     <Compile Include="Assets\StylizedNatureBundle\Demo\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
-    <Compile Include="Assets\Scripts\Guidance.cs" />
-    <Compile Include="Assets\Scripts\ParticleManagerGuidance.cs" />
-    <Compile Include="Assets\Scripts\EnlightenLGuidance.cs" />
-    <Compile Include="Assets\Scripts\EnlightenRGuidance.cs" />
-    <Compile Include="Assets\Scripts\GlowLGuidance.cs" />
-    <Compile Include="Assets\Scripts\GlowRGuidance.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shader\ParticleBoidsCS.compute" />
@@ -987,6 +987,15 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Recorder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder">
+      <HintPath>Library\ScriptAssemblies\Unity.Recorder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder.Base">
+      <HintPath>Library\ScriptAssemblies\Unity.Recorder.Base.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

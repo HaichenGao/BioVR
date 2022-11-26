@@ -33,7 +33,7 @@ public class EnlightenL : MonoBehaviour
     {
         if(numberLeftSphere == PM.enlightenL && isLightened == false)
         {
-            StartCoroutine(EnLighten(3f));
+            StartCoroutine(EnLighten(7f));
             //Lighten.Play();
             isLightened = true;
         }

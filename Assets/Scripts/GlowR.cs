@@ -38,6 +38,27 @@ public class GlowR : MonoBehaviour
             isLightened = true;
             PM.isRelaxationFinishedR = false;
             PM.currentIterationR += 1;
+
+            if (PM.currentIterationR == 10)
+            {
+                StartCoroutine(AnioR1(5f));
+                PM.RuneR[0].SetActive(true);
+                PM.enlightenR += 1;
+            }
+
+            if (PM.currentIterationR == 20)
+            {
+                StartCoroutine(AnioR2(5f));
+                PM.RuneR[1].SetActive(true);
+                PM.enlightenR += 1;
+            }
+
+            if (PM.currentIterationR == 30)
+            {
+                StartCoroutine(AnioR3(5f));
+                PM.RuneR[2].SetActive(true);
+                PM.enlightenR += 1;
+            }
         }
 
         if (transparency > 1f)
@@ -60,5 +81,23 @@ public class GlowR : MonoBehaviour
             gameObject.GetComponent<Renderer>().material.SetColor("_BaseColor", color);
             gameObject.GetComponent<Renderer>().material.SetColor("_EmissiveColor", color * emissiveIntensity);
         }
+    }
+
+    IEnumerator AnioR1(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        PM.oR1.GetComponent<Animator>().SetBool("oR1", true);
+    }
+
+    IEnumerator AnioR2(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        PM.oR2.GetComponent<Animator>().SetBool("oR2", true);
+    }
+
+    IEnumerator AnioR3(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        PM.oR3.GetComponent<Animator>().SetBool("oR3", true);
     }
 }
